@@ -1,5 +1,6 @@
 import NavBar from 'components/navbar';
 import Landing from './components/landing';
+import Process from './components/process';
 
 export default function Home() {
   return (
@@ -11,6 +12,10 @@ export default function Home() {
         {/* the landing page */}
         <Landing />
         {/* the landing page */}
+
+        {/* the process page */}
+        <Process />
+        {/* the process page */}
     </div>
   )
 }

@@ -43,6 +43,7 @@ $padding-x: 6.0625rem;
 
 .input__group{
     display: flex;
+    flex-wrap: wrap;
     input{
         margin-right: 12px;
         width: 23.1875rem;
