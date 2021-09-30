@@ -1,0 +1,57 @@
+@import "styles/variables.scss";
+
+// define variables
+$starting-gradient: #D8DCCD;
+$ending-gradient: #EBEEE3;
+$height: 722px;
+$padding-x: 6.0625rem;
+// define variables
+
+
+.landing__cover{
+    padding-top: 11.9275rem;
+    padding-bottom: 6.8125rem;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    // height: $height;
+    background-size: cover;
+    background-position-y: -86px; //do this to accomodate the navbar
+    background-image: url('../../../../public/images/landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
+}
+
+.landing__content{
+    h1, h4, h3{
+        font-weight: normal;
+    }
+    h1{
+        margin-bottom: 1.9375rem;
+        color: $dark-green;
+        line-height: 4.125rem;
+    }
+    h4{
+        font-family: 'Helvetica Neue';
+        margin-bottom: 3.375rem ;
+        max-width: 36.4rem;
+        line-height: 2.25rem;
+    }
+    h3{
+        color: $dark-green;
+        margin-bottom: 1.23rem;
+        line-height: 4.125rem;
+    }
+}
+
+.input__group{
+    display: flex;
+    input{
+        margin-right: 12px;
+        width: 23.1875rem;
+    }
+
+    button{
+        span{
+            font-weight: 500;
+            margin-right: 2rem;
+        }
+    }
+}
