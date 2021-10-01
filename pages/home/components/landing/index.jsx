@@ -27,7 +27,6 @@ export default function Index() {
             id="email"
             type="email"
             name="email"
-            type="text"
             placeholder="Enter email"
           />
           <button
