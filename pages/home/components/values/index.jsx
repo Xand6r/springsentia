@@ -11,7 +11,7 @@ export default function index() {
   return (
     <div className={styles.values}>
       <div className={styles.imagewrapper}>
-        <Image src={FemaleImage} />
+        <Image alt="femaleimage" src={FemaleImage} />
       </div>
       <div className={styles.textwrapper}>
         <p>OUR VALUES</p>
@@ -31,7 +31,7 @@ export default function index() {
             </div>
         </section>
         <h5>
-            We're happy when your hair and skin are happy. This happiness comes from confidence in our promise of real and natural results for you. Our coco-pure values ensure we always keep it. coco-pure! Completeness, Confidence, and Purity.
+            We&apos;re happy when your hair and skin are happy. This happiness comes from confidence in our promise of real and natural results for you. Our coco-pure values ensure we always keep it. coco-pure! Completeness, Confidence, and Purity.
         </h5>
       </div>
     </div>

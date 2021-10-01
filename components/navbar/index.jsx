@@ -7,7 +7,7 @@ export default function Index() {
     return (
         <nav className={styles.header}>
             <div className={styles.header__logo}>
-                <Image src={Logo}/>
+                <Image alt="logo" src={Logo}/>
             </div>
         </nav>
     )

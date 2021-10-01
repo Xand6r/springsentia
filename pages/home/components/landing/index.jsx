@@ -21,7 +21,7 @@ export default function Index() {
             />
             <button className="--filled">
                 <span>GET NOTIFIED</span>
-                <Image src={LeftArrow}/>
+                <Image alt="left arrow" src={LeftArrow}/>
             </button>
         </div>
       </div>

@@ -277,3 +277,5 @@ export function Beauty() {
     </svg>
   );
 }
+
+export default Nature;

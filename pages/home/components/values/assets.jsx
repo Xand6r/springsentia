@@ -88,3 +88,5 @@ export function Confidence() {
     </svg>
   );
 }
+
+export default Confidence
