@@ -13,10 +13,24 @@ $padding-x: 6.0625rem;
     padding-bottom: 6.8125rem;
     padding-left: $padding-x;
     padding-right: $padding-x;
-    // height: $height;
     background-size: cover;
     background-position-y: -86px; //do this to accomodate the navbar
     background-image: url('../../../../public/images/landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
+
+    @media (max-width: $lg-breakpoint) {
+        background-image: url('../../../../public/images/small-landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
+    }
+
+    @media (max-width: $md-breakpoint) {
+        padding-top: 11.9275rem;
+        padding-bottom: 6.8125rem;
+    }
+
+    @media (max-width: $sm-breakpoint) {
+        padding-top: 4.92rem;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .landing__content{
@@ -44,6 +58,7 @@ $padding-x: 6.0625rem;
 .input__group{
     display: flex;
     flex-wrap: wrap;
+    gap: 1.77rem;
     input{
         transition: 300ms;
         margin-right: 12px;

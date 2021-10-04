@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <section className={styles.landing__cover}>
       <div className={styles.landing__content}>
-        <h1> We&apos;re Launching Soon </h1>
+        <h1> We&apos;re <br className="--smallshow"/> Launching Soon </h1>
         <h4>
           We understand how much your skin and hair matter to you. It does to us
           too. That’s why we’ve put in so much care in making products that give
