@@ -18,7 +18,7 @@ $padding-x: 6.0625rem;
     background-image: url('../../../../public/images/landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
 
     @media (max-width: $lg-breakpoint) {
-        background-image: url('../../../../public/images/small-landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
+        background-image: url('../../../../public/images/plainbg.png'), linear-gradient($starting-gradient, $starting-gradient);
     }
 
     @media (max-width: $md-breakpoint) {
@@ -30,6 +30,7 @@ $padding-x: 6.0625rem;
         padding-top: 4.92rem;
         padding-left: 25px;
         padding-right: 25px;
+        padding-bottom: 0;
     }
 }
 
@@ -41,17 +42,32 @@ $padding-x: 6.0625rem;
         margin-bottom: 1.9375rem;
         color: $dark-green;
         line-height: 4.125rem;
+        @media (max-width: $sm-breakpoint) {
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
     }
     h4{
         font-family: 'Helvetica Neue';
         margin-bottom: 3.375rem ;
         max-width: 36.4rem;
         line-height: 2.25rem;
+        @media (max-width: $sm-breakpoint) {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
     }
     h3{
         color: $dark-green;
         margin-bottom: 1.23rem;
         line-height: 4.125rem;
+
+        @media (max-width: $sm-breakpoint) {
+            font-size: 20px;
+            line-height: 66px;
+            margin-bottom: 0;
+        }
     }
 }
 

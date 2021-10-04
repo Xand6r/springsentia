@@ -29,11 +29,11 @@ export default function Home() {
         {/* the process page */}
 
         {/* the values page */}
-        <Values />
+        {/* <Values /> */}
         {/* the values page */}
 
         {/* the footer page */}
-        <Footer />
+        {/* <Footer /> */}
         {/* the footer page */}
     </div>
   )

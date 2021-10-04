@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import BgCream from 'public/images/small-landingbackground.png'
+
 import LeftArrow from "/public/images/leftarrow.svg";
 import styles from "./landing.module.scss";
 import { useForm } from "@formspree/react";
@@ -51,6 +53,9 @@ export default function Index() {
             }
           </button>
         </form>
+      </div>
+      <div className="--smallshow">
+        <Image alt="nice cream" src={BgCream} />
       </div>
     </section>
   );
