@@ -4,6 +4,9 @@ import LeftArrow from "/public/images/leftarrow.svg";
 import styles from "./landing.module.scss";
 import { useForm } from "@formspree/react";
 
+process.env.NEXT_PUBLIC_REGISTERATION = "mgerqadb";
+
+
 export default function Index() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_REGISTERATION);
   const submittedStyle = state.succeeded ? { visibility: 'hidden' } : {};
@@ -11,7 +14,7 @@ export default function Index() {
   return (
     <section className={styles.landing__cover}>
       <div className={styles.landing__content}>
-        <h1>Real &amp; Natural Results</h1>
+        <h1> We&apos;re Launching Soon </h1>
         <h4>
           We understand how much your skin and hair matter to you. It does to us
           too. That’s why we’ve put in so much care in making products that give
