@@ -41,7 +41,9 @@ export default function Index() {
               !state.submitting ? (
                 <>
                   <span>GET NOTIFIED</span>
-                  <Image alt="left arrow" src={LeftArrow} />
+                  <div style={{transition:"300ms"}} className="image">
+                      <Image alt="left arrow" src={LeftArrow} />
+                  </div>
                 </>
               ) : (
                 <span>SAVING ...</span>
