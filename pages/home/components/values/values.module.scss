@@ -8,11 +8,43 @@
     background-color: $dark-charcoal;
     display: flex;
     justify-content: space-between;
+
+    // on tablets
+    @media (max-width: $lg-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .imagewrapper{
     margin-top: -14.6125rem ;
     margin-right: 25px;
+
+    // on tablets
+    @media (max-width: $lg-breakpoint) {
+        margin: 0;
+        margin-bottom: 50px;
+        object-fit: contain;
+
+        &>div{
+            width: 550px;
+            height: 663px;
+        }
+    }
+
+    // on tablets
+    @media (max-width: $md-breakpoint) {
+        margin: 0;
+        margin-bottom: 50px;
+
+        &>div{
+            width: 502px;
+
+        }
+    }
 }
 
 .textwrapper{

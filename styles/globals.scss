@@ -12,6 +12,11 @@
 html{
   font-size: 16px;
   font-family: 'mabry-pro';
+
+  // on tablets
+  @media (max-width: $md-breakpoint) {
+    font-size: 14px;
+  }
 }
 // defining the root font size
 
