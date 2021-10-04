@@ -17,6 +17,11 @@ html{
   @media (max-width: $md-breakpoint) {
     font-size: 14px;
   }
+
+  // on phones
+  @media (max-width: $md-breakpoint) {
+    font-size: 13px;
+  }
 }
 // defining the root font size
 
