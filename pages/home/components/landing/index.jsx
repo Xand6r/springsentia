@@ -6,7 +6,7 @@ import LeftArrow from "/public/images/leftarrow.svg";
 import styles from "./landing.module.scss";
 import { useForm } from "@formspree/react";
 
-// process.env.NEXT_PUBLIC_REGISTERATION = "mgerqadb";
+process.env.NEXT_PUBLIC_REGISTERATION = "mgerqadb";
 
 
 export default function Index() {
