@@ -110,6 +110,9 @@
         display: flex;
         align-items: center;
         margin-right:33px;
+        @media (max-width: $sm-breakpoint) {
+            margin-right: 0px;
+        }
         &:last-of-type{
             margin-right:0 ;
         }
