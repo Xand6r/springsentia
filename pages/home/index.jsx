@@ -6,6 +6,7 @@ import Footer from 'components/footer';
 import Landing from './components/landing';
 import Process from './components/process';
 import Values from './components/values';
+import BestSeller from './components/bestseller';
 
 export default function Home() {
   return (
@@ -23,6 +24,10 @@ export default function Home() {
         {/* the landing page */}
         <Landing />
         {/* the landing page */}
+
+        {/* best sellers page */}
+        <BestSeller />
+        {/* best sellers page */}
 
         {/* the process page */}
         <Process />

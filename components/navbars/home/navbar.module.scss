@@ -15,6 +15,7 @@
         color: $darker-charcoal;
         font-weight: 400;
         transition: $fast-transition;
+        position: relative;
     }
 }
 
@@ -47,8 +48,10 @@
 
 .right__section{
     display: flex;
+    align-items: center;
     p{
         margin-left: 2.1875rem;
+        cursor: pointer;
 
         &:first-of-type{
             cursor: pointer;
@@ -62,6 +65,7 @@
 
 .left__section{
     display: flex;
+    align-items: center;
     p{
         cursor: pointer;
         margin-right: 2.1875rem;

@@ -9,17 +9,22 @@ $padding-x: 6.0625rem;
 
 
 .landing__cover{
-    padding-top: 11.9275rem;
-    padding-bottom: 6.8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.8125rem;
+    padding-bottom: 5.625rem;
     padding-left: $padding-x;
     padding-right: $padding-x;
-    background-size: cover;
-    background-position-y: -86px; //do this to accomodate the navbar
-    background-image: url('../../../../public/images/landingbackground.png'), linear-gradient($starting-gradient, $starting-gradient);
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background-position-y: -86px; //do this to accomodate the navbar
+    background-color: $ionic-opacity-variant;
+    // background-image: url('../../../../public/images/landingcream.png'), $ionic-opacity-variant;
 
-    @media (max-width: $lg-breakpoint) {
-        background-image: url('../../../../public/images/plainbg.png'), linear-gradient($starting-gradient, $starting-gradient);
-    }
+    // @media (max-width: $lg-breakpoint) {
+    //     background-image: url('../../../../public/images/plainbg.png'), $ionic-opacity-variant;
+    // }
 
     @media (max-width: $md-breakpoint) {
         padding-top: 11.9275rem;
@@ -40,7 +45,7 @@ $padding-x: 6.0625rem;
     }
     h1{
         margin-bottom: 1.9375rem;
-        color: $dark-green;
+        color: $darker-charcoal;
         line-height: 4.125rem;
         @media (max-width: $sm-breakpoint) {
             line-height: 40px;
@@ -95,7 +100,7 @@ $padding-x: 6.0625rem;
         transition: 300ms;
         span{
             font-weight: 500;
-            margin-right: 2rem;
+            margin-right: 2.8125rem;
         }
         &:hover{
             background-color: #9CC193;
