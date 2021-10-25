@@ -1,0 +1,80 @@
+@import "styles/variables.scss";
+
+.header{
+    width: 100%;
+    background-color: $ionic-opacity-variant;
+    padding: 1.6875rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $sm-breakpoint) {
+        padding: 24px auto;
+    }
+
+    p{
+        color: $darker-charcoal;
+        font-weight: 400;
+        transition: $fast-transition;
+    }
+}
+
+.header__logo__big{
+    margin: 0 auto;
+    width: fit-content;
+
+    @media (max-width: $sm-breakpoint) {
+        display: none;
+    }
+}
+
+
+.header__logo__small{
+    margin: 0 auto;
+    width: fit-content;
+    display: none;
+
+    @media (max-width: $sm-breakpoint) {
+        display: inherit;
+    }
+}
+
+.arrow-icon{
+    margin-left: 4px;
+    position: relative;
+    top: -2px;
+    content: url('../../../public/icons/downarrow.svg');
+}
+
+.right__section{
+    display: flex;
+    p{
+        margin-left: 2.1875rem;
+
+        &:first-of-type{
+            cursor: pointer;
+            
+            &::after {
+                @extend .arrow-icon;
+            }
+        }
+    }
+}
+
+.left__section{
+    display: flex;
+    p{
+        cursor: pointer;
+        margin-right: 2.1875rem;
+
+        &::after {
+            @extend .arrow-icon;
+        }
+    }
+}
+
+p.item__active{
+    color: $relish;
+    &::after {
+        content: url('../../../public/icons/downarrowactive.svg') !important;
+    }
+}
