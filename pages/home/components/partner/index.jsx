@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <section className={styles.container}>
       <div className={styles.container__image}>
-        <Image src={partnerImage} layout="fill" />
+        <Image src={partnerImage} layout="fill" alt="" />
       </div>
       <div className={styles.container__text}>
         <div>

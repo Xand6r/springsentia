@@ -6,7 +6,7 @@ export default function Index({ post, small }) {
   return (
     <div className={`${styles.container} ${small ? styles.__small : ""}`}>
       <div className={styles.container__image}>
-        <Image src={post.image} layout="fill" />
+        <Image src={post.image} layout="fill" alt="" />
       </div>
 
       <div className={styles.container__content}>

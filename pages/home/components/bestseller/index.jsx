@@ -56,7 +56,7 @@ export default function Index() {
             <div className={styles.bestseller_container}>
                 {
                     DEFAULT_PRODUCTS.map((oneProduct) => (
-                        <Product product={oneProduct} />
+                        <Product key={oneProduct.image} product={oneProduct} />
                     ))
                 }
             </div>

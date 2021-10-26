@@ -55,7 +55,7 @@ export default function Index() {
     <div className={styles.content}>
         {
            fauxBlogPosts.map((obp, i) => (
-              <BlogPost post={obp} small={i==1 || i==2}/>
+              <BlogPost key={i} post={obp} small={i==1 || i==2}/>
            ))
         }
     </div>
