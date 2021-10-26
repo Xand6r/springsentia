@@ -1,6 +1,8 @@
 // defining the different colors to be used
 $ionic-ivory: #F3EFE2;
+$ionic-opacity-variant: #F8F7F5;
 $dark-green: #014C37;
+$relish: #8FB685;
 $dark-charcoal: #EFEFEF;
 $darker-charcoal: #333333;
 
@@ -9,3 +11,7 @@ $darker-charcoal: #333333;
 $lg-breakpoint: 1200px;
 $md-breakpoint: 800px;
 $sm-breakpoint: 650px;
+
+
+// define speed variables
+$fast-transition: 200ms;

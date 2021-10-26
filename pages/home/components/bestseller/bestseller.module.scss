@@ -1,0 +1,53 @@
+@import 'styles/variables.scss';
+
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7.625rem;
+    // padding-bottom: 12.5625rem;
+    margin: 0 5.5625rem;
+
+    button{
+        span{
+            margin-right: 58px;
+        }
+    }
+
+    @media (max-width: $sm-breakpoint) {
+        padding-top: 65px;
+        margin: 0 25px;
+        padding-bottom: 0;
+    }
+}
+
+.bestseller__header{
+    text-align: center;
+    margin-bottom: 3.125rem;
+    @media (max-width: $sm-breakpoint) {
+        margin-bottom: 0px;
+    }
+    p{
+        color: $dark-green;
+        font-weight: 500;
+        margin-bottom: 1.5625rem;
+        @media (max-width: $sm-breakpoint) {
+            margin-bottom: 16px;
+        }
+    }
+    h2{
+        @media (max-width: $sm-breakpoint) {
+            font-size: 28px;
+        }
+    }
+}
+
+.bestseller__addmore{
+    margin-top: 4.125rem;
+}
+
+.bestseller_container{
+    display: flex;
+    gap: 1.4rem;
+}
