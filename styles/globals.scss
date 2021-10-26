@@ -12,6 +12,7 @@
 html{
   font-size: 16px;
   font-family: 'mabry-pro';
+  scroll-behavior: smooth;
 
   // on tablets
   @media (max-width: $md-breakpoint) {

@@ -8,6 +8,7 @@ import Process from './components/process';
 import Values from './components/values';
 import BestSeller from './components/bestseller';
 import Blog from './components/blog';
+import Partner from './components/partner';
 
 export default function Home() {
   return (
@@ -41,6 +42,10 @@ export default function Home() {
         {/* the blog section */}
         <Blog />
         {/* the blog section */}
+
+        {/* the partner section */}
+        <Partner />
+        {/* the partner section */}
 
         {/* the footer page */}
         <Footer />

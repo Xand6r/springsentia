@@ -1,0 +1,46 @@
+@import "styles/variables.scss";
+
+.container{
+    display: flex;
+    justify-self: center;
+    width:fit-content;
+    margin: 12.5rem auto;
+    align-items: flex-end;
+    &__image{
+        width:421px;
+        height:634px;
+        position: relative;
+        margin-right: 9.3125rem;
+    }
+
+    &__text{
+        p{
+            color: $dark-green;
+            margin-bottom: 1.625rem;
+        }
+        h2{
+            max-width: 33.3125rem;
+            color: $darker-charcoal;
+            margin-bottom: 1.25rem;
+        }
+        h5{
+            color: #676767;
+        }
+        h2.benefits__placeholder{
+            color: #EDC9AF;
+            margin: 4.5rem 0 7.4375rem;
+        }
+    }
+
+    .benefits__cta{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: fit-content;
+        span{
+            margin-right: 0.9375rem;
+            font-weight: 500;
+            color: $dark-green;
+        }
+    }
+}
