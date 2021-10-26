@@ -24,3 +24,18 @@
     }
 
 }
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // flex-direction: column;
+    gap: 2.125rem;
+}
+
+.cta{
+    margin-top: 5.1875rem;
+    span{
+        margin-right: 2rem;
+    }
+}
