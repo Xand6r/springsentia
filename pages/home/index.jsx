@@ -9,6 +9,7 @@ import Values from './components/values';
 import BestSeller from './components/bestseller';
 import Blog from './components/blog';
 import Partner from './components/partner';
+import ContactUs from './components/contact'
 
 export default function Home() {
   return (
@@ -46,6 +47,10 @@ export default function Home() {
         {/* the partner section */}
         <Partner />
         {/* the partner section */}
+
+        {/* the contact us section */}
+        <ContactUs />
+        {/* the contact us section */}
 
         {/* the footer page */}
         <Footer />

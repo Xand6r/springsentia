@@ -1,0 +1,36 @@
+@import "styles/variables.scss";
+
+.container{
+    background: $ionic-ivory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.75rem;
+    padding-bottom: 6.25rem;
+    text-align: center;
+
+    p{
+        color: $dark-green;
+        margin-bottom: 1.625rem;
+    }
+
+    h2{
+        margin-bottom: 1.5rem;
+        color: #333333;
+    }
+    
+    h5{
+        max-width: 34.0625rem;
+        color: #676767;
+        line-height: 1.75rem;
+    }
+
+    div{
+        margin-top: 3.125rem;
+        button{
+            span{
+                margin-right: 0.9375rem;
+            }
+        }
+    }
+}
