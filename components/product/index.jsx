@@ -8,7 +8,7 @@ export default function Index({ product }) {
     return (
         <div className={styles.product_container}>
             <div className={styles.product_image_wrapper}>
-                <Image height='225px' width='205px' src={product.image}/>
+                <Image height='225px' width='205px' src={product.image} alt=""/>
                 <div className={styles.add_to_cart}>
                     <Plus /> <span> Add to cart </span>
                 </div>
