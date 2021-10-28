@@ -9,6 +9,15 @@
         margin-bottom: 0.5rem;
         line-height: 1.75rem;
         cursor: pointer;
+        transition: $fast-transition;
+
+        &:hover{
+            color: #8FB685;
+        }
+
+        &:active{
+            color: white;
+        }
         
         &:last-of-type{
             margin-bottom: 0;
@@ -42,6 +51,7 @@
     
         h3{
             margin-bottom: 2.375rem;
+            line-height: 2.3125rem;
         }
     
         .input__wrapper{
@@ -51,17 +61,49 @@
                 background-color: transparent;
                 border-bottom: 1px solid #999999;
                 width: 100%;
-                caret-color: #999999;
-                color: #999999;
                 padding: 0;
                 padding-bottom: 1.0625rem;
                 padding-right: 6.25rem;
+                caret-color: #fff;
+                color: #fff;
+                &::placeholder{
+                    caret-color: #999999;
+                    color: #999999;
+                }
             }
     
             p{
                 position: absolute;
                 top: 0;
                 right: 0;
+                transition: $fast-transition;
+                
+                &::after{
+                    transition: $fast-transition;
+                    position: relative;
+                    top: 1px;
+                    opacity: 0;
+                    content: url('../../public/icons/rightarrowrelish.svg');
+                }
+            }
+            
+            &:hover{
+                p{ 
+                    color: $relish; 
+                    &::after{
+                        margin-left: 1.5625rem;
+                        opacity: 1;
+                        content: url('../../public/icons/rightarrowrelish.svg');
+                    }
+                }
+            }
+
+            input:focus ~ p{
+                color: white;               
+                &::after{
+                    margin-left: 0.9375rem;
+                    content: url('../../public/icons/rightarrowwhite.svg');
+                }
             }
         }
     
@@ -71,6 +113,14 @@
         border-top: 1px solid #E5E1C6;
         margin-top: 6.25rem;
         padding-top: 3.1875rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .medialogo{
+        display: flex;
+        gap: 1.625rem;
     }
 
     .footer__logo{

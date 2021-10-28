@@ -3,6 +3,8 @@
 
 .container{
     display: flex;
+    cursor: pointer;
+    transition: $fast-transition;
 
     .container__image{
         width: 22.375rem;
@@ -15,6 +17,7 @@
     }
 
     .container__content{
+        transition: $fast-transition;
         position: relative;
         background: $ionic-opacity-variant;
         padding: 1.875rem;
@@ -59,6 +62,7 @@
             align-items: center;
             cursor: pointer;
             span{
+                transition: $fast-transition;
                 color: $dark-green;
                 margin-right: 1rem;
             }
@@ -84,6 +88,39 @@
 
             .aux__section{
                 display: none;
+            }
+        }
+    }
+
+    &:hover{
+        .container__content{
+            background-color: #F3EFE2;
+
+            .aux__section{
+                span{
+                    color: $relish;
+                    margin-right: 1.625rem;
+                }
+                path{
+                    fill: $relish;
+                }
+            }
+        }
+    }
+
+    &:active{
+        .container__content{
+            background-color: $ionic-opacity-variant;
+
+
+            .aux__section{
+                span{
+                    color: $dark-green;
+                    margin-right: 1.0rem;
+                }
+                path{
+                    fill: $dark-green;
+                }
             }
         }
     }

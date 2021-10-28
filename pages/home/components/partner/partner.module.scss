@@ -38,9 +38,28 @@
         cursor: pointer;
         width: fit-content;
         span{
+            transition: $fast-transition;
             margin-right: 0.9375rem;
             font-weight: 500;
             color: $dark-green;
+            
+        }
+        &:hover{
+            span{
+                color: $relish;
+                margin-right: 1.5625rem;
+            }
+            path{
+                fill: $relish;
+            }
+        }
+        &:active{
+            span{
+                color: $dark-green;
+            }
+            path{
+                fill: $dark-green;
+            }
         }
     }
 }

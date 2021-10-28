@@ -9,28 +9,28 @@ const fauxBlogPosts = [
         category: "haircare",
         dateCreated: "04 september 2021",
         title: "Product Buildup: Myth C",
-        subTittle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
+        subTitle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
     },
     {
         image: "https://res.cloudinary.com/xand6r/image/upload/v1635240950/springsentia/pexels-august-de-richelieu-4261253_7_vddcb5.png",
         category: "lifestyle",
         dateCreated: "15 march 2021",
         title: "How to Take Care of Your Long and Natural Hair",
-        subTittle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
+        subTitle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
     },
     {
       image: "https://res.cloudinary.com/xand6r/image/upload/v1635240931/springsentia/pexels-august-de-richelieu-4261253_11_zlousl.png",
       category: "lifestyle",
       dateCreated: "15 march 2021",
       title: "How to Take Care of Your Long and Natural Hair",
-      subTittle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
+      subTitle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
   },
   {
     image: "https://res.cloudinary.com/xand6r/image/upload/v1635240946/springsentia/unsplash_6W4F62sN_yI_vhy6uc.png",
     category: "haircare",
     dateCreated: "04 september 2021",
     title: "Product Buildup: Myth C",
-    subTittle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
+    subTitle: "Perhaps, the flakes that you spotted on your scalp may not have been caused by dandruff like you earlier thought, it may actually have been product buildup."
 },
 
 ]

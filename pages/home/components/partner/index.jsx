@@ -20,12 +20,9 @@ export default function Index() {
           <h2 className={styles.benefits__placeholder}>
             Something will be here
           </h2>
-          <div className={styles.benefits__cta}>
-              <span>
-                  LEARN MORE
-              </span>
-              <RightArrow />
-          </div>
+          <button className="--hollow">
+            LEARN MORE
+          </button>
         </div>
       </div>
     </section>

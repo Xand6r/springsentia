@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import logo from 'public/images/logowhite.svg';
 import circularlogo from 'public/images/circularLogo.svg';
+
+import {
+    Facebook, Instagram, Twitter
+} from './assets'
 import styles from './footer.module.scss';
 
 export default function Index() {
@@ -61,6 +65,12 @@ export default function Index() {
                     <h6>
                         © Springsentia 2021. All rights reserved.
                     </h6>
+                </div>
+
+                <div className={styles.medialogo}>
+                    <Instagram />
+                    <Facebook />
+                    <Twitter />
                 </div>
 
             </div>
