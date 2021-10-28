@@ -110,16 +110,73 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: $fast-transition;
+
+  &.--hollow{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    color: $dark-green;
+    background-color: transparent;
+    padding: 0;
+    
+    &::after{
+      transition: $fast-transition;
+      margin-left: 0.9375rem;
+      position: relative;
+      top: 1px;
+      content: url('../public/icons/rightarrowgreen.svg');
+    }
+
+    &:hover{
+      color: $relish;
+
+      &::after{
+        margin-left: 1.5625rem;
+        content: url('../public/icons/rightarrowrelish.svg');
+      }
+    }
+
+    &:active{
+      color: $dark-green;
+      &::after{
+        content: url('../public/icons/rightarrowgreen.svg');
+      }
+    }
+  }
 
   &.--filled{
     background-color: $dark-green;
     color: white;
+
+    &:hover{
+      background-color: $relish;
+    }
+
+    &:active{
+      background-color: $dark-green;
+      color: white;
+    }
   }
 
   &.--lined{
     border: 1px solid $dark-green;
     color: $dark-green;
     background-color: white;
+
+    &:hover{
+      background-color: #D8E8D4;
+    }
+
+    &:active{
+      background-color: $dark-green;
+      color: white;
+      path{
+        fill: white !important;
+      }
+    }
   }
 
   &:hover{

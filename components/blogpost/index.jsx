@@ -16,11 +16,9 @@ export default function Index({ post, small }) {
         </div>
 
         <div className={styles.text__section}>
-          <h4>Product Buildup: Myth C</h4>
+          <h4>{post.title}</h4>
           <h6>
-            Perhaps, the flakes that you spotted on your scalp may not have been
-            caused by dandruff like you earlier thought, it may actually have
-            been product buildup.
+            {post.subTitle}
           </h6>
         </div>
 
