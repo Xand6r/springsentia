@@ -77,6 +77,8 @@
                 top: 0;
                 right: 0;
                 transition: $fast-transition;
+                display: flex;
+                align-items: center;
                 
                 &::after{
                     transition: $fast-transition;
