@@ -8,6 +8,9 @@ import { UserIcon, SearchIcon, LikeIcon, CartIcon } from "../icons";
 import SmallLogo from "public/images/smalllogo.svg";
 import styles from "./navbar.module.scss";
 
+// import the required dropdowns
+import WomenDropdown from '../dropdowns/women'
+
 export default function Index() {
   const [activeDropdown, setActiveDropdown] = useState("");
   const isTabActive = (tab) => activeDropdown === tab;
@@ -19,11 +22,16 @@ export default function Index() {
   return (
     <nav className={styles.header}>
       <div className={styles.left__section}>
-        <p
-          className={isTabActive("women") ? styles.item__active : ""}
-          onClick={() => setActiveTab("women")}
-        >
-          Women
+        <p className={isTabActive("women") ? styles.item__active : ""}>
+          <span
+            onClick={() => setActiveTab("women")}
+          >
+            Women
+          </span>
+          <WomenDropdown
+            open={isTabActive('women')}
+            onClose={() => setActiveTab('')}
+          />
         </p>
         <p
           className={isTabActive("men") ? styles.item__active : ""}

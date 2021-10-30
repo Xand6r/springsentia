@@ -1,0 +1,76 @@
+@import 'styles/variables.scss';
+
+.nav_dropdown{
+    position: absolute;
+    top: 2.5rem;
+    background-color: white;
+    z-index: 2;
+    border: 1px solid $dropdown-outline;
+    display: flex;
+
+    .image__section{
+        width: 9.75rem;
+        background: #EFEFEF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image__wrapper{
+            width: 102px;
+            height: 113px;
+            position: relative;
+        }
+
+    }
+
+    .section{
+        padding-top: 0.75rem;
+        padding-bottom: 1.5rem;
+        p{
+            line-height: 36px;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+            color: #333333;
+            text-transform: uppercase;
+        }
+        .section__divider{
+            height: 0.7px;
+            background: #999999;
+        }
+        h6{
+            margin-top: 1.0625rem;
+            cursor: pointer;
+            color: $dark-green;
+            transition: $fast-transition;
+            width: fit-content;
+            border-bottom: 1px solid white;
+            text-transform: capitalize;
+
+            &:hover{
+                color: $relish;
+                border-bottom: 1px solid $relish;
+            }
+        }
+    }
+
+
+    .first__section{
+        padding-left: 3.125rem ;
+        padding-right: 3.125rem ;
+        .section__divider{
+            width: 6.0625rem;
+        }
+
+    }
+
+    .second__section{
+        padding-left: 0.6875rem ;
+        padding-right: 6.375rem ;
+        .section__divider{
+            width: 10.9375rem;
+        }
+        h6{
+            color: #999999;
+        }
+    }
+}
