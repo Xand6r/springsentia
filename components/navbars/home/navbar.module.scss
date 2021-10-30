@@ -49,9 +49,11 @@
 .right__section{
     display: flex;
     align-items: center;
-    p{
+    & > p{
         margin-left: 2.1875rem;
-        cursor: pointer;
+        span{
+            cursor: pointer;
+        }
 
         &:first-of-type{
             cursor: pointer;
@@ -66,8 +68,10 @@
 .left__section{
     display: flex;
     align-items: center;
-    p{
-        cursor: pointer;
+    & > p{
+        span{
+            cursor: pointer;
+        }
         margin-right: 2.1875rem;
 
         &::after {
