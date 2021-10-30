@@ -13,6 +13,8 @@ import WomenDropdown from "../dropdowns/women";
 import MenDropdown from "../dropdowns/men";
 import KidsDropdown from "../dropdowns/kids";
 import CompanyDropdown from "../dropdowns/company";
+import CurrencyDropdown from "../dropdowns/currency";
+import AccountDropdown from "../dropdowns/account";
 
 import { useClickAway } from "react-use";
 
@@ -48,18 +50,14 @@ export default function Index() {
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p
-          className={isTabActive("kids") ? styles.item__active : ""}
-        >
+        <p className={isTabActive("kids") ? styles.item__active : ""}>
           <span onClick={(e) => setActiveTab("kids")}>Kids</span>
           <KidsDropdown
             open={isTabActive("kids")}
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p
-          className={isTabActive("company") ? styles.item__active : ""}
-        >
+        <p className={isTabActive("company") ? styles.item__active : ""}>
           <span onClick={(e) => setActiveTab("company")}>Company</span>
           <CompanyDropdown
             open={isTabActive("company")}
@@ -80,17 +78,27 @@ export default function Index() {
       </div>
 
       <div className={styles.right__section}>
-        <p
-          className={isTabActive("currency") ? styles.item__active : ""}
-          onClick={() => setActiveTab("currency")}
-        >
-          NGN
+        <p className={isTabActive("currency") ? styles.item__active : ""}>
+          <span onClick={(e) => setActiveTab("currency")}>NGN</span>
+          <CurrencyDropdown
+            open={isTabActive("currency")}
+            onClose={() => setActiveTab("")}
+          />
+        </p>
+        <p>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={(e) => setActiveTab("account")}
+          >
+            <UserIcon active={isTabActive("account")} />
+          </div>
+          <AccountDropdown
+            open={isTabActive("account")}
+            onClose={() => setActiveTab("")}
+          />
         </p>
         <p>
           <SearchIcon />
-        </p>
-        <p>
-          <UserIcon />
         </p>
         <p>
           <LikeIcon />
