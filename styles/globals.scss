@@ -50,6 +50,10 @@ body {
   }
 }
 
+svg, path{
+  transition: $fast-transition;
+}
+
 // ------- Define the different sizes of the texts
 @mixin defaultstyles {
   margin: 0;
