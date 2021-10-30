@@ -24,7 +24,11 @@ export default function Index() {
       <div className={styles.left__section}>
         <p className={isTabActive("women") ? styles.item__active : ""}>
           <span
-            onClick={() => setActiveTab("women")}
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault()
+              setActiveTab("women");
+            }}
           >
             Women
           </span>

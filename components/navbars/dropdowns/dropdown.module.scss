@@ -46,9 +46,13 @@
             border-bottom: 1px solid white;
             text-transform: capitalize;
 
+            &.__active{
+                color: $relish;
+                // border-color: $relish;
+            }
+
             &:hover{
                 color: $relish;
-                border-bottom: 1px solid $relish;
             }
         }
     }
@@ -59,6 +63,13 @@
         padding-right: 3.125rem ;
         .section__divider{
             width: 6.0625rem;
+        }
+        h6{
+
+
+            &.__active{
+                border-color: $relish;
+            }
         }
 
     }
