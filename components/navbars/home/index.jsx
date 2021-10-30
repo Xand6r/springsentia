@@ -12,6 +12,8 @@ import styles from "./navbar.module.scss";
 import WomenDropdown from "../dropdowns/women";
 import MenDropdown from "../dropdowns/men";
 import KidsDropdown from "../dropdowns/kids";
+import CompanyDropdown from "../dropdowns/company";
+
 import { useClickAway } from "react-use";
 
 export default function Index() {
@@ -57,9 +59,12 @@ export default function Index() {
         </p>
         <p
           className={isTabActive("company") ? styles.item__active : ""}
-          onClick={() => setActiveTab("company")}
         >
-          Company
+          <span onClick={(e) => setActiveTab("company")}>Company</span>
+          <CompanyDropdown
+            open={isTabActive("company")}
+            onClose={() => setActiveTab("")}
+          />
         </p>
       </div>
 
