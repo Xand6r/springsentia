@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import Image from "next/image";
 import Logo from "public/images/logo.svg";
@@ -9,39 +9,41 @@ import SmallLogo from "public/images/smalllogo.svg";
 import styles from "./navbar.module.scss";
 
 // import the required dropdowns
-import WomenDropdown from '../dropdowns/women'
+import WomenDropdown from "../dropdowns/women";
+import MenDropdown from "../dropdowns/men";
+import { useClickAway } from "react-use";
 
 export default function Index() {
+  const navRef = useRef('');
   const [activeDropdown, setActiveDropdown] = useState("");
   const isTabActive = (tab) => activeDropdown === tab;
 
   const setActiveTab = (newTab) => {
-    setActiveDropdown((add) => (add === newTab ? "" : newTab));
+    const value = newTab === activeDropdown ? "" : newTab;
+    setActiveDropdown(value);
   };
 
+  useClickAway(navRef, () => {
+    setActiveTab("");
+  });
+  console.log({activeDropdown})
+
   return (
-    <nav className={styles.header}>
+    <nav ref={navRef} className={styles.header}>
       <div className={styles.left__section}>
         <p className={isTabActive("women") ? styles.item__active : ""}>
-          <span
-            onClick={(e) => {
-              e.stopPropagation();
-              e.preventDefault()
-              setActiveTab("women");
-            }}
-          >
-            Women
-          </span>
+          <span onClick={(e) => setActiveTab("women")}>Women</span>
           <WomenDropdown
-            open={isTabActive('women')}
-            onClose={() => setActiveTab('')}
-          />
+            open={isTabActive("women")}
+            onClose={() => setActiveTab("")}
+          /> 
         </p>
-        <p
-          className={isTabActive("men") ? styles.item__active : ""}
-          onClick={() => setActiveTab("men")}
-        >
-          Men
+        <p className={isTabActive("men") ? styles.item__active : ""}>
+          <span onClick={(e) => setActiveTab("men")}>Men</span>
+          <MenDropdown
+            open={isTabActive("men")}
+            onClose={() => setActiveTab("")}
+          />
         </p>
         <p
           className={isTabActive("kids") ? styles.item__active : ""}
@@ -76,7 +78,7 @@ export default function Index() {
           NGN
         </p>
         <p>
-            <SearchIcon />
+          <SearchIcon />
         </p>
         <p>
           <UserIcon />

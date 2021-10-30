@@ -8,8 +8,7 @@ import { DEFAULT_STRUCTURE } from "data/navbar";
 import generalStyles from "../dropdown.module.scss";
 import styles from "./women.module.scss";
 
-const IMAGE_LINK =
-    "https://res.cloudinary.com/xand6r/image/upload/v1635192068/77_copy_2_tbsgqx.png";
+
 export default function Index({ open, onClose }) {
     if (!open) {
         return "";
@@ -18,14 +17,14 @@ export default function Index({ open, onClose }) {
     const [activeSection, setActiveSection] = useState("");
     const [activeSubsection, setActiveSubsection] = useState("");
 
-    useClickAway(popupRef, () => {
-        // add delay for bug causing the clickaway handler and the handler on the parent element to fire at time same time
-        setTimeout(() => {
-            if (open) {
-                onClose();
-            }
-        }, 250)
-    });
+    // useClickAway(popupRef, () => {
+    //     // add delay for bug causing the clickaway handler and the handler on the parent element to fire at time same time
+    //     setTimeout(() => {
+    //         if (open) {
+    //             onClose();
+    //         }
+    //     }, 250)
+    // });
 
     useEffect(()=>{
         setActiveSubsection('');
