@@ -39,6 +39,7 @@
         }
         h6{
             margin-top: 1.0625rem;
+            white-space: nowrap;
             cursor: pointer;
             color: $dark-green;
             transition: $fast-transition;
@@ -62,7 +63,7 @@
         padding-left: 3.125rem ;
         padding-right: 3.125rem ;
         .section__divider{
-            width: 6.0625rem;
+            min-width: 6.0625rem;
         }
         h6{
 
@@ -78,7 +79,7 @@
         padding-left: 0.6875rem ;
         padding-right: 6.375rem ;
         .section__divider{
-            width: 10.9375rem;
+            min-width: 10.9375rem;
         }
         h6{
             color: #999999;

@@ -11,10 +11,11 @@ import styles from "./navbar.module.scss";
 // import the required dropdowns
 import WomenDropdown from "../dropdowns/women";
 import MenDropdown from "../dropdowns/men";
+import KidsDropdown from "../dropdowns/kids";
 import { useClickAway } from "react-use";
 
 export default function Index() {
-  const navRef = useRef('');
+  const navRef = useRef("");
   const [activeDropdown, setActiveDropdown] = useState("");
   const isTabActive = (tab) => activeDropdown === tab;
 
@@ -26,7 +27,7 @@ export default function Index() {
   useClickAway(navRef, () => {
     setActiveTab("");
   });
-  console.log({activeDropdown})
+  console.log({ activeDropdown });
 
   return (
     <nav ref={navRef} className={styles.header}>
@@ -36,7 +37,7 @@ export default function Index() {
           <WomenDropdown
             open={isTabActive("women")}
             onClose={() => setActiveTab("")}
-          /> 
+          />
         </p>
         <p className={isTabActive("men") ? styles.item__active : ""}>
           <span onClick={(e) => setActiveTab("men")}>Men</span>
@@ -47,9 +48,12 @@ export default function Index() {
         </p>
         <p
           className={isTabActive("kids") ? styles.item__active : ""}
-          onClick={() => setActiveTab("kids")}
         >
-          Kids
+          <span onClick={(e) => setActiveTab("kids")}>Kids</span>
+          <KidsDropdown
+            open={isTabActive("kids")}
+            onClose={() => setActiveTab("")}
+          />
         </p>
         <p
           className={isTabActive("company") ? styles.item__active : ""}
