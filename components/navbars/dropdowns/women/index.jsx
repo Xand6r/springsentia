@@ -13,18 +13,8 @@ export default function Index({ open, onClose }) {
     if (!open) {
         return "";
     }
-    const popupRef = useRef(null);
     const [activeSection, setActiveSection] = useState("");
     const [activeSubsection, setActiveSubsection] = useState("");
-
-    // useClickAway(popupRef, () => {
-    //     // add delay for bug causing the clickaway handler and the handler on the parent element to fire at time same time
-    //     setTimeout(() => {
-    //         if (open) {
-    //             onClose();
-    //         }
-    //     }, 250)
-    // });
 
     useEffect(()=>{
         setActiveSubsection('');
@@ -32,7 +22,6 @@ export default function Index({ open, onClose }) {
 
     return (
         <div
-            ref={popupRef}
             className={`${generalStyles.nav_dropdown} ${styles.women_dropdown}`}
         >
             <section

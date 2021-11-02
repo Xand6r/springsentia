@@ -79,7 +79,7 @@ export default function Index({ open }) {
             )}
 
             {
-                activeSubsection ? (
+                activeSubsection && DEFAULT_STRUCTURE[activeSection].find(({name}) => name === activeSubsection)?.image ? (
                     <section className={generalStyles.image__section}>
                         <div className={generalStyles.image__wrapper}>
                             <Image alt="" layout="fill" src={DEFAULT_STRUCTURE[activeSection].find(({name}) => name === activeSubsection).image} />
