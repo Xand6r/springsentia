@@ -1,25 +1,10 @@
-import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import { useClickAway } from "react-use";
-import { toggleStateValue } from "utilities";
-
-import { DEFAULT_STRUCTURE } from "data/navbar";
-
 import generalStyles from "../dropdown.module.scss";
 import styles from "./company.module.scss";
 
-export default function Index({ open, onClose }) {
+export default function Index({ open }) {
   if (!open) {
     return "";
   }
-  const popupRef = useRef(null);
-  const [activeSection, setActiveSection] = useState("");
-  const [activeSubsection, setActiveSubsection] = useState("");
-
-  useEffect(() => {
-    setActiveSubsection("");
-  }, [activeSection]);
-
   return (
     <div
       ref={popupRef}

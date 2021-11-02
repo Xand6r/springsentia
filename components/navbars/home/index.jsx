@@ -37,28 +37,28 @@ export default function Index() {
     <nav ref={navRef} className={styles.header}>
       <div className={styles.left__section}>
         <p className={isTabActive("women") ? styles.item__active : ""}>
-          <span onClick={(e) => setActiveTab("women")}>Women</span>
+          <span onClick={() => setActiveTab("women")}>Women</span>
           <WomenDropdown
             open={isTabActive("women")}
             onClose={() => setActiveTab("")}
           />
         </p>
         <p className={isTabActive("men") ? styles.item__active : ""}>
-          <span onClick={(e) => setActiveTab("men")}>Men</span>
+          <span onClick={() => setActiveTab("men")}>Men</span>
           <MenDropdown
             open={isTabActive("men")}
             onClose={() => setActiveTab("")}
           />
         </p>
         <p className={isTabActive("kids") ? styles.item__active : ""}>
-          <span onClick={(e) => setActiveTab("kids")}>Kids</span>
+          <span onClick={() => setActiveTab("kids")}>Kids</span>
           <KidsDropdown
             open={isTabActive("kids")}
             onClose={() => setActiveTab("")}
           />
         </p>
         <p className={isTabActive("company") ? styles.item__active : ""}>
-          <span onClick={(e) => setActiveTab("company")}>Company</span>
+          <span onClick={() => setActiveTab("company")}>Company</span>
           <CompanyDropdown
             open={isTabActive("company")}
             onClose={() => setActiveTab("")}
@@ -79,7 +79,7 @@ export default function Index() {
 
       <div className={styles.right__section}>
         <p className={isTabActive("currency") ? styles.item__active : ""}>
-          <span onClick={(e) => setActiveTab("currency")}>NGN</span>
+          <span onClick={() => setActiveTab("currency")}>NGN</span>
           <CurrencyDropdown
             open={isTabActive("currency")}
             onClose={() => setActiveTab("")}
@@ -88,7 +88,7 @@ export default function Index() {
         <p>
           <div
             style={{ cursor: "pointer" }}
-            onClick={(e) => setActiveTab("account")}
+            onClick={() => setActiveTab("account")}
           >
             <UserIcon active={isTabActive("account")} />
           </div>
