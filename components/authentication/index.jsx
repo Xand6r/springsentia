@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./authentication.module.scss";
 
 import Register from "./components/register";
+import Login from "./components/login";
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState(1);
@@ -26,12 +27,18 @@ export default function Index() {
 
       {/* the content of the login component */}
       <div className={styles.content}>
-        {/* tab one for register */}
-        <Register />
-        {/* tab one for register */}
-        {/* tab two for login*/}
-        {/* login component */}
-        {/* tab two for login*/}
+        {
+          activeTab === 1 ? (
+            // {/* tab one for register */}
+            <Register />
+            // {/* tab one for register */}
+          ) : (
+            // {/* tab two for login*/}
+            <Login />
+            // {/* tab two for login*/}
+          )
+        }
+        
       </div>
       {/* the content of the login component */}
     </div>

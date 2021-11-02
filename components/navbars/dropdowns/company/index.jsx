@@ -7,7 +7,6 @@ export default function Index({ open }) {
   }
   return (
     <div
-      ref={popupRef}
       className={`${generalStyles.nav_dropdown} ${styles.company_dropdown}`}
     >
       <section

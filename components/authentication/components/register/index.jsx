@@ -5,7 +5,7 @@ import {
   EyeOpen,
   EyeClosed,
 } from "components/authentication/assets";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const DEFAULT_STATE = {
   firstName: "",
@@ -30,7 +30,7 @@ export default function Index() {
     });
   };
   return (
-    <div className={styles.logincomponent}>
+    <div className={styles.registercomponent}>
       <h5>register with</h5>
 
       <section className={styles.options}>
@@ -103,14 +103,12 @@ export default function Index() {
 
       {/* footer section */}
       <h6 className={styles.bottom_one}>
-        By creating your account, you agree to our <span>Terms and Conditions &amp;
-        Privacy Policy</span>
+        By creating your account, you agree to our{" "}
+        <span>Terms and Conditions &amp; Privacy Policy</span>
       </h6>
       {/* footer section */}
 
-      <button className="--filled">
-            REGISTER
-      </button>
+      <button className="--filled">REGISTER</button>
     </div>
   );
 }
