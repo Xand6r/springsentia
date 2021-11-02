@@ -1,0 +1,44 @@
+@import 'styles/variables.scss';
+.loginpage {
+  background: #efefef;
+  overflow: auto;
+  min-height: calc(100vh - 90px);
+  width: 100vw;
+  display: flex;
+  padding-top: 5.8125rem;
+  padding-bottom: 11.0625rem;
+  justify-content: center;
+
+  form {
+    section {
+      position: relative;
+    }
+    & > div {
+      label {
+        display: block;
+        font-size: 0.875rem;
+        color: #707070;
+      }
+      input {
+        background: #f9f9f9;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 1px;
+        width: 100%;
+        &::placeholder {
+          color: #999999;
+        }
+
+        &[data-type="password"] {
+          & ~ i {
+            transition: $fast-transition;
+            cursor: pointer;
+            position: absolute;
+            top: calc(50% - 9px);
+            right: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

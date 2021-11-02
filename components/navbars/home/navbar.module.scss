@@ -51,6 +51,7 @@
     align-items: center;
     & > p{
         margin-left: 2.1875rem;
+        white-space: nowrap;
         span{
             cursor: pointer;
         }
@@ -69,6 +70,7 @@
     display: flex;
     align-items: center;
     & > p{
+        white-space: nowrap;
         span{
             cursor: pointer;
         }
