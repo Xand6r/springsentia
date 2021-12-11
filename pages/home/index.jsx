@@ -33,7 +33,7 @@ export default function Home() {
         {/* best sellers page */}
 
         {/* the process page */}
-        {/* <Process /> */}
+        <Process />
         {/* the process page */}
 
         {/* the values page */}
