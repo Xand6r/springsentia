@@ -37,7 +37,7 @@ export default function Home() {
         {/* the process page */}
 
         {/* the values page */}
-        {/* <Values /> */}
+        <Values />
         {/* the values page */}
 
         {/* the blog section */}
