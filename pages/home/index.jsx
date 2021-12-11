@@ -25,35 +25,35 @@ export default function Home() {
         {/* the navbar */}
 
         {/* the landing page */}
-        <Landing />
+        {/* <Landing /> */}
         {/* the landing page */}
 
         {/* best sellers page */}
-        <BestSeller />
+        {/* <BestSeller /> */}
         {/* best sellers page */}
 
         {/* the process page */}
-        <Process />
+        {/* <Process /> */}
         {/* the process page */}
 
         {/* the values page */}
-        <Values />
+        {/* <Values /> */}
         {/* the values page */}
 
         {/* the blog section */}
-        <Blog />
+        {/* <Blog /> */}
         {/* the blog section */}
 
         {/* the partner section */}
-        <Partner />
+        {/* <Partner /> */}
         {/* the partner section */}
 
         {/* the contact us section */}
-        <ContactUs />
+        {/* <ContactUs /> */}
         {/* the contact us section */}
 
         {/* the footer page */}
-        <Footer />
+        {/* <Footer /> */}
         {/* the footer page */}
     </div>
   )

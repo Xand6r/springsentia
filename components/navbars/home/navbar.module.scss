@@ -22,7 +22,8 @@
 .header__logo__big{
     margin: 0 auto;
     width: fit-content;
-
+    width: 182px;
+    height: 33px;
     @media (max-width: $sm-breakpoint) {
         display: none;
     }
@@ -31,7 +32,8 @@
 
 .header__logo__small{
     margin: 0 auto;
-    width: fit-content;
+    width: 122px;
+    height: 22px;
     display: none;
 
     @media (max-width: $sm-breakpoint) {
@@ -64,6 +66,16 @@
             }
         }
     }
+
+    @media (max-width: $lg-breakpoint){
+        #currency__menu,
+        #like__menu,
+        #search__menu
+        {
+            display: none
+        }
+    }
+
 }
 
 .left__section{
@@ -78,6 +90,17 @@
 
         &::after {
             @extend .arrow-icon;
+        }
+
+        @media (max-width: $lg-breakpoint){
+            display: none;
+        }
+    }
+    & > div{
+        margin-right: 40px;
+        cursor: pointer;
+        @media (min-width: $lg-breakpoint){
+            display: none;
         }
     }
 }
