@@ -26,31 +26,50 @@ $padding-x: 6.0625rem;
   // }
 
   @media (max-width: $md-breakpoint) {
-    padding-top: 11.9275rem;
+    // padding-top: 11.9275rem;
+    padding-top: 6.9275rem;
     padding-bottom: 6.8125rem;
   }
 
   @media (max-width: $sm-breakpoint) {
-    padding-top: 4.92rem;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 0;
+    padding-top: 4.25rem;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 5.16rem;
+  }
+
+  @media (max-width: $lg-breakpoint){
+    .cover__image{
+      display: none;
+
+    }
+  }
+
+  @media (max-width: $sm-breakpoint){
+    justify-content: center;
   }
 }
 
 .landing__content {
   h1,
-  h4,
-  h3 {
+  h4{
     font-weight: normal;
+    @media (max-width: $sm-breakpoint) {
+      text-align: center;
+    }
   }
   h1 {
     margin-bottom: 1.9375rem;
     color: $darker-charcoal;
     line-height: 4.125rem;
     @media (max-width: $sm-breakpoint) {
+      line-height: 48px;
+      margin: auto;
       line-height: 40px;
-      margin-bottom: 24px;
+      margin-bottom: 23px;
+      font-weight: 400;
+      font-size: 38px;
+      max-width: 261px;
     }
   }
   h4 {
@@ -62,6 +81,9 @@ $padding-x: 6.0625rem;
       font-size: 14px;
       line-height: 22px;
       margin-bottom: 30px;
+      max-width: 304px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   h3 {
@@ -81,6 +103,9 @@ $padding-x: 6.0625rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.77rem;
+  @media (max-width: $sm-breakpoint) {
+    justify-content: center;
+  }
   input {
     transition: 300ms;
     margin-right: 12px;
@@ -105,6 +130,14 @@ $padding-x: 6.0625rem;
     }
     &:hover {
       background-color: #9cc193;
+    }
+    @media (max-width: $sm-breakpoint) {
+      width: 141px;
+      height: 45px;
+      justify-content: space-between;
+      span{
+        margin-right: 0;
+      }
     }
   }
 }

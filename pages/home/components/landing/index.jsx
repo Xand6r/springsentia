@@ -30,7 +30,7 @@ export default function Index() {
           </button>
         </form>
       </div>
-      <div style={{marginRight: "60px"}} className="--smallhide">
+      <div style={{marginRight: "60px"}} className={styles.cover__image}>
         <Image alt="nice cream" src={BgCream} />
       </div>
     </section>
