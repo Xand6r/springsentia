@@ -25,7 +25,7 @@ export default function Home() {
         {/* the navbar */}
 
         {/* the landing page */}
-        {/* <Landing /> */}
+        <Landing />
         {/* the landing page */}
 
         {/* best sellers page */}
