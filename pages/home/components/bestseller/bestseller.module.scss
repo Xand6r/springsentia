@@ -25,20 +25,22 @@
 .bestseller__header{
     text-align: center;
     margin-bottom: 3.125rem;
-    @media (max-width: $sm-breakpoint) {
-        margin-bottom: 0px;
+    @media (max-width: $md-breakpoint) {
+        margin-bottom: 35px;
     }
     p{
         color: $dark-green;
         font-weight: 500;
         margin-bottom: 1.5625rem;
-        @media (max-width: $sm-breakpoint) {
+        @media (max-width: $md-breakpoint) {
             margin-bottom: 16px;
+            font-size: 12px;
         }
     }
     h2{
-        @media (max-width: $sm-breakpoint) {
+        @media (max-width: $md-breakpoint) {
             font-size: 28px;
+            max-width: 229px;
         }
     }
 }
@@ -48,6 +50,17 @@
 }
 
 .bestseller_container{
-    display: flex;
-    gap: 1.4rem;
+    // display: flex;
+    // gap: 1.4rem;
+    grid-gap: 1.4rem 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    @media (max-width: $lg-breakpoint) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $md-breakpoint) {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
 }

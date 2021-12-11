@@ -29,7 +29,7 @@ export default function Home() {
         {/* the landing page */}
 
         {/* best sellers page */}
-        {/* <BestSeller /> */}
+        <BestSeller />
         {/* best sellers page */}
 
         {/* the process page */}
