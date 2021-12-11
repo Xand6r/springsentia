@@ -3,7 +3,8 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import Logo from "public/images/logo.svg";
 
-import { UserIcon, SearchIcon, LikeIcon, CartIcon } from "../icons";
+import { UserIcon, SearchIcon, LikeIcon, HamburgerMenu } from "../icons";
+import { CartIcon } from "../icons";
 
 import SmallLogo from "public/images/smalllogo.svg";
 import styles from "./navbar.module.scss";
@@ -64,6 +65,9 @@ export default function Index() {
             onClose={() => setActiveTab("")}
           />
         </p>
+        <div>
+          <HamburgerMenu />
+        </div>
       </div>
 
       <div>
@@ -78,14 +82,14 @@ export default function Index() {
       </div>
 
       <div className={styles.right__section}>
-        <p className={isTabActive("currency") ? styles.item__active : ""}>
+        <p id={styles.currency__menu} className={isTabActive("currency") ? styles.item__active : ""}>
           <span onClick={() => setActiveTab("currency")}>NGN</span>
           <CurrencyDropdown
             open={isTabActive("currency")}
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p>
+        <p id={styles.account__menu}>
           <div
             style={{ cursor: "pointer" }}
             onClick={() => setActiveTab("account")}
@@ -97,14 +101,16 @@ export default function Index() {
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p>
-          <SearchIcon />
+        <p id={styles.search__menu}>
+          <SearchIcon onClick={() => console.log(10)} />
         </p>
-        <p>
+        <p id={styles.like__menu}>
+          <span>
           <LikeIcon />
+          </span>
         </p>
-        <p>
-          <CartIcon />
+        <p key="carttt" id={styles.cart__menu}>
+          <CartIcon active />
         </p>
       </div>
     </nav>
