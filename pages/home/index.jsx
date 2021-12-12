@@ -45,11 +45,11 @@ export default function Home() {
         {/* the blog section */}
 
         {/* the partner section */}
-        {/* <Partner /> */}
+        <Partner />
         {/* the partner section */}
 
         {/* the contact us section */}
-        {/* <ContactUs /> */}
+        <ContactUs />
         {/* the contact us section */}
 
         {/* the footer page */}
