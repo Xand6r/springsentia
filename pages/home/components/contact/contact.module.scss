@@ -8,21 +8,41 @@
     padding-top: 5.75rem;
     padding-bottom: 6.25rem;
     text-align: center;
+    @media (max-width: $sm-breakpoint) {
+        padding-top: 81px;
+        padding-bottom: 90px;
+    }
 
     p{
         color: $dark-green;
         margin-bottom: 1.625rem;
+        letter-spacing: 0.1em;
+        @media (max-width: $sm-breakpoint) {
+            margin-bottom: 0;
+        }
     }
 
     h2{
         margin-bottom: 1.5rem;
         color: #333333;
+
+        @media (max-width: $md-breakpoint) {
+            font-size: 28px;
+            max-width: 302px;
+            margin: 16px auto 20px;
+            line-height: 36px;
+        }
     }
     
     h5{
         max-width: 34.0625rem;
         color: #676767;
         line-height: 1.75rem;
+        @media (max-width: $sm-breakpoint) {
+            font-size: 13px;
+            line-height: 22px;
+            max-width: 274px;
+        }
     }
 
     div{
@@ -31,6 +51,9 @@
             span{
                 margin-right: 0.9375rem;
             }
+        }
+        @media (max-width: $sm-breakpoint) {
+            margin-top: 28px;
         }
     }
 }
