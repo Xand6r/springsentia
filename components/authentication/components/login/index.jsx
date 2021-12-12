@@ -4,6 +4,7 @@ import {
   GoogleLogo,
   EyeOpen,
   EyeClosed,
+  Envelope,
 } from "components/authentication/assets";
 import styles from "./login.module.scss";
 
@@ -11,8 +12,9 @@ const DEFAULT_STATE = {
   email: "",
   password: "",
 };
+const name = "chidonmerole@gmail.com";
 
-export default function Index() {
+export default function Index({ confirmationMode }) {
   const [state, setState] = useState(DEFAULT_STATE);
   const [inputType, setInputType] = useState("text");
   const toggleInputType = () => {
@@ -26,14 +28,28 @@ export default function Index() {
       [name]: value,
     });
   };
+  console.log({confirmationMode});
 
-  const register = () => {
+  const login = () => {
     console.log(state);
   };
 
   return (
     <div className={styles.logincomponent}>
-      <form className={styles.form}>
+      {confirmationMode && (
+        <div className={styles.confirmationModeContent}>
+          <Envelope />
+          <div className={styles.mode__title}>EMAIL CONFIRMED</div>
+          <p>
+            Your email <b>{name}</b> has been confirmed. Log in below to begin
+            your skincare and haircare journey with us
+          </p>
+          <h5>LOG IN</h5>
+        </div>
+      )}
+      <form
+        className={confirmationMode ? styles.confirm__mode : ""}
+      >
         <div className={styles.input_wrapper}>
           <label htmlFor="email">Email</label>
           <input
@@ -61,8 +77,8 @@ export default function Index() {
           <b>Forgot Password?</b>
         </div>
 
-        <button onClick={register} className="--filled">
-          REGISTER
+        <button onClick={login} className="--filled">
+          LOG IN
         </button>
       </form>
 

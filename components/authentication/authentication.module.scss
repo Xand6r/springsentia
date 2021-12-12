@@ -10,6 +10,9 @@
     .heading{
         display: flex;
         border-bottom: 1px solid #EFEFEF;
+        @media (max-width: $sm-breakpoint) {
+            justify-content: center;
+        }
         & > div {
             width: 344px;
             height: 78px;
