@@ -41,7 +41,7 @@ export default function Home() {
         {/* the values page */}
 
         {/* the blog section */}
-        {/* <Blog /> */}
+        <Blog />
         {/* the blog section */}
 
         {/* the partner section */}
