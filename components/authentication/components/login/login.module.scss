@@ -2,11 +2,15 @@
 
 .logincomponent {
   width: 380px;
+  margin-left: 154px;
+  margin-right: 154px;
+
   @media (max-width: $sm-breakpoint) {
     margin-left: 20px;
     margin-right: 20px;
     width: fit-content;
   }
+
   .confirmationModeContent{
     display: flex;
     flex-direction: column;
