@@ -53,7 +53,7 @@ export default function Home() {
         {/* the contact us section */}
 
         {/* the footer page */}
-        {/* <Footer /> */}
+        <Footer />
         {/* the footer page */}
     </div>
   )
