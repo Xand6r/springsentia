@@ -2,14 +2,25 @@
 
 .logincomponent {
   width: 380px;
+  @media (max-width: $sm-breakpoint) {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: fit-content;
+  }
 
   form {
     margin-top: 3.125rem;
+    @media (max-width: $sm-breakpoint) {
+      margin-top: 50px;
+    }
     .input_wrapper {
       position: relative;
       margin-bottom: 1.875rem;
       label {
         margin-bottom: 0.9375rem;
+        @media (max-width: $sm-breakpoint) {
+          margin-bottom: 15px;
+        }
       }
       b {
         font-size: 14px;
@@ -20,14 +31,17 @@
         cursor: pointer;
         transition: $fast-transition;
 
-        &:hover{
-            color: $relish;
+        &:hover {
+          color: $relish;
         }
       }
     }
     button {
       margin-top: 0.625rem;
       width: 100%;
+      @media (max-width: $sm-breakpoint) {
+        margin-top: 40px;
+      }
     }
   }
 
@@ -35,6 +49,11 @@
     margin-top: 2.625rem;
     padding-top: 22px;
     border-top: 1px solid #efefef;
+
+    @media (max-width: $sm-breakpoint) {
+      padding-top: 25px;
+      margin-top: 43px;
+    }
 
     h5 {
       line-height: 4.125rem;
@@ -64,6 +83,9 @@
           letter-spacing: 0.05em;
           line-height: 1.25rem;
         }
+      }
+      @media (max-width: $sm-breakpoint) {
+        justify-content: center;
       }
       //options for facebook or google
     }
