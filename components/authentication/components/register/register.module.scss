@@ -41,6 +41,11 @@
     color: #707070;
     line-height: 1.25rem;
     border-bottom: 1px solid $dark-charcoal;
+    @media (max-width: $sm-breakpoint) {
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      margin-top: 20px;
+    }
   }
 
   h5.alternative {
@@ -52,6 +57,9 @@
         margin-bottom: 1.875rem;
       label {
         margin-bottom: 0.9375rem;
+        @media (max-width: $sm-breakpoint) {
+          margin-bottom: 15px;
+        }
       }
       input {
       }
@@ -65,6 +73,10 @@
 
     span{
       color: $dark-green;
+    }
+    @media (max-width: $sm-breakpoint) {
+          margin-top: 35px;
+          margin-bottom: 40px;
     }
   }
 
