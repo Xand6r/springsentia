@@ -4,6 +4,9 @@
     background: #FFFFFF;
     border-radius: 1px;
     width: fit-content;
+    @media (max-width: $sm-breakpoint) {
+        width: 100%
+    }
     .heading{
         display: flex;
         border-bottom: 1px solid #EFEFEF;
@@ -26,6 +29,17 @@
                 background: #F9F9F9;
                 color: $dark-green;
                 border-bottom-color: $dark-green;
+            }
+
+            @media (max-width: $md-breakpoint) {
+                width: 250px;
+            }
+            
+            @media (max-width: $sm-breakpoint) {
+                width: 186px;
+                font-size: 14px;
+                height: 55px;
+                border-bottom: 3px solid transparent;
             }
         }
     }
