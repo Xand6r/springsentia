@@ -5,6 +5,12 @@
     display: flex;
     cursor: pointer;
     transition: $fast-transition;
+    // @media (max-width: $md-breakpoint) {
+    //     min-width: 400px;
+    // }
+    // @media (max-width: $sm-breakpoint) {
+    //     min-width: 280px;
+    // }
 
     .container__image{
         width: 22.375rem;
@@ -21,6 +27,7 @@
         position: relative;
         background: $ionic-opacity-variant;
         padding: 1.875rem;
+        width: inherit;
 
 
         .top__section{
@@ -70,6 +77,28 @@
     } 
 
     &.__small{
+        flex-direction: column;
+        width: 22.375rem;
+        cursor: pointer;
+
+        .container__image{
+            height: 215px;
+        }
+
+        .container__content{
+            height: 9.875rem;
+            .text__section{
+                h6{
+                    display: none;
+                }
+            }
+
+            .aux__section{
+                display: none;
+            }
+        }
+    }
+    @media (max-width: $md-breakpoint) {
         flex-direction: column;
         width: 22.375rem;
         cursor: pointer;
