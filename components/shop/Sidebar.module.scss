@@ -1,0 +1,188 @@
+@import "styles/variables.scss";
+
+.shop_container {
+  display: flex;
+  flex: 1;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.sidebar {
+  flex: 0.2;
+  margin-left: 50px;
+}
+
+.shop_body {
+  flex: 0.8;
+  margin-bottom: 195px;
+  margin-left: 136px;
+}
+
+.sidebar_headings {
+  font-size: 44px;
+  margin-top: 90px;
+}
+
+.sidebar_price {
+  font-size: 18px;
+  margin-top: 34px;
+}
+
+.sidebar_bar {
+  width: 208px;
+  height: 4px;
+  background-color: $darker-charcoal;
+  margin-top: 28px;
+}
+
+.sidebar_categories p,
+.sidebar_categories_two p {
+  font-size: 16px;
+  color: $dark-gray;
+  margin: 15px 0;
+}
+
+.sidebar_categories {
+  margin-top: 50px;
+}
+
+.sidebar_categories_two {
+  margin-top: 65px;
+}
+
+.sidebar_hr {
+  width: 219px;
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.boxes {
+  display: flex;
+  margin-top: 24px;
+}
+
+.box {
+  width: 95px;
+  height: 35px;
+  border: 1px solid $lighter-gray;
+  background-color: $light-grey;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: $gray;
+}
+
+.sidebar_minus {
+  margin: 0 12px;
+  width: 6px;
+  height: 6px;
+}
+
+.sidebar_btn {
+  width: 219px;
+  height: 45px;
+  border: 1px solid $dark-green;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_display {
+  display: flex;
+}
+
+.shopbody_product {
+  margin: 0 21px;
+}
+
+.pp_select {
+  display: flex;
+  color: $gray;
+  font-size: 14px;
+  margin-top: 122px;
+  margin-bottom: 9px;
+  align-items: center;
+}
+
+.pp_select small {
+  margin: 0 13px;
+}
+
+.pp_select p {
+  margin-left: 13px;
+  color: $darker-charcoal;
+}
+
+.pp_icon {
+  font-size: 7px;
+}
+
+.sort_dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 101px;
+  margin-left: 592px;
+}
+
+.shop_dropdown {
+  display: flex;
+}
+
+.dropdown_dependent {
+  position: relative;
+}
+
+.shop_popularity {
+  cursor: pointer;
+  display: flex;
+  width: 133px;
+  height: 45px;
+  border: 1px solid $dark-green;
+  color: $dark-green;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_popularity:hover {
+  background: $dark-green;
+  color: $white;
+}
+
+
+.dropdown_content {
+  width: 234px;
+  height: 230px;
+  border: 1px solid $dropdown-outline;
+  color: $dark-green;
+  position: absolute;
+  top: 102%;
+  left: 73%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // margin: 13px 0;
+  z-index: 999;
+  background: $white;
+}
+
+.dropdown_content_display {
+  display: flex;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.dropdown_content_display:hover {
+  padding: 18px 20px;
+  border: 1px solid $dark-green;
+}
+
+.dropdown_icons {
+  font-size: 12px;
+  margin-left: 10px;
+}

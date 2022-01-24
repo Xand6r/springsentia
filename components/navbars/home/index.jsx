@@ -18,11 +18,32 @@ import CurrencyDropdown from "../dropdowns/currency";
 import AccountDropdown from "../dropdowns/account";
 
 import { useClickAway } from "react-use";
+import Cart from "components/modal/cart";
+import Favourite from 'components/modal/favourite'
+import Backdrop from "components/modal/Backdrop";
 
 export default function Index() {
   const navRef = useRef("");
   const [activeDropdown, setActiveDropdown] = useState("");
   const isTabActive = (tab) => activeDropdown === tab;
+  const [show, setShow] = useState(false);
+  const [fav, setFav] = useState(false);
+
+  const clickedCart = () => {
+    setShow(!show);
+  };
+
+  const clickedFavourite = () => {
+    setFav(!fav);
+  };
+
+  const closeCart = () => {
+    setShow(false);
+  };
+
+  const closeFav = () => {
+    setFav(false);
+  };
 
   const setActiveTab = (newTab) => {
     const value = newTab === activeDropdown ? "" : newTab;
@@ -82,7 +103,10 @@ export default function Index() {
       </div>
 
       <div className={styles.right__section}>
-        <p id={styles.currency__menu} className={isTabActive("currency") ? styles.item__active : ""}>
+        <p
+          id={styles.currency__menu}
+          className={isTabActive("currency") ? styles.item__active : ""}
+        >
           <span onClick={() => setActiveTab("currency")}>NGN</span>
           <CurrencyDropdown
             open={isTabActive("currency")}
@@ -104,15 +128,25 @@ export default function Index() {
         <p id={styles.search__menu}>
           <SearchIcon onClick={() => console.log(10)} />
         </p>
-        <p id={styles.like__menu}>
+        <p id={styles.like__menu} onClick={clickedFavourite}>
           <span>
-          <LikeIcon />
+            <LikeIcon />
           </span>
         </p>
-        <p key="carttt" id={styles.cart__menu}>
+        <p
+          key="carttt"
+          id={styles.cart__menu}
+          style={{ cursor: "pointer" }}
+          onClick={clickedCart}
+        >
           <CartIcon active />
         </p>
       </div>
+      {show ? <Cart onCancel={closeCart} /> : null}
+      {show ? <Backdrop /> : null}
+
+      {fav ? <Favourite onCancel={closeFav} /> : null}
+      {fav ? <Backdrop /> : null}
     </nav>
   );
 }

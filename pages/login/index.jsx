@@ -6,7 +6,7 @@ import styles from "./loginpage.module.scss";
 export default function Index() {
   return (
     <>
-      {/* define extra components we are goign to be using for the login page */}
+      {/* define extra components we are going to be using for the login page */}
       {/* clearly define the title */}
       <Head>
         <title>Springsentia Login</title>
