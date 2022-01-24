@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.pp_btn {
+    display: flex;
+    // width: 446px;
+    height: 55px;
+    background-color: $dark-green;
+    color: $white !important;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 61px;
+  }
+  
+  .pp_btn p {
+    margin-left: 8px;
+    color: $white !important;
+  }

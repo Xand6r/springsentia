@@ -1,0 +1,167 @@
+@import "styles/variables.scss";
+
+.about_container {
+}
+
+.about_logo {
+  margin: auto;
+  display: block;
+  width: 148px;
+  height: 140px;
+  margin-top: 112.99px;
+}
+
+.about_heading {
+  font-size: 44px;
+  text-align: center;
+  margin-top: 63.01px;
+}
+
+.about_text {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 42px;
+  line-height: 36px;
+}
+
+.theStory_with_image {
+  display: flex;
+  margin-top: 300px;
+  //   margin-left: 120px;
+  color: $darker-charcoal;
+  justify-content: center;
+  align-items: center;
+}
+
+.theStory_heading {
+  font-size: 44px;
+}
+
+.theStory_texts {
+  font-size: 18px;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.theStory_texts_two {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.theStory_image {
+  margin-left: 141px;
+}
+
+.cocoPure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: $dark-charcoal;
+  margin-top: 264px;
+}
+
+.cocoPure_image_odd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.cocoPure_image {
+  margin-top: 180px;
+  left: 18%;
+  position: absolute;
+  bottom: 29%;
+}
+
+.cocoPure_texts {
+  color: $dark-gray;
+  margin-left: 747px;
+  font-size: 18px;
+  padding-bottom: 126px;
+  line-height: 30px;
+}
+
+.cocoPure_heading {
+  font-size: 44px !important;
+  color: $darker-charcoal !important;
+  margin-top: 125px;
+}
+
+.cocoPure_heading_text {
+  margin-top: 27px;
+}
+
+.cocoPure_subheadings_image {
+  width: 41px;
+  height: 41.12px;
+}
+
+.cocoPure_subheadings {
+  font-size: 22px;
+  margin-left: 15px;
+  color: $darker-charcoal !important;
+}
+
+.cocoPure_subheadings_display {
+  display: flex;
+  align-items: center;
+}
+
+.cocoPure_completeness {
+  margin-top: 63px;
+}
+
+.cocoPure_confidence,
+.cocoPure_purity {
+  margin-top: 49px;
+}
+
+.coco_align_texts {
+  margin-left: 60px;
+  margin-top: 17px;
+}
+
+.partner {
+  display: flex;
+  justify-content: center;
+//   align-items: center;
+}
+
+.partner_image {
+  margin-top: 156px;
+}
+
+.partner_texts {
+  margin-left: 146px;
+}
+
+.partner small {
+  font-size: 18px;
+  color: $grey;
+  margin-top: 20px;
+}
+
+.partner_greenText {
+  font-size: 16px;
+  color: $dark-green;
+  margin-top: 260px;
+}
+
+.partner_bigText {
+  font-size: 44px;
+  margin-top: 26px;
+  line-height: 57.86px;
+}
+
+.partner_unknown {
+  margin-top: 72px;
+  font-size: 44px;
+  color: $light-pink;
+}
+
+.partner_learn {
+  display: flex;
+  margin-top: 121.49px;
+  margin-bottom: 202.51px;
+}
