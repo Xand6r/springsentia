@@ -5,7 +5,7 @@ const index = () => {
   return(
       <div className={styles.pp_btn}>
         <Plus />
-        <p>ADD TO CART</p>
+        ADD TO CART
       </div>
   )
 };

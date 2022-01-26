@@ -43,7 +43,9 @@ export default function Index() {
               <p>Kids</p>
               <p>Hair</p>
               <p>Skin</p>
-              <p>Collections</p>
+              <Link href="/shop">
+                <p>Collections</p>
+              </Link>
             </div>
           </div>
         </section>

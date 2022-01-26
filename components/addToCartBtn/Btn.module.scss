@@ -5,13 +5,24 @@
     // width: 446px;
     height: 55px;
     background-color: $dark-green;
-    color: $white !important;
+    color: $white;
     justify-content: center;
     align-items: center;
     // margin-top: 61px;
+    cursor: pointer;
+
+    svg{
+      margin-right: 10px;
+    }
   }
-  
-  .pp_btn p {
-    margin-left: 8px;
-    color: $white !important;
+
+  .pp_btn:hover{
+    background-color: $white;
+    border: 1px solid $dark-green;
+    color: $dark-green !important;
+    transition: 1000ms;
+
+    path{
+      fill: $dark-green !important;
+    }
   }
