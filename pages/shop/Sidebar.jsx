@@ -1,3 +1,4 @@
+import ReactSlider from "react-slider";
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
@@ -6,7 +7,12 @@ const Sidebar = () => {
       <p className={styles.sidebar_headings}>Shop easy!</p>
       <p className={styles.sidebar_price}>PRICE (₦)</p>
       <div className={styles.sidebar_bar}>
-        <div className={styles.sidebar_dot}></div>
+        <ReactSlider
+          className={styles.horizontal_slider}
+          thumbClassName={styles.example_thumb}
+          trackClassName={styles.example_track}
+          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+        />
       </div>
 
       <div className={styles.boxes}>

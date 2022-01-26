@@ -1,12 +1,18 @@
 import Image from "next/image";
-import { Star, Plus, Like } from "../../components/product/assets";
+import { Star, Plus, Like } from "components/product/assets";
 import styles from "./Review.module.scss";
 
 const ProductProducts = ({ productInfo }) => {
   return (
     <div className={styles.productProducts_container}>
       <div className={styles.product_image_wrapper}>
-        <Image height="225px" width="205px" src={productInfo.image} alt="" />
+        <Image
+          height="225px"
+          width="205px"
+          src={productInfo.image}
+          className={"productimagecream"}
+          alt=""
+        />
         <div className={styles.add_to_cart}>
           <Plus /> <span> Add to cart </span>
         </div>

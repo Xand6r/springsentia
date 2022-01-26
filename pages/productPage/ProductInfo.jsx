@@ -33,7 +33,7 @@ function ProductInfo({ productInfo }) {
           <p className={styles.current_price}>{productInfo.currentPrice}</p>
           <p className={styles.old_price}>{productInfo.oldPrice}</p>
         </div>
-        <Image src={Love} alt="" width={19} height={17} />
+        <div className={styles.pp_love}><Image src={Love} alt="" width={19} height={17} /></div>
       </div>
       <hr className={styles.hr}></hr>
 

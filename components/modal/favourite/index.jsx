@@ -34,7 +34,7 @@ function Index(props) {
         <div className={styles.fav_btn}>
           <div className={styles.pp_btn}>
             <Plus />
-            <p>ADD TO CART</p>
+            ADD TO CART
           </div>
         </div>
         <hr className={styles.fav_hr}></hr>
@@ -45,7 +45,7 @@ function Index(props) {
         <div className={styles.fav_btn}>
           <div className={styles.pp_btn}>
             <Plus />
-            <p>ADD TO CART</p>
+            ADD TO CART
           </div>
         </div>
         <hr className={styles.fav_hr}></hr>
@@ -56,7 +56,7 @@ function Index(props) {
         <div className={styles.fav_btn}>
           <div className={styles.pp_btn}>
             <Plus />
-            <p>ADD TO CART</p>
+            ADD TO CART
           </div>
         </div>
         <hr className={styles.fav_hr}></hr>
@@ -67,7 +67,7 @@ function Index(props) {
         <div className={styles.fav_btn}>
           <div className={styles.pp_btn}>
             <Plus />
-            <p>ADD TO CART</p>
+            ADD TO CART
           </div>
         </div>
         <hr className={styles.fav_hr}></hr>
@@ -77,7 +77,7 @@ function Index(props) {
           <div className={styles.fav_btn}>
             <div className={styles.pp_btn}>
               <Plus />
-              <p>ADD TO CART</p>
+              ADD TO CART
             </div>
           </div>
         </div>

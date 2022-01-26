@@ -18,8 +18,6 @@ const PRODUCTS_DETAILS = [
       "https://res.cloudinary.com/xand6r/image/upload/v1635192068/77_copy_2_tbsgqx.png",
     title: "Mist3 Hair Butter",
     description: "Hair butter with pure shea butter and",
-    // description: "with a soft sheen",
-    // description: "with a soft sheen",
     ratings: 5.0,
     currentPrice: 4500,
     oldPrice: 5500,

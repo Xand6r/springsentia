@@ -28,11 +28,41 @@
   margin-top: 34px;
 }
 
-.sidebar_bar {
-  width: 208px;
+.horizontal_slider {
+  width: 187px;
+  max-width: 500px;
   height: 4px;
-  background-color: $darker-charcoal;
-  margin-top: 28px;
+  // margin: auto;
+  margin-left: 0;
+  background-color: $dark-charcoal;
+  margin-top: 20px;
+}
+.example_thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  color: $dark-green;
+  border: 1px solid $dark-green;
+  border-radius: 50px;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example_thumb.active {
+  background-color: $relish;
+}
+.example_track {
+  position: relative;
+  background: $dark-green;
+}
+.example_track.example_track-0 {
+  background: $dark-green;
+}
+
+.sidebar_bar {
+  // width: 208px;
+  // height: 4px;
+  // background-color: $darker-charcoal;
+  // margin-top: 28px;
 }
 
 .sidebar_categories p,

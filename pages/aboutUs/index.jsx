@@ -7,7 +7,7 @@ import {
   PurityIcon,
 } from "./assets";
 import Girl from "public/images/fineGirl.png";
-import Cream from "public/images/landingcream.png";
+import PartnersImage from "public/images/partner.png";
 import NavBar from "components/navbars/home";
 import ContactUs from "pages/home/components/contact";
 import Footer from "components/footer";
@@ -160,8 +160,8 @@ const index = () => {
 
         <div className={styles.partner}>
           <div className={styles.partner_image}>
-            <Image src={Cream} width={300} height={300} alt="" />
-            <Image src={Cream} width={300} height={300} alt="" />
+            <Image src={PartnersImage} width={421} height={634} alt="" />
+            {/* <Image src={Cream} width={300} height={300} alt="" /> */}
           </div>
           <div className={styles.partner_texts}>
             <p className={styles.partner_greenText}>BECOME A PARTNER</p>

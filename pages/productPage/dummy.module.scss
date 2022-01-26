@@ -5,45 +5,52 @@
   display: flex;
   justify-content: space-evenly;
   font-weight: 400;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .ingredients_container {
   flex: 1;
   display: flex;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
 }
 
 .pp_headings {
   font-size: 28px;
   flex: 0.5;
-  margin-left: 60px;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-left: 20px;
+
+  @media (max-width: $md-breakpoint) {
+    margin-left: 0px !important;
+  }
 }
 
 .ingredients_subheadings {
   flex: 0.5;
-  margin-top: 143px;
+  margin-top: 33px;
 }
 
 .customers {
   margin-top: 155px;
   flex: 0.5;
-}
 
-.review_container {
-  flex: 1;
-  display: flex;
-  margin-left: 60px;
-}
+  @media (max-width: $md-breakpoint) {
+    margin-top: 58px;
+    flex: 0.5;
+  }
 
-.customer_reviews {
-  flex: 0.5;
-  margin-top: 150px;
-}
-
-.review_ratings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (max-width: $lg-breakpoint) {
+    flex: 0.8;
+  }
 }
 
 .pp_title {
@@ -75,22 +82,37 @@
   height: 706px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $md-breakpoint) {
+    height: 426px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 .right_page {
   flex: 0.5;
-  // width: 720px;
-  // height: 706px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
+
+  @media (max-width: $md-breakpoint) {
+    margin-left: 20px;
+    align-items: unset;
+  }
 }
 
 .PPCream {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $md-breakpoint) {
+    width: 178px;
+    height: 195px;
+  }
 }
 
 .pp_select {
@@ -101,22 +123,30 @@
   margin-top: 26px;
   margin-bottom: 22px;
   align-items: center;
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
 }
 
-.ppSize_btn{
+.ppSize_btn {
   margin-top: 60px;
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
 }
 
 .pp_select small {
   margin: 0 13px;
 }
 
-.pp_select p{
+.pp_select p {
   margin-left: 13px;
   color: $darker-charcoal;
 }
 
-.pp_icon{
+.pp_icon {
   font-size: 7px;
 }
 
@@ -136,6 +166,10 @@
   background-color: $dark-charcoal;
   height: 1px;
   margin: 30px 0;
+
+  @media (max-width: $lg-breakpoint) {
+    width: 330px;
+  }
 }
 
 .pp_uses {
@@ -228,6 +262,18 @@
   margin-top: 40px;
   margin-bottom: 64px;
   color: $dark-green;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    justify-content: unset;
+    font-size: 14px;
+  }
+}
+
+.pp_love {
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
 }
 
 .old_price {
@@ -250,17 +296,52 @@
   height: 318px;
   margin-top: 198px;
   position: relative;
+
+  @media (max-width: $md-breakpoint) {
+    height: 195px;
+    margin-top: 98px;
+    // padding-left: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: $xl-breakpoint) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .relish_image {
   padding-left: 124px;
   position: absolute;
   bottom: 40%;
+
+  @media (max-width: $md-breakpoint) {
+    width: 180px !important;
+    position: absolute;
+    bottom: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    // left: 0;
+  }
+  @media (max-width: $xl-breakpoint) {
+    padding-left: 0;
+    width: 290px;
+  }
+  
 }
 
 .pp_subheadings {
   font-size: 22px;
   margin-top: 61px;
+
+  @media (max-width: $md-breakpoint) {
+    margin-top: 33px;
+  }
 }
 
 .pp_texts {
@@ -268,6 +349,10 @@
   color: $grey;
   margin-top: 25px;
   line-height: 28px;
+
+  @media (max-width: $md-breakpoint) {
+    font-size: 11px;
+  }
 }
 
 .ingredients_hr {
@@ -276,6 +361,41 @@
   height: 1px;
   color: $grey;
   margin-left: 0;
+
+  @media (max-width: $xl-breakpoint) {
+    width: 510px;
+  }
+}
+
+.review_container {
+  flex: 1;
+  display: flex;
+  margin-left: 60px;
+
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  @media (max-width: $lg-breakpoint) {
+    margin-left: 20px;
+  }
+}
+
+.customer_reviews {
+  flex: 0.5;
+  margin-top: 150px;
+}
+
+.review_ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $md-breakpoint) {
+    align-items: unset;
+  }
 }
 
 .reviews_heading {
@@ -317,6 +437,11 @@
   font-size: 14px;
   padding: 0 130px;
   line-height: 30px;
+
+  @media (max-width: $md-breakpoint) {
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
 
 .seeReviews p {
@@ -326,6 +451,10 @@
 .productProducts_display {
   margin-left: 60px;
   margin-bottom: 105px;
+
+  @media (max-width: $md-breakpoint) {
+    margin-left: 20px;
+  }
 }
 
 .productProducts {
@@ -336,6 +465,10 @@
   font-size: 28px;
   color: $dark-green;
   margin-top: 161px;
+
+  @media (max-width: $md-breakpoint) {
+    font-size: 20px;
+  }
 }
 
 .products_map {
