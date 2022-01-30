@@ -1,0 +1,132 @@
+@import "styles/variables.scss";
+
+.logincomponent {
+  width: 380px;
+  margin-left: 154px;
+  margin-right: 154px;
+
+  @media (max-width: $sm-breakpoint) {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: fit-content;
+  }
+
+  .confirmationModeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.9375rem;
+    @media (max-width: $sm-breakpoint) {
+      font-size: 16px;
+    }
+    .mode__title{
+      font-size: 1.25rem;
+      line-height: 4.125rem;
+      color: $dark-green;
+      @media (max-width: $sm-breakpoint) {
+        font-size: 16px;
+      }
+    }
+    p{
+      max-width: 21.6875rem;
+      line-height: 24px;
+      text-align: center;
+      color: #707070;
+      margin-bottom: 3.125rem;
+      @media (max-width: $sm-breakpoint) {
+        margin-bottom: 23px;
+        font-size: 14px;
+      }
+    }
+    h5{
+      letter-spacing: 0.05em;
+      line-height: 4.125rem;
+    }
+  }
+
+  form {
+    margin-top: 3.125rem;
+    &.confirm__mode{
+      margin-top: 10px;
+    }
+    @media (max-width: $sm-breakpoint) {
+      margin-top: 50px;
+    }
+    .input_wrapper {
+      position: relative;
+      margin-bottom: 1.875rem;
+      label {
+        margin-bottom: 0.9375rem;
+        @media (max-width: $sm-breakpoint) {
+          margin-bottom: 15px;
+        }
+      }
+      b {
+        font-size: 14px;
+        color: $dark-green;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transition: $fast-transition;
+
+        &:hover {
+          color: $relish;
+        }
+      }
+    }
+    button {
+      margin-top: 0.625rem;
+      width: 100%;
+      @media (max-width: $sm-breakpoint) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .auxillarycontent {
+    margin-top: 2.625rem;
+    padding-top: 22px;
+    border-top: 1px solid #efefef;
+
+    @media (max-width: $sm-breakpoint) {
+      padding-top: 25px;
+      margin-top: 43px;
+    }
+
+    h5 {
+      line-height: 4.125rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 0.9375rem;
+    }
+
+    //options for facebook or google
+    section.options {
+      display: flex;
+      gap: 1.25rem;
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2.3125rem;
+        background: #f9f9f9;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 1px;
+        cursor: pointer;
+        h6 {
+          color: $darker-charcoal;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          line-height: 1.25rem;
+        }
+      }
+      @media (max-width: $sm-breakpoint) {
+        justify-content: center;
+      }
+      //options for facebook or google
+    }
+  }
+}

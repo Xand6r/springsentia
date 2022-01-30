@@ -1,0 +1,83 @@
+@import "styles/variables.scss";
+.loginpage {
+  background: #efefef;
+  overflow: auto;
+  min-height: calc(100vh - 90px);
+  width: 100vw;
+  display: flex;
+  padding-top: 5.8125rem;
+  padding-bottom: 11.0625rem;
+  justify-content: center;
+  @media (max-width: $sm-breakpoint) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .confirm__tab {
+    background-color: white;
+    padding: 4.6875rem 9.625rem 5.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $sm-breakpoint) {
+      width: 100%;
+      padding: 4.3125rem 3.25rem;
+    }
+  }
+
+  .tab__title {
+    font-size: 1.25rem;
+    line-height: 4.125rem;
+    letter-spacing: 0.05em;
+    color: $dark-green;
+    @media (max-width: $sm-breakpoint) {
+      font-size: 16px;
+    }
+  }
+
+  .tab__text {
+    b {
+      font-weight: 700;
+    }
+    color: #707070;
+    max-width: 19.9375rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2.25rem;
+    @media (max-width: $sm-breakpoint) {
+      font-size: 14px;
+      line-height: 22px;
+      padding-bottom: 41px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .tab__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: $sm-breakpoint) {
+      flex-direction: column;
+      gap: 41px;
+    }
+    section {
+      p {
+        line-height: 1.5rem;
+        text-align: center;
+        &:first-of-type {
+          color: #333333;
+        }
+        &:last-of-type {
+          color: $relish;
+          cursor: pointer;
+        }
+        @media (max-width: $sm-breakpoint) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

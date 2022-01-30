@@ -1,0 +1,66 @@
+@import 'styles/variables.scss';
+
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7.625rem;
+    // padding-bottom: 12.5625rem;
+    margin: 0 5.5625rem;
+
+    button{
+        span{
+            margin-right: 58px;
+        }
+    }
+
+    @media (max-width: $sm-breakpoint) {
+        padding-top: 65px;
+        margin: 0 25px;
+        padding-bottom: 0;
+    }
+}
+
+.bestseller__header{
+    text-align: center;
+    margin-bottom: 3.125rem;
+    @media (max-width: $md-breakpoint) {
+        margin-bottom: 35px;
+    }
+    p{
+        color: $dark-green;
+        font-weight: 500;
+        margin-bottom: 1.5625rem;
+        @media (max-width: $md-breakpoint) {
+            margin-bottom: 16px;
+            font-size: 12px;
+        }
+    }
+    h2{
+        @media (max-width: $md-breakpoint) {
+            font-size: 28px;
+            max-width: 229px;
+        }
+    }
+}
+
+.bestseller__addmore{
+    margin-top: 4.125rem;
+}
+
+.bestseller_container{
+    // display: flex;
+    // gap: 1.4rem;
+    grid-gap: 1.4rem 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    @media (max-width: $lg-breakpoint) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $md-breakpoint) {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}

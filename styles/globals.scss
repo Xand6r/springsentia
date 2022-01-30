@@ -12,6 +12,7 @@
 html{
   font-size: 16px;
   font-family: 'mabry-pro';
+  scroll-behavior: smooth;
 
   // on tablets
   @media (max-width: $md-breakpoint) {
@@ -49,6 +50,10 @@ body {
   }
 }
 
+svg, path{
+  transition: $fast-transition;
+}
+
 // ------- Define the different sizes of the texts
 @mixin defaultstyles {
   margin: 0;
@@ -57,34 +62,34 @@ body {
 }
 
 h1{
-  font-size: 3.75rem;
+  font-size: 3.75rem; //60px
   @include defaultstyles;
   @media (max-width: $sm-breakpoint) {
     font-size:34px;
   }
 }
 h2{
-  font-size: 2.75rem;
+  font-size: 2.75rem; //44px
   @include defaultstyles;
 }
 h3{
-  font-size: 1.75rem;
+  font-size: 1.75rem; //28px
   @include defaultstyles;
 }
 h4{
-  font-size: 1.375rem;
+  font-size: 1.375rem; //22px
   @include defaultstyles;
 }
 h5{
-  font-size: 1.125rem;
+  font-size: 1.125rem; //18px
   @include defaultstyles;
 }
 p{
-  font-size: 1rem;
+  font-size: 1rem; //16px
   @include defaultstyles;
 }
 h6{
-  font-size: 0.875rem;
+  font-size: 0.875rem; //14px
   @include defaultstyles;
 }
 
@@ -103,21 +108,79 @@ input{
 
 button{
   font-size: 1rem;
-  padding: 1.25rem;
+  padding: 1.10rem 1.25rem;
   border: 0;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: $fast-transition;
+
+  &.--hollow{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    color: $dark-green;
+    background-color: transparent;
+    padding: 0;
+    
+    &::after{
+      transition: $fast-transition;
+      margin-left: 0.9375rem;
+      position: relative;
+      top: 1px;
+      content: url('../public/icons/rightarrowgreen.svg');
+    }
+
+    &:hover{
+      color: $relish;
+
+      &::after{
+        margin-left: 1.5625rem;
+        content: url('../public/icons/rightarrowrelish.svg');
+      }
+    }
+
+    &:active{
+      color: $dark-green;
+      &::after{
+        content: url('../public/icons/rightarrowgreen.svg');
+      }
+    }
+  }
 
   &.--filled{
     background-color: $dark-green;
     color: white;
+
+    &:hover{
+      background-color: $relish;
+    }
+
+    &:active{
+      background-color: $dark-green;
+      color: white;
+    }
   }
 
   &.--lined{
     border: 1px solid $dark-green;
     color: $dark-green;
+    background-color: white;
+
+    &:hover{
+      background-color: #D8E8D4;
+    }
+
+    &:active{
+      background-color: $dark-green;
+      color: white;
+      path{
+        fill: white !important;
+      }
+    }
   }
 
   &:hover{

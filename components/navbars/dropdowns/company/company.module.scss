@@ -1,0 +1,43 @@
+@import 'styles/variables.scss';
+
+.company_dropdown{
+    left: -2.5rem;
+    .partner__div{
+        h6{
+            width: 11.5rem;
+            white-space: normal;
+            cursor: auto;
+            color: #333333;
+            margin-bottom: 2.1875rem;
+            line-height: 1.1875rem;
+            &:hover{
+                color: $dark-green;
+            }
+        }
+        button{
+            font-size: 0.875rem;
+        }
+    }
+
+    .first__section{
+        padding-left: 0 ;
+        padding-right: 3.125rem ;
+        .section__divider{
+            min-width: 9.625rem;
+        }
+        h6{
+            &.__active{
+                border-color: $relish;
+            }
+        }
+
+    }
+
+    .second__section{
+        padding-left: 0.6875rem ;
+        padding-right: 6.375rem ;
+        .section__divider{
+            min-width: 9.625rem;
+        }
+    }
+}

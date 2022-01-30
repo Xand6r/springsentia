@@ -1,0 +1,113 @@
+@import "styles/variables.scss";
+
+.header{
+    width: 100%;
+    background-color: $ionic-opacity-variant;
+    padding: 1.6875rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $sm-breakpoint) {
+        padding: 24px auto;
+    }
+
+    p{
+        color: $darker-charcoal;
+        font-weight: 400;
+        transition: $fast-transition;
+        position: relative;
+    }
+}
+
+.header__logo__big{
+    margin: 0 auto;
+    width: fit-content;
+    width: 182px;
+    height: 33px;
+    @media (max-width: $sm-breakpoint) {
+        display: none;
+    }
+}
+
+
+.header__logo__small{
+    margin: 0 auto;
+    width: 122px;
+    height: 22px;
+    display: none;
+
+    @media (max-width: $sm-breakpoint) {
+        display: inherit;
+    }
+}
+
+.arrow-icon{
+    margin-left: 4px;
+    position: relative;
+    top: -2px;
+    content: url('../../../public/icons/downarrow.svg');
+}
+
+.right__section{
+    display: flex;
+    align-items: center;
+    & > p{
+        margin-left: 2.1875rem;
+        white-space: nowrap;
+        span{
+            cursor: pointer;
+        }
+
+        &:first-of-type{
+            cursor: pointer;
+            
+            &::after {
+                @extend .arrow-icon;
+            }
+        }
+    }
+
+    @media (max-width: $lg-breakpoint){
+        #currency__menu,
+        #search__menu,
+        #like__menu
+        {
+            display: none
+        }
+    }
+
+}
+
+.left__section{
+    display: flex;
+    align-items: center;
+    & > p{
+        white-space: nowrap;
+        span{
+            cursor: pointer;
+        }
+        margin-right: 2.1875rem;
+
+        &::after {
+            @extend .arrow-icon;
+        }
+
+        @media (max-width: $lg-breakpoint){
+            display: none;
+        }
+    }
+    & > div{
+        margin-right: 40px;
+        cursor: pointer;
+        @media (min-width: $lg-breakpoint){
+            display: none;
+        }
+    }
+}
+
+p.item__active{
+    color: $relish;
+    &::after {
+        content: url('../../../public/icons/downarrowactive.svg') !important;
+    }
+}
