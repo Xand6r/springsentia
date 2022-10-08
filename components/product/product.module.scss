@@ -35,7 +35,12 @@
 
     &:hover .add_to_cart,&:hover .like {
         opacity: 1;
-        // display: flex;
+    }
+
+    @media (max-width: $md-breakpoint) {
+        .add_to_cart,.like {
+            opacity: 1;
+        }
     }
 }
 
@@ -43,21 +48,41 @@
     position: relative;
     background: #EFEFEF;
     width: 19.625rem;
-    height : 25.625rem;
+    height : 30.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $md-breakpoint) {
+        height: 241px;
+        width: 162px;
+    }
 }
 
 .product_content_wrapper{
-    margin-top: 1.5625rem;
+    margin-top: 1.9375rem;
+    @media (max-width: $md-breakpoint) {
+        margin-top: 20px;
+    }
 
     h5{
+        font-family: Cosmica-SemiBold;
         color: $dark-green;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.9375rem;
+        font-size: 20px;
+        @media (max-width: $md-breakpoint) {
+            font-family: Cosmica-Regular;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
         &:hover{
             color: $relish;
             transition: $fast-transition;
+        }
+    }
+    div.product__meta > p{
+        @media (max-width: $md-breakpoint) {
+            font-size: 10px;
         }
     }
 
@@ -68,8 +93,25 @@
     }
 }
 
+.product_image{
+    height: 225px;
+    width: 205px;
+    position: relative;
+    @media (max-width: $md-breakpoint) {
+        height:inherit;
+        width: 121px;
+    }
+
+    img{
+        object-fit: contain;
+    }
+}
+
 .product__meta{
     display: flex;
+    @media (max-width: $md-breakpoint) {
+        align-items: center;
+    }
 
     p{
         &::first-letter{
@@ -93,9 +135,10 @@
 }
 
 .product__prices{
-    margin-top: 21px;
+    margin-top: 16px;
     display: flex;
     align-items: flex-end;
+
 
     @media (max-width: $md-breakpoint) {
         margin-top: 5px;
@@ -105,6 +148,10 @@
         margin-right: 10px;
         &::before{
             content: "₦ ";
+        }
+        font-size: 20px;
+        @media (max-width: $md-breakpoint) {
+            font-size: 14px;
         }
     }
 

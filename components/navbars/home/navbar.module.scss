@@ -3,12 +3,14 @@
 .header{
     width: 100%;
     background-color: $ionic-opacity-variant;
-    padding: 1.6875rem 3.125rem;
+    padding: 1.6875rem 9.375rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @media (max-width: $sm-breakpoint) {
-        padding: 24px auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     p{
@@ -52,25 +54,19 @@
     display: flex;
     align-items: center;
     & > p{
-        margin-left: 2.1875rem;
+        margin-left: 1.75rem;
         white-space: nowrap;
-        span{
-            cursor: pointer;
-        }
-
-        &:first-of-type{
-            cursor: pointer;
-            
-            &::after {
-                @extend .arrow-icon;
-            }
-        }
+        cursor: pointer;
+    }
+    & > span{
+        margin-left: 1.75rem;
+        white-space: nowrap;
+        cursor: pointer;
     }
 
     @media (max-width: $lg-breakpoint){
-        #currency__menu,
-        #search__menu,
-        #like__menu
+        #like__menu,
+        #account__menu
         {
             display: none
         }
@@ -80,34 +76,54 @@
 
 .left__section{
     display: flex;
-    align-items: center;
-    & > p{
-        white-space: nowrap;
-        span{
+    gap: 3.875rem;
+    @media (max-width: $md-breakpoint) {
+        gap: 18px;
+    }
+
+    .left__items__section{
+        order: 1;
+        @media (max-width: $md-breakpoint) {
+            order: -1;
+        }
+        display: flex;
+        align-items: center;
+        & > p{
+            white-space: nowrap;
+            span{
+                cursor: pointer;
+            }
+            margin-right: 2.1875rem;
+    
+            &::after {
+                @extend .arrow-icon;
+            }
+    
+            @media (max-width: $lg-breakpoint){
+                display: none;
+            }
+        }
+        & > div{
+            margin-right: 40px;
             cursor: pointer;
-        }
-        margin-right: 2.1875rem;
-
-        &::after {
-            @extend .arrow-icon;
-        }
-
-        @media (max-width: $lg-breakpoint){
-            display: none;
-        }
-    }
-    & > div{
-        margin-right: 40px;
-        cursor: pointer;
-        @media (min-width: $lg-breakpoint){
-            display: none;
+            @media (max-width: $md-breakpoint){
+                margin-right: 0px;
+            }
+            @media (min-width: $lg-breakpoint){
+                display: none;
+            }
         }
     }
 }
 
-p.item__active{
-    color: $relish;
-    &::after {
-        content: url('../../../public/icons/downarrowactive.svg') !important;
-    }
+.middle__items__section{
+
 }
+
+
+// p.item__active{
+//     color: $relish;
+//     &::after {
+//         content: url('../../../public/icons/downarrowactive.svg') !important;
+//     }
+// }

@@ -37,57 +37,55 @@ export default function Index() {
   return (
     <nav ref={navRef} className={styles.header}>
       <div className={styles.left__section}>
-        <p className={isTabActive("women") ? styles.item__active : ""}>
-          <span onClick={() => setActiveTab("women")}>Women</span>
-          <WomenDropdown
-            open={isTabActive("women")}
-            onClose={() => setActiveTab("")}
-          />
-        </p>
-        <p className={isTabActive("men") ? styles.item__active : ""}>
-          <span onClick={() => setActiveTab("men")}>Men</span>
-          <MenDropdown
-            open={isTabActive("men")}
-            onClose={() => setActiveTab("")}
-          />
-        </p>
-        <p className={isTabActive("kids") ? styles.item__active : ""}>
-          <span onClick={() => setActiveTab("kids")}>Kids</span>
-          <KidsDropdown
-            open={isTabActive("kids")}
-            onClose={() => setActiveTab("")}
-          />
-        </p>
-        <p className={isTabActive("company") ? styles.item__active : ""}>
-          <span onClick={() => setActiveTab("company")}>Company</span>
-          <CompanyDropdown
-            open={isTabActive("company")}
-            onClose={() => setActiveTab("")}
-          />
-        </p>
-        <div>
-          <HamburgerMenu />
+        <div className={styles.left__items__section}>
+          <p className={isTabActive("women") ? styles.item__active : ""}>
+            <span onClick={() => setActiveTab("women")}>Women</span>
+            <WomenDropdown
+              open={isTabActive("women")}
+              onClose={() => setActiveTab("")}
+            />
+          </p>
+          <p className={isTabActive("men") ? styles.item__active : ""}>
+            <span onClick={() => setActiveTab("men")}>Men</span>
+            <MenDropdown
+              open={isTabActive("men")}
+              onClose={() => setActiveTab("")}
+            />
+          </p>
+          <p className={isTabActive("kids") ? styles.item__active : ""}>
+            <span onClick={() => setActiveTab("kids")}>Kids</span>
+            <KidsDropdown
+              open={isTabActive("kids")}
+              onClose={() => setActiveTab("")}
+            />
+          </p>
+          <p className={isTabActive("company") ? styles.item__active : ""}>
+            <span onClick={() => setActiveTab("company")}>About Us</span>
+            <CompanyDropdown
+              open={isTabActive("company")}
+              onClose={() => setActiveTab("")}
+            />
+          </p>
+          <div>
+            <HamburgerMenu />
+          </div>
         </div>
-      </div>
 
-      <div>
-        {/* logo on big screens */}
-        <div className={styles.header__logo__big}>
-          <Image alt="logo" src={Logo} />
-        </div>
-        {/* logo on small screens */}
-        <div className={styles.header__logo__small}>
-          <Image alt="logo" src={Logo} />
+        <div className={styles.left__images__section}>
+          {/* logo on big screens */}
+          <div className={styles.header__logo__big}>
+            <Image alt="logo" src={Logo} />
+          </div>
+          {/* logo on small screens */}
+          <div className={styles.header__logo__small}>
+            <Image alt="logo" src={Logo} />
+          </div>
         </div>
       </div>
 
       <div className={styles.right__section}>
-        <p id={styles.currency__menu} className={isTabActive("currency") ? styles.item__active : ""}>
-          <span onClick={() => setActiveTab("currency")}>NGN</span>
-          <CurrencyDropdown
-            open={isTabActive("currency")}
-            onClose={() => setActiveTab("")}
-          />
+        <p id={styles.search__menu}>
+          <SearchIcon onClick={() => console.log(10)} />
         </p>
         <p id={styles.account__menu}>
           <div
@@ -101,17 +99,14 @@ export default function Index() {
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p id={styles.search__menu}>
-          <SearchIcon onClick={() => console.log(10)} />
-        </p>
         <p id={styles.like__menu}>
           <span>
-          <LikeIcon />
+            <LikeIcon />
           </span>
         </p>
-        <p key="carttt" id={styles.cart__menu}>
+        <span key="cart" id={styles.cart__menu}>
           <CartIcon active />
-        </p>
+        </span>
       </div>
     </nav>
   );

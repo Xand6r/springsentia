@@ -10,6 +10,7 @@ import BestSeller from './components/bestseller';
 import Blog from './components/blog';
 import Partner from './components/partner';
 import ContactUs from './components/contact'
+import Target from "./components/target";
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
         <BestSeller />
         {/* best sellers page */}
 
+        {/* shop targets */}
+        <Target />
+        {/* shop targets */}
+    
         {/* the process page */}
         <Process />
         {/* the process page */}

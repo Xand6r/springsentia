@@ -1,17 +1,10 @@
-@import 'styles/variables.scss';
-
-// define global fonts
-@font-face {
-  font-family: "mabry-pro";
-  src: url("../fonts/Mabry/MabryPro-Regular.ttf")
-}
-// define global fonts
-
+@import 'styles/variables';
+@import 'styles/font';
 
 // defining the root font size
 html{
   font-size: 16px;
-  font-family: 'mabry-pro';
+  font-family: 'Cosmica-Regular';
   scroll-behavior: smooth;
 
   // on tablets
@@ -115,6 +108,8 @@ button{
   justify-content: center;
   align-items: center;
   transition: $fast-transition;
+  font-family: 'Cosmica-Regular';
+
 
   &.--hollow{
     display: flex;

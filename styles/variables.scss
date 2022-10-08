@@ -6,6 +6,7 @@ $relish: #8fb685;
 $dark-charcoal: #efefef;
 $darker-charcoal: #333333;
 $dropdown-outline: #e5e1c6;
+$blue-green: #D9E3E1;
 
 // define breakpoint variables
 $xl-breakpoint: 1200px;
@@ -15,3 +16,29 @@ $sm-breakpoint: 650px;
 
 // define speed variables
 $fast-transition: 200ms;
+
+
+// define mixins
+@mixin small-breakpoint {
+    @media (max-width: $sm-breakpoint ){
+        @content;
+    }
+}
+  
+@mixin medium-breakpoint {
+    @media (max-width: $md-breakpoint ){
+      @content;
+    }
+}
+
+@mixin large-breakpoint {
+    @media (max-width: $lg-breakpoint ){
+      @content;
+    }
+}
+
+@mixin xlarge-breakpoint {
+    @media (max-width: $xl-breakpoint ){
+      @content;
+    }
+}
