@@ -1,0 +1,82 @@
+@import "styles/variables.scss";
+
+.target{
+    width: 100%;
+
+    padding-left: 6.84rem;
+    padding-right: 6.84rem;
+    width: fit-content;
+    margin: auto;
+    margin-top: 11.25rem;
+
+    @include xlarge-breakpoint(){
+        margin-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .image__container{
+        height: 100%;
+        margin: auto;
+        gap: 20px;
+        display: flex;
+        background-size: cover;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include xlarge-breakpoint(){
+            flex-direction: column;
+            gap: 60px;
+            width: fit-content;
+        }
+    }
+
+    .image__item{
+        width: 374.29px;
+        height: 295.5px;
+        position: relative;
+        background-color: #F8F7F5;
+        padding: 30px;
+        display: flex;
+        background-position: center;
+        align-items: flex-end;
+        background-size: cover;
+
+        @include xlarge-breakpoint(){
+            width: 335px;
+            height: 265px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    .image__footer{
+        height: 40px;
+        width: 330px;
+        
+        background: white;
+        border: 1px solid $dark-green;
+        color: $dark-green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1.873rem;
+        padding-left: 1.25rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: Cosmica-SemiBold;
+        span{
+            display: inline-block;
+            margin-top: 4px;
+            font-size: 12px;
+        }
+
+        @include xlarge-breakpoint(){
+            width: 295px;
+            height:55px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+    }
+}

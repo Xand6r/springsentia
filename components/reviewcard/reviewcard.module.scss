@@ -1,0 +1,55 @@
+@import "styles/variables.scss";
+
+.review_card{
+    width: 23.3125rem;
+    height: 15.915rem;
+    background-color: white;
+    padding: 2.051875rem;
+    @include large-breakpoint{
+        width: 306px;
+        height: 226px;
+        padding: 26px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 11.6739px;
+        line-height: 20px;
+        color: $darker-charcoal;
+        margin-bottom: 45px;
+        max-height: 95px;
+        @include large-breakpoint{
+            font-size: 10px;
+        }
+    }
+
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .biodata{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            span{
+                position: relative;
+                width: 40.86px;
+                height: 40.86px;
+                display: block;
+                border-radius: 50%;
+            }
+            b{
+                text-transform: capitalize;
+                font-family: "Cosmica-SemiBold";
+                font-size: 11px;
+                @include large-breakpoint{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .arrows{
+        display: flex;
+        gap: 2px;
+    }
+}

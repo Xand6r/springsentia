@@ -17,7 +17,7 @@ export default function Index() {
       setActiveTab(2);
       setConfirmationMode(true);
     }
-  }, [router.query]);
+  }, [router.query, confirmationMode]);
 
   return (
     <div className={styles.authcomponent}>

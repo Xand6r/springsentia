@@ -1,5 +1,7 @@
 @import 'styles/variables';
 @import 'styles/font';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 // defining the root font size
 html{
@@ -9,12 +11,12 @@ html{
 
   // on tablets
   @media (max-width: $md-breakpoint) {
-    font-size: 14px;
+    // font-size: 14px;
   }
 
   // on phones
   @media (max-width: $md-breakpoint) {
-    font-size: 13px;
+    // font-size: 13px;
   }
 }
 // defining the root font size
@@ -181,5 +183,41 @@ button{
   &:hover{
     outline: none;
     box-shadow: none;
+  }
+}
+
+
+// override react slick
+.reviews{
+  .slick-dots{
+    bottom: -50px;
+    @include medium-breakpoint{
+      bottom: -40px;
+    }
+    li {
+      width: unset;
+      height: unset;
+      button{
+        &::before{
+          display: none;
+        }
+        width: 4px;
+        height: 4px;
+        background: #999999;
+      }
+    }
+    .slick-active{
+      button{
+        background: #014C37;
+        width: 24.81px;
+        height: 4.38px;
+        &:before{
+          display: none;
+        }
+        @include medium-breakpoint{
+          width: 18px;
+        }
+      }
+    }
   }
 }

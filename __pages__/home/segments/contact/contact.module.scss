@@ -1,0 +1,102 @@
+@import "styles/variables.scss";
+
+.contact{
+    height: 37.679vw;
+    display: flex;
+    @include large-breakpoint{
+        flex-direction: column;
+        height: fit-content;
+    }
+    & > div{
+        position: relative;
+        width: 50vw;
+        height: 100%;
+        img{
+            object-fit: cover;
+        }
+        @include large-breakpoint{
+            width: 100vw;
+            height: 75.5vw;
+        }
+    }
+
+    & > section{
+        width: 50vw;
+        height: 100%;
+        background: #D9E3E1;
+        display: flex;
+        align-items: center;
+        @include large-breakpoint{
+            width: 100vw;
+
+        }
+
+        .text__content{
+            margin-top: 7.490625rem;
+            margin-left: 9.75rem;
+            margin-bottom: 6.794375rem;
+            margin-right: 20px;
+            max-width: 22.709375rem;
+
+            @include large-breakpoint{
+                margin: 79px auto 73px;
+                width: fit-content;
+                padding-left: 34px;
+                padding-right: 34px;
+            }
+
+            & > span{
+                display: inline-block;
+                line-height: 1.25rem;
+                margin-bottom: 1.5625rem;
+                color: #014c37;
+                letter-spacing: 0.1em;
+                font-size: 13px;
+                font-family: "Cosmica-SemiBold";
+                letter-spacing: 0.1em;
+                margin-bottom: 24px;
+                @include large-breakpoint{
+                    display: none;
+                }
+            }
+
+            & > h4{
+                font-weight: 400;
+                font-size: 32.1032px;
+                line-height: 42px;
+                color: #333333;
+                margin-bottom: 22.52px;
+                @include large-breakpoint{
+                    font-size: 28px;
+                }
+            }
+
+            & > p{
+                font-weight: 400;
+                font-size: 13.1331px;
+                line-height: 22px;
+                color: #333333;
+                margin-bottom: 50.74px;
+                @include large-breakpoint{
+                    margin-bottom: 37px;
+                    color: #707070;
+                }
+            }
+
+            button{
+                width: 153.97px;
+                height: 40.13px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+                font-weight: 600;
+                font-size: 11.6755px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                color: #014C37;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}

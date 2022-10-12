@@ -12,3 +12,10 @@ export const Envelope = () => (
     />
   </svg>
 );
+
+
+export default function assets() {
+  return (
+    <div>assets</div>
+  )
+}

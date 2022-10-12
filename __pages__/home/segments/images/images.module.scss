@@ -1,0 +1,9 @@
+.images{
+    display: flex;
+    & > div{
+        height: 48.1vw;
+        width: 33.35vw;
+        position: relative;
+        background-color: gray;
+    }
+}

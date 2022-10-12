@@ -3,7 +3,8 @@
 .header{
     width: 100%;
     background-color: $ionic-opacity-variant;
-    padding: 1.6875rem 9.375rem;
+    // padding: 1.6875rem 9.375rem;
+    padding: 20px 109px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,17 +16,18 @@
 
     p{
         color: $darker-charcoal;
-        font-weight: 400;
+        font-weight: 500;
         transition: $fast-transition;
         position: relative;
+        font-size: 12px;
     }
 }
 
 .header__logo__big{
     margin: 0 auto;
     width: fit-content;
-    width: 182px;
-    height: 33px;
+    width: 127.7px;
+    height: 22px;
     @media (max-width: $sm-breakpoint) {
         display: none;
     }
@@ -46,7 +48,7 @@
 .arrow-icon{
     margin-left: 4px;
     position: relative;
-    top: -2px;
+    top: 0px;
     content: url('../../../public/icons/downarrow.svg');
 }
 
@@ -76,7 +78,7 @@
 
 .left__section{
     display: flex;
-    gap: 3.875rem;
+    gap: 2.8275rem;
     @media (max-width: $md-breakpoint) {
         gap: 18px;
     }
@@ -93,7 +95,7 @@
             span{
                 cursor: pointer;
             }
-            margin-right: 2.1875rem;
+            margin-right: 1.61125rem;
     
             &::after {
                 @extend .arrow-icon;

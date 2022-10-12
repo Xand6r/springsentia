@@ -19,7 +19,6 @@ export default function Index({ product }) {
       </div>
       <div className={styles.product_content_wrapper}>
         <h5>{product.title}</h5>
-        {/* <p>{product.description}</p> */}
         <div className={styles.product__meta}>
           <p>{product.category}</p>
           <p>{product.subCategory}</p>
@@ -29,9 +28,6 @@ export default function Index({ product }) {
         </div>
         <div className={styles.product__prices}>
           <p>{product.currentPrice.toLocaleString()}</p>
-          {/* <span>
-                        {product.oldPrice.toLocaleString()}
-                    </span> */}
         </div>
       </div>
     </div>

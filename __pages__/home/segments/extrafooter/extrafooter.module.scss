@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.extrafooter{
+    width: 100%;
+    height: 160.52px;
+    background-color: #F8F7F5;
+    background-image: url("/images/paystack/desktop.png");
+    background-repeat: no-repeat;
+    background-size:446.53px 80.99px;
+    background-position: center;
+
+    @include medium-breakpoint{
+        height: 149px;
+        background-size:336px 61px;
+    }
+
+}

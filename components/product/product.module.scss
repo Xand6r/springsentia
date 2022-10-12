@@ -31,6 +31,10 @@
         span{
             margin-left: 0.5rem;
         }
+
+        @include medium-breakpoint{
+            height: 40px;
+        }
     }
 
     &:hover .add_to_cart,&:hover .like {
@@ -47,8 +51,8 @@
 .product_image_wrapper{
     position: relative;
     background: #EFEFEF;
-    width: 19.625rem;
-    height : 30.25rem;
+    width: 17.191875rem;
+    height: 22.07125rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +64,7 @@
 }
 
 .product_content_wrapper{
-    margin-top: 1.9375rem;
+    margin-top: 1.375rem;
     @media (max-width: $md-breakpoint) {
         margin-top: 20px;
     }
@@ -68,8 +72,8 @@
     h5{
         font-family: Cosmica-SemiBold;
         color: $dark-green;
-        margin-bottom: 0.9375rem;
-        font-size: 20px;
+        margin-bottom: 0.625rem;
+        font-size: 15px;
         @media (max-width: $md-breakpoint) {
             font-family: Cosmica-Regular;
             margin-bottom: 8px;
@@ -81,6 +85,7 @@
         }
     }
     div.product__meta > p{
+    font-size: 12px;
         @media (max-width: $md-breakpoint) {
             font-size: 10px;
         }
@@ -94,8 +99,8 @@
 }
 
 .product_image{
-    height: 225px;
-    width: 205px;
+    height: 100%;
+    width: 170px;
     position: relative;
     @media (max-width: $md-breakpoint) {
         height:inherit;
@@ -135,7 +140,7 @@
 }
 
 .product__prices{
-    margin-top: 16px;
+    margin-top: 12px;
     display: flex;
     align-items: flex-end;
 
@@ -145,11 +150,12 @@
     }
 
     p{
+        font-family: "Cosmica-SemiBold";
         margin-right: 10px;
         &::before{
             content: "₦ ";
         }
-        font-size: 20px;
+        font-size: 15px;
         @media (max-width: $md-breakpoint) {
             font-size: 14px;
         }
