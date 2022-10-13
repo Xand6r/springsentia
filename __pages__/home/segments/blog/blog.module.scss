@@ -67,6 +67,10 @@
         padding: 10px 15px;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $md-breakpoint) {
+            height: 45px;
+        }
     }
     span{
         // margin-right: 2rem;
