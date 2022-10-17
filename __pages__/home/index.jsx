@@ -4,16 +4,16 @@ import NavBar from 'components/navbars/home';
 import Footer from 'components/footer';
 
 import Landing from "./segments/landing";
-import Process from "./segments/process";
-import Values from "./segments/values";
 import BestSeller from "./segments/bestseller";
-import Blog from "./segments/blog";
-import Target from "./segments/target";
-import Review from "./segments/reviews";
-import Images from "./segments/images";
-import Partner from "./segments/partner";
-import Contact from "./segments/contact";
-import ExtraFooter from "./segments/extrafooter";
+// import Process from "./segments/process";
+// import Values from "./segments/values";
+// import Blog from "./segments/blog";
+// import Target from "./segments/target";
+// import Review from "./segments/reviews";
+// import Images from "./segments/images";
+// import Partner from "./segments/partner";
+// import Contact from "./segments/contact";
+// import ExtraFooter from "./segments/extrafooter";
 
 
 export default function HomeView() {
@@ -32,44 +32,44 @@ export default function HomeView() {
       {/* best sellers page */}
 
       {/* shop targets */}
-      <Target />
+      {/* <Target /> */}
       {/* shop targets */}
 
       {/* the process page */}
-      <Process />
+      {/* <Process /> */}
       {/* the process page */}
 
       {/* the values page */}
-      <Values />
+      {/* <Values /> */}
       {/* the values page */}
 
       {/* the blog section */}
-      <Blog />
+      {/* <Blog /> */}
       {/* the blog section */}
 
       {/* the review section */}
-      <Review />
+      {/* <Review /> */}
       {/* the review section */}
 
       {/* the images section */}
-      <Images />
+      {/* <Images /> */}
       {/* the images section */}
 
       {/* the partner section */}
-      <Partner />
+      {/* <Partner /> */}
       {/* the partner section */}
 
       {/* the contact us section */}
       {/* <ContactUs /> */}
-      <Contact />
+      {/* <Contact /> */}
       {/* the contact us section */}
 
       {/* the footer page */}
-      <Footer />
+      {/* <Footer /> */}
       {/* the footer page */}
 
       {/* extra payment footer */}
-      <ExtraFooter />
+      {/* <ExtraFooter /> */}
       {/* extra payment footer */}
     </>
   );

@@ -1,0 +1,8 @@
+{
+  "rootFontSize": 16,
+  "fixedDigits": 4,
+  "addMark": true,
+  "vw": true,
+  "vwHover": true,
+  "vwDesign": 1400
+}

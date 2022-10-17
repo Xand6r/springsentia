@@ -3,7 +3,6 @@
 // define variables
 $starting-gradient: #d8dccd;
 $ending-gradient: #ebeee3;
-$height: 722px;
 $padding-x: 6.93125rem;
 // define variables
 
@@ -21,20 +20,20 @@ $padding-x: 6.93125rem;
   position: relative;
 
 
-  @media (max-width: $md-breakpoint) {
-    padding-top: 0;
-    padding-bottom: 6.8125rem;
-  }
+  // @media (max-width: $md-breakpoint) {
+  //   padding-top: 0;
+  //   padding-bottom: 6.8125rem;
+  // }
 
   @media (max-width: $sm-breakpoint) {
     padding-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom:75px;
+    padding-left: 1.25rem /* 20px -> 1.25rem */;
+    padding-right: 1.25rem /* 20px -> 1.25rem */;
+    padding-bottom:4.6875rem /* 75px -> 4.6875rem */;
   }
 
   @media (max-width: $sm-breakpoint){
-    // justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -53,12 +52,12 @@ $padding-x: 6.93125rem;
     margin-bottom: 1.8125rem;
     color: $darker-charcoal;
     @media (max-width: $sm-breakpoint) {
-      line-height: 48px;
+      line-height: 3rem /* 48px -> 3rem */;
       margin: auto;
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem /* 24px -> 1.5rem */;
       font-weight: 400;
-      font-size: 38px;
-      max-width: 326px;
+      font-size: 2.375rem /* 38px -> 2.375rem */;
+      max-width: 20.375rem /* 326px -> 20.375rem */;
       text-align: left;
     }
   }
@@ -68,10 +67,10 @@ $padding-x: 6.93125rem;
     max-width: 23.21125rem;
     line-height: 1.625rem;
     @media (max-width: $sm-breakpoint) {
-      font-size: 14px;
-      line-height: 25px;
-      margin-bottom: 30px;
-      max-width: 314px;
+      font-size: .875rem /* 14px -> .875rem */;
+      line-height: 1.5625rem /* 25px -> 1.5625rem */;
+      margin-bottom: 2.8125rem /* 45px -> 2.8125rem */;
+      max-width: 19.625rem /* 314px -> 19.625rem */;
       margin-left: auto;
       margin-right: auto;
     }
@@ -82,13 +81,13 @@ $padding-x: 6.93125rem;
     line-height: 4.125rem;
 
     @media (max-width: $sm-breakpoint) {
-      font-size: 20px;
-      line-height: 66px;
+      font-size: 1.25rem /* 20px -> 1.25rem */;
+      line-height: 4.125rem /* 66px -> 4.125rem */;
       margin-bottom: 0;
     }
   }
-  @media (max-width: $lg-breakpoint){
-    margin-top: 267px;
+  @media (max-width: $sm-breakpoint){
+    margin-top: 16.6875rem /* 267px -> 16.6875rem */;
   }
 }
 
@@ -97,41 +96,41 @@ $padding-x: 6.93125rem;
   flex-wrap: wrap;
   gap: 1.77rem;
   @media (max-width: $sm-breakpoint) {
-    // justify-content: center;
+    justify-content: flex-start;
   }
   input {
     transition: 300ms;
-    margin-right: 12px;
+    margin-right: .75rem /* 12px -> .75rem */;
     width: 23.1875rem;
-    border: 1px solid transparent;
+    border: .0625rem /* 1px -> .0625rem */ solid transparent;
 
     &:hover {
-      border: 1px solid #999999;
+      border: .0625rem /* 1px -> .0625rem */ solid #999999;
     }
 
     &:focus {
-      border: 1px solid #014c37;
+      border: .0625rem /* 1px -> .0625rem */ solid #014c37;
       color: #014c37;
     }
   }
 
   button {
     transition: 300ms;
-    padding: 15px 15px 12px;
+    padding: .9375rem /* 15px -> .9375rem */ .9375rem /* 15px -> .9375rem */ .75rem /* 12px -> .75rem */;
     box-sizing: border-box;
     letter-spacing: 0.05em;
 
     span {
       font-weight: 500;
-      font-size: 12px;;
-      margin-right: 20px;
+      font-size: .75rem /* 12px -> .75rem */;
+      margin-right: 1.25rem /* 20px -> 1.25rem */;
     }
     &:hover {
       background-color: #9cc193;
     }
     @media (max-width: $sm-breakpoint) {
-      width: 141px;
-      height: 45px;
+      width: 8.8125rem /* 141px -> 8.8125rem */;
+      height: 2.8125rem /* 45px -> 2.8125rem */;
       justify-content: space-between;
       span{
         margin-right: 0;
@@ -145,11 +144,7 @@ $padding-x: 6.93125rem;
   top: 0;
   right: 0;
   bottom: 0;
-  @media (max-width: $xl-breakpoint){
-    display: none;
-    left: 0;
-  }
-  @media (max-width: $lg-breakpoint){
+  @media (max-width: $sm-breakpoint){
     display: block;
     bottom: unset;
   }
@@ -159,21 +154,21 @@ $padding-x: 6.93125rem;
   section{
     display: flex;
     height: 100%;
-    @media (max-width: $lg-breakpoint){
-      height: 350px;
-    }
-    @media (max-width: $md-breakpoint){
-      height: 218px;
+
+    @media (max-width: $sm-breakpoint){
+      height: 13.625rem /* 218px -> 13.625rem */;
+      width: 100vw;
+      background-color: black;
     }
     div{
       &:first-of-type{
         display: inline-block;
-        margin-right: -1px;
+        margin-right: -0.0625rem /* -1px -> -0.0625rem */;
       }
       position: relative;
-      width: 360.43px;// 24vw;
+      width: 22.5269rem /* 360.43px -> 22.5269rem */;
       height: 100%;
-      @media (max-width: $lg-breakpoint){
+      @media (max-width: $sm-breakpoint){
         width: 50vw;
       }
       & > span{

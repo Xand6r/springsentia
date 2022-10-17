@@ -5,9 +5,9 @@
     top: 2.5rem;
     background-color: white;
     z-index: 2;
-    border: 1px solid $dropdown-outline;
+    border: .0625rem /* 1px -> .0625rem */ solid $dropdown-outline;
     display: flex;
-    border-radius: 1px;
+    border-radius: .0625rem /* 1px -> .0625rem */;
 
     .image__section{
         width: 9.75rem;
@@ -17,8 +17,8 @@
         align-items: center;
 
         .image__wrapper{
-            width: 102px;
-            height: 113px;
+            width: 6.375rem /* 102px -> 6.375rem */;
+            height: 7.0625rem /* 113px -> 7.0625rem */;
             position: relative;
         }
 
@@ -28,14 +28,14 @@
         padding-top: 0.75rem;
         padding-bottom: 1.5rem;
         p{
-            line-height: 36px;
+            line-height: 2.25rem /* 36px -> 2.25rem */;
             font-weight: normal;
             margin-bottom: 0.5rem;
             color: #333333;
             text-transform: uppercase;
         }
         .section__divider{
-            height: 0.7px;
+            height: .0437rem /* 0.7px -> .0437rem */;
             background: #999999;
             opacity: 0.3;
         }
@@ -46,7 +46,7 @@
             color: $dark-green;
             transition: $fast-transition;
             width: fit-content;
-            border-bottom: 1px solid white;
+            border-bottom: .0625rem /* 1px -> .0625rem */ solid white;
             text-transform: capitalize;
 
             &.__active{

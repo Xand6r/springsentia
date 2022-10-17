@@ -1,12 +1,10 @@
 import { useState, useRef } from "react";
 
 import Image from "next/image";
-import Logo from "public/images/logo.svg";
 
 import { UserIcon, SearchIcon, LikeIcon, HamburgerMenu } from "../icons";
 import { CartIcon } from "../icons";
 
-import SmallLogo from "public/images/smalllogo.svg";
 import styles from "./navbar.module.scss";
 
 // import the required dropdowns
@@ -14,10 +12,10 @@ import WomenDropdown from "../dropdowns/women";
 import MenDropdown from "../dropdowns/men";
 import KidsDropdown from "../dropdowns/kids";
 import CompanyDropdown from "../dropdowns/company";
-import CurrencyDropdown from "../dropdowns/currency";
 import AccountDropdown from "../dropdowns/account";
 
 import { useClickAway } from "react-use";
+import RenderStyledImage from "components/images/renderstyledimage";
 
 export default function Index() {
   const navRef = useRef("");
@@ -74,39 +72,51 @@ export default function Index() {
         <div className={styles.left__images__section}>
           {/* logo on big screens */}
           <div className={styles.header__logo__big}>
-            <Image alt="logo" src={Logo} />
-          </div>
-          {/* logo on small screens */}
-          <div className={styles.header__logo__small}>
-            <Image alt="logo" src={Logo} />
+            <Image alt="logo" layout="fill" src="/images/nav/logo.svg" />
           </div>
         </div>
       </div>
 
       <div className={styles.right__section}>
         <p id={styles.search__menu}>
-          <SearchIcon onClick={() => console.log(10)} />
+          <RenderStyledImage
+            className={styles.basic_svg}
+            src="/icons/navbar/search.svg"
+          />
         </p>
+
         <p id={styles.account__menu}>
           <div
             style={{ cursor: "pointer" }}
             onClick={() => setActiveTab("account")}
           >
-            <UserIcon active={isTabActive("account")} />
+            <RenderStyledImage
+              className={styles.basic_svg}
+              src="/icons/navbar/user.svg"
+            />
           </div>
           <AccountDropdown
             open={isTabActive("account")}
             onClose={() => setActiveTab("")}
           />
         </p>
-        <p id={styles.like__menu}>
+
+        <span id={styles.like__menu}>
           <span>
-            <LikeIcon />
+            <RenderStyledImage
+              className={styles.basic_svg}
+              src="/icons/navbar/like.svg"
+            />
           </span>
-        </p>
-        <span key="cart" id={styles.cart__menu}>
-          <CartIcon active />
         </span>
+  
+        <span key="cart" id={styles.cart__menu}>
+          <RenderStyledImage
+            className={styles.basic_svg}
+            src="/icons/navbar/cart.svg"
+          />
+        </span>
+
       </div>
     </nav>
   );

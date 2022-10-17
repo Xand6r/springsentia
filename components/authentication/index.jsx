@@ -48,7 +48,7 @@ export default function Index() {
         ) : (
           // {/* tab one for register */}
           // {/* tab two for login*/}
-          <Login confirmationMode={confirmationMode} />
+          <Login confirmationMode />
           // {/* tab two for login*/}
         )}
       </div>
