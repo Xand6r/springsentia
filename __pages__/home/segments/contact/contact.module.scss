@@ -1,9 +1,9 @@
 @import "styles/variables.scss";
 
 .contact{
-    height: 37.679vw;
+    height: 32.9694rem /* 527.51px -> 32.9694rem */;
     display: flex;
-    @include large-breakpoint{
+    @include small-breakpoint{
         flex-direction: column;
         height: fit-content;
     }
@@ -14,7 +14,7 @@
         img{
             object-fit: cover;
         }
-        @include large-breakpoint{
+        @include small-breakpoint{
             width: 100vw;
             height: 75.5vw;
         }
@@ -26,7 +26,7 @@
         background: #D9E3E1;
         display: flex;
         align-items: center;
-        @include large-breakpoint{
+        @include small-breakpoint{
             width: 100vw;
 
         }
@@ -35,14 +35,14 @@
             margin-top: 7.490625rem;
             margin-left: 9.75rem;
             margin-bottom: 6.794375rem;
-            margin-right: 20px;
+            margin-right: 1.25rem /* 20px -> 1.25rem */;
             max-width: 22.709375rem;
 
-            @include large-breakpoint{
-                margin: 79px auto 73px;
+            @include small-breakpoint{
+                margin: 79px auto 4.5625rem /* 73px -> 4.5625rem */;
                 width: fit-content;
-                padding-left: 34px;
-                padding-right: 34px;
+                padding-left: 2.125rem /* 34px -> 2.125rem */;
+                padding-right: 2.125rem /* 34px -> 2.125rem */;
             }
 
             & > span{
@@ -51,52 +51,58 @@
                 margin-bottom: 1.5625rem;
                 color: #014c37;
                 letter-spacing: 0.1em;
-                font-size: 13px;
+                font-size: .8125rem /* 13px -> .8125rem */;
                 font-family: "Cosmica-SemiBold";
                 letter-spacing: 0.1em;
-                margin-bottom: 24px;
-                @include large-breakpoint{
+                margin-bottom: 1.5rem /* 24px -> 1.5rem */;
+                @include small-breakpoint{
                     display: none;
                 }
             }
 
             & > h4{
                 font-weight: 400;
-                font-size: 32.1032px;
-                line-height: 42px;
+                font-size: 2.0065rem /* 32.1032px -> 2.0065rem */;
+                line-height: 2.625rem /* 42px -> 2.625rem */;
                 color: #333333;
-                margin-bottom: 22.52px;
-                @include large-breakpoint{
-                    font-size: 28px;
+                margin-bottom: 1.4075rem /* 22.52px -> 1.4075rem */;
+                @include small-breakpoint{
+                    font-size: 1.75rem /* 28px -> 1.75rem */;
                 }
             }
 
             & > p{
                 font-weight: 400;
-                font-size: 13.1331px;
-                line-height: 22px;
+                font-size: .8208rem /* 13.1331px -> .8208rem */;
+                line-height: 1.375rem /* 22px -> 1.375rem */;
                 color: #333333;
-                margin-bottom: 50.74px;
-                @include large-breakpoint{
-                    margin-bottom: 37px;
+                margin-bottom: 3.1713rem /* 50.74px -> 3.1713rem */;
+                @include small-breakpoint{
+                    margin-bottom: 2.3125rem /* 37px -> 2.3125rem */;
                     color: #707070;
                 }
             }
 
             button{
-                width: 153.97px;
-                height: 40.13px;
+                width: 9.6231rem /* 153.97px -> 9.6231rem */;
+                height: 2.5081rem /* 40.13px -> 2.5081rem */;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
                 font-weight: 600;
-                font-size: 11.6755px;
-                line-height: 22px;
+                font-size: .7297rem /* 11.6755px -> .7297rem */;
+                line-height: 1.375rem /* 22px -> 1.375rem */;
                 letter-spacing: 0.05em;
                 color: #014C37;
-                padding-left: 15px;
-                padding-right: 15px;
+                padding-left: .9375rem /* 15px -> .9375rem */;
+                padding-right: .9375rem /* 15px -> .9375rem */;
             }
         }
+    }
+
+    .goto_blog{
+        height: .75rem /* 12px -> .75rem */;
+        width: .8125rem /* 13px -> .8125rem */;
+        margin-top: -2px;
     }
 }

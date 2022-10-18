@@ -10,23 +10,37 @@
     margin: 0 6.93125rem;
 
     button{
-        padding:  20px 19px;
+        padding:  .8125rem /* 13px -> .8125rem */ .875rem /* 14px -> .875rem */;
+
         span{
-            margin-right: 20px;
+            font-size: .75rem /* 12px -> .75rem */;
+            font-family: "Cosmica-SemiBold";
+            margin-right: .9375rem /* 15px -> .9375rem */;
+            @media (max-width: $sm-breakpoint) {
+                margin-right: 20px;
+            }
+        }
+
+        .filled_arrow{
+            height: .89rem /* 14.24px -> .89rem */;
+            width: .89rem /* 14.24px -> .89rem */;
+            margin-top: -0.25rem /* -4px -> -0.25rem */;
+            @media (max-width: $sm-breakpoint) {
+                position: relative;
+                top: 2px;
+            }
         }
     }
 
     @media (max-width: $sm-breakpoint) {
-        padding-top: 83px;
-        margin: 0 25px;
+        padding-top: 5.1875rem /* 83px -> 5.1875rem */;
+        margin: 0 1.5625rem /* 25px -> 1.5625rem */;
         padding-bottom: 0;
 
         button{
-            padding: 17px;
-            font-size: 12px;
             display: flex;
             align-items: baseline;
-            padding: 17px;
+            padding: .9375rem /* 15px -> .9375rem */ 1.25rem /* 20px -> 1.25rem */;
         }
     }
 }
@@ -34,23 +48,23 @@
 .bestseller__header{
     text-align: center;
     margin-bottom: 2.970625rem;
-    @media (max-width: $md-breakpoint) {
-        margin-bottom: 35px;
+    @media (max-width: $sm-breakpoint) {
+        margin-bottom: 2.1875rem /* 35px -> 2.1875rem */;
     }
     h2{
         font-size: 2rem;
         color: $darker-charcoal;
-        @media (max-width: $md-breakpoint) {
-            font-size: 22px;
-            max-width: 229px;
+        @media (max-width: $sm-breakpoint) {
+            font-size: 1.375rem /* 22px -> 1.375rem */;
+            max-width: 14.3125rem /* 229px -> 14.3125rem */;
         }
     }
 }
 
 .bestseller__addmore{
     margin-top: 3.5625rem;
-    @media (max-width: $md-breakpoint) {
-        margin-top: 45px;
+    @media (max-width: $sm-breakpoint) {
+        margin-top: 2.8125rem /* 45px -> 2.8125rem */;
     }
 }
 
@@ -59,11 +73,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    @media (max-width: $lg-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
         grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: $md-breakpoint) {
-        grid-template-columns: 1fr 1fr;
-        gap: 35px 10px;
+        grid-gap: 35px .6875rem /* 11px -> .6875rem */;
     }
 }
+

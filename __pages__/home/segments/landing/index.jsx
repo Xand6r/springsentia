@@ -1,19 +1,19 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import Hero1 from "public/images/home/hero1.png";
-import Hero2 from "public/images/home/hero2.png";
+import Hero1 from 'public/images/home/hero1.png';
+import Hero2 from 'public/images/home/hero2.png';
 
-import LeftArrow from "/public/images/leftarrow.svg";
-import styles from "./landing.module.scss";
+import styles from './landing.module.scss';
+import RenderStyledImage from 'components/images/renderstyledimage';
 
 export default function Index() {
   return (
     <section className={styles.landing__cover}>
       <div className={styles.landing__content}>
         <h1>
-          {" "}
+          {' '}
           Real &amp;
-          <br /> Natural Results{" "}
+          <br /> Natural Results{' '}
         </h1>
         <h4>
           We understand how much your skin and hair matter to you. It does to us
@@ -23,10 +23,9 @@ export default function Index() {
         <form className={styles.input__group}>
           <button type="submit" className="--filled">
             <span>SHOP NOW</span>
-            <div style={{ transition: "300ms" }} className="image">
-              <Image alt="left arrow" src={LeftArrow} />
+            <div style={{ transition: '300ms' }} className="image">
+              <RenderStyledImage className={styles.left__arrow} src="/images/leftarrow.svg" />
             </div>
-
           </button>
         </form>
       </div>

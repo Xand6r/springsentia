@@ -32,8 +32,11 @@
             margin-left: 0.5rem;
         }
 
-        @include medium-breakpoint{
-            height: 40px;
+        @include small-breakpoint{
+            height: 2.5rem /* 40px -> 2.5rem */;
+            span{
+                font-size: 11px;
+            }
         }
     }
 
@@ -57,27 +60,27 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: $md-breakpoint) {
-        height: 241px;
-        width: 162px;
+    @media (max-width: $sm-breakpoint) {
+        height: 15.0625rem /* 241px -> 15.0625rem */;
+        width: 10.125rem /* 162px -> 10.125rem */;
     }
 }
 
 .product_content_wrapper{
     margin-top: 1.375rem;
-    @media (max-width: $md-breakpoint) {
-        margin-top: 20px;
+    @media (max-width: $sm-breakpoint) {
+        margin-top: 1.25rem /* 20px -> 1.25rem */;
     }
 
     h5{
         font-family: Cosmica-SemiBold;
         color: $dark-green;
         margin-bottom: 0.625rem;
-        font-size: 15px;
-        @media (max-width: $md-breakpoint) {
+        font-size: .9375rem /* 15px -> .9375rem */;
+        @media (max-width: $sm-breakpoint) {
             font-family: Cosmica-Regular;
-            margin-bottom: 8px;
-            font-size: 14px;
+            margin-bottom: .5rem /* 8px -> .5rem */;
+            font-size: .875rem /* 14px -> .875rem */;
         }
         &:hover{
             color: $relish;
@@ -85,9 +88,11 @@
         }
     }
     div.product__meta > p{
-    font-size: 12px;
-        @media (max-width: $md-breakpoint) {
-            font-size: 10px;
+        display: flex;
+        align-items: center;
+        font-size: .75rem /* 12px -> .75rem */;
+        @media (max-width: $sm-breakpoint) {
+            font-size: .625rem /* 10px -> .625rem */;
         }
     }
 
@@ -98,13 +103,20 @@
     }
 }
 
+.star__image{
+    height: .6519rem /* 10.43px -> .6519rem */;
+    width: .6519rem /* 10.43px -> .6519rem */;
+    margin-top: -3px;
+    margin-right: 2px;
+}
+
 .product_image{
     height: 100%;
-    width: 170px;
+    width: 10.625rem /* 170px -> 10.625rem */;
     position: relative;
-    @media (max-width: $md-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
         height:inherit;
-        width: 121px;
+        width: 7.5625rem /* 121px -> 7.5625rem */;
     }
 
     img{
@@ -114,7 +126,7 @@
 
 .product__meta{
     display: flex;
-    @media (max-width: $md-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
         align-items: center;
     }
 
@@ -125,39 +137,38 @@
         color: #707070;
         &:not(:last-of-type){
             &::after{
-                height: 3px;
-                width: 3px;
+                height: .1875rem /* 3px -> .1875rem */;
+                width: .1875rem /* 3px -> .1875rem */;
                 border-radius: 50%;
                 background: #C4C4C4;
                 content: '';
                 display: inline-block;
                 position: relative;
                 top: -25%;
-                margin: 0 10px;
+                margin: 0 .625rem /* 10px -> .625rem */;
             }
         }
     }
 }
 
 .product__prices{
-    margin-top: 12px;
+    margin-top: .75rem /* 12px -> .75rem */;
     display: flex;
     align-items: flex-end;
 
-
-    @media (max-width: $md-breakpoint) {
-        margin-top: 5px;
+    @media (max-width: $sm-breakpoint) {
+        margin-top: .5625rem /* 9px -> .5625rem */;
     }
 
     p{
-        font-family: "Cosmica-SemiBold";
-        margin-right: 10px;
+        font-family: "Cosmica-Regular";
+        margin-right: .625rem /* 10px -> .625rem */;
         &::before{
             content: "₦ ";
         }
-        font-size: 15px;
-        @media (max-width: $md-breakpoint) {
-            font-size: 14px;
+        font-size: .9375rem /* 15px -> .9375rem */;
+        @media (max-width: $sm-breakpoint) {
+            font-size: .875rem /* 14px -> .875rem */;
         }
     }
 
@@ -169,4 +180,14 @@
             content: "₦ ";
         }
     }
+}
+
+.add_icon{
+    height: .5625rem /* 9px -> .5625rem */;
+    height: .5625rem /* 9px -> .5625rem */;
+}
+
+.like_icon{
+    height: 1.0625rem /* 17px -> 1.0625rem */;
+    height: 1.0625rem /* 17px -> 1.0625rem */;
 }

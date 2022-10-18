@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { TARGET_DATA } from "data/targets";
-import styles from "./target.module.scss";
-import { LeftArrow } from "./assets";
-import { useRouter } from "next/router";
+import { TARGET_DATA } from 'data/targets';
+import styles from './target.module.scss';
+import { useRouter } from 'next/router';
+import RenderStyledImage from 'components/images/renderstyledimage';
 
 export default function Target() {
   const router = useRouter();
@@ -20,7 +19,10 @@ export default function Target() {
             >
               <div className={styles.image__footer}>
                 <span>{text}</span>
-                <LeftArrow />
+                <RenderStyledImage
+                  className={styles.left_arrow}
+                  src="/icons/product/leftarrow.svg"
+                />
               </div>
             </section>
           );

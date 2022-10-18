@@ -1,6 +1,7 @@
-import Image from "next/image";
+import RenderStyledImage from 'components/images/renderstyledimage';
+import Image from 'next/image';
 
-import styles from "./blogpost.module.scss";
+import styles from './blogpost.module.scss';
 
 export default function Index({ post, small }) {
   return (
@@ -17,7 +18,10 @@ export default function Index({ post, small }) {
 
         <div className={styles.aux__section}>
           <span>KEEP READING</span>
-          <Arrow />
+          <RenderStyledImage
+            className={styles.goto_blog}
+            src="/icons/blog/rightarrow.svg"
+          />
         </div>
       </div>
     </div>
@@ -26,7 +30,7 @@ export default function Index({ post, small }) {
 
 const Arrow = () => (
   <svg
-    style={{ marginTop: "-3px" }}
+    style={{ marginTop: '-3px' }}
     width="11"
     height="10"
     viewBox="0 0 11 10"

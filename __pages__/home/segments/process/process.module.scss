@@ -9,9 +9,9 @@
   padding-bottom: 13.25rem;
   margin: 0 9.375rem;
 
-  @media (max-width: $xl-breakpoint) {
-    padding-top: 110px;
-    margin: 0 25px;
+  @media (max-width: $sm-breakpoint) {
+    padding-top: 6.875rem /* 110px -> 6.875rem */;
+    margin: 0 1.5625rem /* 25px -> 1.5625rem */;
     padding-bottom: 0;
   }
 }
@@ -26,20 +26,20 @@
     color: $dark-green;
     font-weight: 500;
     margin-bottom: 1.5625rem;
-    font-size: 13px;
+    font-size: .8125rem /* 13px -> .8125rem */;
     font-family: 'Cosmica-SemiBold';
     letter-spacing: 0.1em;
     @media (max-width: $sm-breakpoint) {
       margin-bottom: 16px;
-      font-size: 12px;
+      font-size: .75rem /* 12px -> .75rem */;
     }
   }
   h2 {
     color: $darker-charcoal;
-    font-size: 32px;
-    @media (max-width: $md-breakpoint) {
-      font-size: 28px;
-      max-width: 254px;
+    font-size: 2rem /* 32px -> 2rem */;
+    @media (max-width: $sm-breakpoint) {
+      font-size: 1.75rem /* 28px -> 1.75rem */;
+      max-width: 15.875rem /* 254px -> 15.875rem */;
 
     }
   }
@@ -48,13 +48,13 @@
 .process__tab {
   display: flex;
   // padding: 2.875rem 4.6875rem;
-  width: 477.17px;
-  height: 234.94px;
+  width: 29.8231rem /* 477.17px -> 29.8231rem */;
+  height: 14.6837rem /* 234.94px -> 14.6837rem */;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $ionic-ivory;
-  margin: 10px;
+  border: .0625rem /* 1px -> .0625rem */ solid $ionic-ivory;
+  margin: .625rem /* 10px -> .625rem */;
   font-family: "Cosmica-Regular";
   
   @media (max-width: $sm-breakpoint) {
@@ -64,24 +64,22 @@
     margin: 0;
     flex-direction: column;
     align-items: center;
-    padding-top: 31px;
-    padding-bottom: 25px;
+    padding-top: 1.9375rem /* 31px -> 1.9375rem */;
+    padding-bottom: 1.5625rem /* 25px -> 1.5625rem */;
     border: 0;
-    border-bottom: 1px solid $ionic-ivory;
+    border-bottom: .0625rem /* 1px -> .0625rem */ solid $ionic-ivory;
   }
 }
 .process__tabcontent {
   display: flex;
   // on tablets
-  @media (max-width: $xl-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media only screen and (max-width: $xl-breakpoint) and (min-width: $sm-breakpoint)  {
-    margin-bottom: 100px;
-  }
+
 }
 
 .tab__group {
@@ -92,8 +90,9 @@
   }
   &:last-of-type {
     margin-top: 50px;
-    @media (max-width: $xl-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
       margin: 0;
+      padding-bottom: 0;
     }
     & > section:first-of-type {
       margin-top: 0;
@@ -104,12 +103,12 @@
       margin-right: 0;
       @media (max-width: $sm-breakpoint) {
         border: 0;
-        margin-bottom: 142px;
+        margin-bottom: 8.875rem /* 142px -> 8.875rem */;
       }
     }
   }
   &:nth-of-type(1) {
-    @media (max-width: $xl-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
       margin: 0;
     }
     & > section:first-of-type {
@@ -126,41 +125,54 @@
   margin-left: 2.5rem;
   @media (max-width: $sm-breakpoint) {
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 1.5625rem /* 25px -> 1.5625rem */;
   }
   h3 {
     font-weight: 500;
     margin-bottom: 0.9375rem;
     color: #333333;
-    font-size: 20px;
+    font-size: 1.25rem /* 20px -> 1.25rem */;
     @media (max-width: $sm-breakpoint) {
-      margin-bottom: 10px;
+      margin-bottom: .625rem /* 10px -> .625rem */;
     }
   }
   p {
-    font-size: 13px;
+    font-size: .8125rem /* 13px -> .8125rem */;
     max-width: 16.188125rem;
     color: #707070;
     line-height: 1.5rem;
-    line-height: 20px;
+    line-height: 1.25rem /* 20px -> 1.25rem */;
   }
 }
 
 .horizontal__line {
-  width: 1px;
+  width: .0625rem /* 1px -> .0625rem */;
   background-color: $ionic-ivory;
   // on tablets
-  @media (max-width: $xl-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     display: none;
   }
 }
 
 .vertical__line {
-  height: 1px;
+  height: .0625rem /* 1px -> .0625rem */;
   width: 100%;
   background-color: $ionic-ivory;
   // on tablets
-  @media (max-width: $xl-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     display: none;
+  }
+}
+
+.process_image{
+  height: 3.8125rem /* 61px -> 3.8125rem */;
+  width: 3.8125rem /* 61px -> 3.8125rem */;
+
+  img{
+    object-fit: contain;
+  }
+  @media (max-width: $sm-breakpoint) {
+    height: 3.4375rem /* 55px -> 3.4375rem */;
+    width: 3.4375rem /* 55px -> 3.4375rem */;
   }
 }

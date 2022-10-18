@@ -1,24 +1,19 @@
-import { useState } from "react";
-import {
-  FacebookLogo,
-  GoogleLogo,
-  EyeOpen,
-  EyeClosed,
-  Envelope,
-} from "components/authentication/assets";
-import styles from "./login.module.scss";
+import RenderStyledImage from 'components/images/renderstyledimage';
+import { useState } from 'react';
+import { Envelope } from '__pages__/auth/assets';
+import styles from './login.module.scss';
 
 const DEFAULT_STATE = {
-  email: "",
-  password: "",
+  email: '',
+  password: '',
 };
-const name = "chidonmerole@gmail.com";
+const name = 'chidonmerole@gmail.com';
 
 export default function Index({ confirmationMode }) {
   const [state, setState] = useState(DEFAULT_STATE);
-  const [inputType, setInputType] = useState("text");
+  const [inputType, setInputType] = useState('text');
   const toggleInputType = () => {
-    const newType = inputType === "text" ? "password" : "text";
+    const newType = inputType === 'text' ? 'password' : 'text';
     setInputType(newType);
   };
   const changeState = (e) => {
@@ -28,7 +23,7 @@ export default function Index({ confirmationMode }) {
       [name]: value,
     });
   };
-  console.log({confirmationMode});
+  console.log({ confirmationMode });
 
   const login = () => {
     console.log(state);
@@ -38,7 +33,10 @@ export default function Index({ confirmationMode }) {
     <div className={styles.logincomponent}>
       {confirmationMode && (
         <div className={styles.confirmationModeContent}>
-          <Envelope />
+          <RenderStyledImage
+            className={styles.envelope__icon}
+            src="/icons/auth/envelopeconfirmed.svg"
+          />
           <div className={styles.mode__title}>EMAIL CONFIRMED</div>
           <p>
             Your email <b>{name}</b> has been confirmed. Log in below to begin
@@ -47,11 +45,9 @@ export default function Index({ confirmationMode }) {
           <h5>LOG IN</h5>
         </div>
       )}
-      <form
-        className={confirmationMode ? styles.confirm__mode : ""}
-      >
+      <form className={confirmationMode ? styles.confirm__mode : ''}>
+        <h5>Log in with email</h5>
         <div className={styles.input_wrapper}>
-          <label htmlFor="email">Email</label>
           <input
             onChange={changeState}
             name="email"
@@ -61,7 +57,6 @@ export default function Index({ confirmationMode }) {
         </div>
 
         <div className={styles.input_wrapper}>
-          <label htmlFor="password">Password</label>
           <section>
             <input
               data-type="password"
@@ -71,30 +66,48 @@ export default function Index({ confirmationMode }) {
               placeholder="Enter password"
             />
             <i onClick={toggleInputType}>
-              {inputType !== "text" ? <EyeOpen /> : <EyeClosed />}
+              {inputType == 'text' ? (
+                <RenderStyledImage
+                  src="/icons/product/eyesopen.svg"
+                  className={styles.eyesicon}
+                />
+              ) : (
+                <RenderStyledImage
+                  src="/icons/product/eyesclosed.svg"
+                  className={styles.eyesicon}
+                />
+              )}
             </i>
           </section>
-          <b>Forgot Password?</b>
         </div>
 
         <button onClick={login} className="--filled">
           LOG IN
         </button>
+
+        <p>Forgot Password?</p>
       </form>
 
       <div className={styles.auxillarycontent}>
         <h5>OR LOG IN with</h5>
         <section className={styles.options}>
           <div>
-            <GoogleLogo />
+            <RenderStyledImage
+              className={styles.oauth__image}
+              src="/icons/login/google.svg"
+            />
             <h6>GOOGLE</h6>
           </div>
           <div>
-            <FacebookLogo />
+            <RenderStyledImage
+              className={styles.oauth__image}
+              src="/icons/login/facebook.svg"
+            />
             <h6>FACEBOOK</h6>
           </div>
         </section>
       </div>
+
     </div>
   );
 }

@@ -1,9 +1,9 @@
-import Image from "next/image";
-import styles from "./product.module.scss";
+import Image from 'next/image';
+import styles from './product.module.scss';
 
-import { Star, Plus, Like } from "./assets";
+import RenderStyledImage from 'components/images/renderstyledimage';
 
-export default function Index({ product }) {
+export default function Product({ product }) {
   return (
     <div className={styles.product_container}>
       <div className={styles.product_image_wrapper}>
@@ -11,10 +11,17 @@ export default function Index({ product }) {
           <Image layout="fill" src={product.image} alt="" />
         </div>
         <div className={styles.add_to_cart}>
-          <Plus /> <span> Add to cart </span>
+          <RenderStyledImage
+            className={styles.star__image}
+            src="/icons/product/plus.svg"
+          />
+          <span> Add to cart </span>
         </div>
         <div className={styles.like}>
-          <Like active />
+          <RenderStyledImage
+            className={styles.like_icon}
+            src="/icons/product/like.svg"
+          />
         </div>
       </div>
       <div className={styles.product_content_wrapper}>
@@ -23,7 +30,11 @@ export default function Index({ product }) {
           <p>{product.category}</p>
           <p>{product.subCategory}</p>
           <p>
-            <Star /> {product.rating}
+            <RenderStyledImage
+              className={styles.star__image}
+              src="/icons/landing/star.svg"
+            />
+            {product.rating}
           </p>
         </div>
         <div className={styles.product__prices}>

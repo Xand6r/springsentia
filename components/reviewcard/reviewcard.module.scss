@@ -5,21 +5,21 @@
     height: 15.915rem;
     background-color: white;
     padding: 2.051875rem;
-    @include large-breakpoint{
-        width: 306px;
-        height: 226px;
-        padding: 26px;
+    @include small-breakpoint{
+        width: 19.125rem /* 306px -> 19.125rem */;
+        height: 14.125rem /* 226px -> 14.125rem */;
+        padding: 1.625rem /* 26px -> 1.625rem */;
     }
 
     p{
         font-weight: 400;
-        font-size: 11.6739px;
-        line-height: 20px;
+        font-size: .7296rem /* 11.6739px -> .7296rem */;
+        line-height: 1.25rem /* 20px -> 1.25rem */;
         color: $darker-charcoal;
-        margin-bottom: 45px;
-        max-height: 95px;
-        @include large-breakpoint{
-            font-size: 10px;
+        margin-bottom: 2.8125rem /* 45px -> 2.8125rem */;
+        max-height: 5.9375rem /* 95px -> 5.9375rem */;
+        @include small-breakpoint{
+            font-size: .625rem /* 10px -> .625rem */;
         }
     }
 
@@ -30,11 +30,11 @@
         .biodata{
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: .9375rem /* 15px -> .9375rem */;
             span{
                 position: relative;
-                width: 40.86px;
-                height: 40.86px;
+                width: 2.5537rem /* 40.86px -> 2.5537rem */;
+                height: 2.5537rem /* 40.86px -> 2.5537rem */;
                 display: block;
                 border-radius: 50%;
             }
@@ -42,14 +42,14 @@
                 text-transform: capitalize;
                 font-family: "Cosmica-SemiBold";
                 font-size: 11px;
-                @include large-breakpoint{
-                    font-size: 10px;
+                @include small-breakpoint{
+                    font-size: .625rem /* 10px -> .625rem */;
                 }
             }
         }
     }
     .arrows{
         display: flex;
-        gap: 2px;
+        gap: .125rem /* 2px -> .125rem */;
     }
 }

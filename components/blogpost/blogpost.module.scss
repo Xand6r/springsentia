@@ -18,9 +18,9 @@
             object-fit: cover;
         }
 
-        @media (max-width: $md-breakpoint) {
-            width: 283px;
-            height: 170px;
+        @media (max-width: $sm-breakpoint) {
+            width: 17.6875rem /* 283px -> 17.6875rem */;
+            height: 10.625rem /* 170px -> 10.625rem */;
         }
 
     }
@@ -29,14 +29,14 @@
         transition: $fast-transition;
         position: relative;
         background: $ionic-opacity-variant;
-        padding: 24px 22px 33px;
+        padding: 1.5rem /* 24px -> 1.5rem */ 1.375rem /* 22px -> 1.375rem */ 2.0625rem /* 33px -> 2.0625rem */;
         width: inherit;
-        width: 328.37px;
+        width: 20.5231rem /* 328.37px -> 20.5231rem */;
 
 
-        @media (max-width: $md-breakpoint) {
-            padding: 25px 20px;
-            width: 283px;
+        @media (max-width: $sm-breakpoint) {
+            padding: 1.5625rem /* 25px -> 1.5625rem */ 1.25rem /* 20px -> 1.25rem */;
+            width: 17.6875rem /* 283px -> 17.6875rem */;
 
         }
 
@@ -63,26 +63,26 @@
             h4{
                 font-family: "Cosmica-SemiBold";
                 font-weight: 500;
-                font-size: 14.5943px;
-                line-height: 23px;
+                font-size: .9121rem /* 14.5943px -> .9121rem */;
+                line-height: 1.4375rem /* 23px -> 1.4375rem */;
                 display: flex;
                 align-items: center;
                 color: #333333;
-                @media (max-width: $md-breakpoint) {
-                    font-size: 18px;
-                    line-height: 28px;
+                @media (max-width: $sm-breakpoint) {
+                    font-size: 1.125rem /* 18px -> 1.125rem */;
+                    line-height: 1.75rem /* 28px -> 1.75rem */;
                 }
             }
             h6{
-                margin-top: 14px;
-                margin-bottom: 21px;
+                margin-top: .875rem /* 14px -> .875rem */;
+                margin-bottom: 1.3125rem /* 21px -> 1.3125rem */;
                 color: #707070;
                 max-width: 17.239375rem;
-                height: 60px;
+                height: 3.75rem /* 60px -> 3.75rem */;
                 overflow: hidden;
                 font-weight: 400;
-                font-size: 11.6755px;
-                line-height: 19px;
+                font-size: .7297rem /* 11.6755px -> .7297rem */;
+                line-height: 1.1875rem /* 19px -> 1.1875rem */;
 
                 overflow: hidden;
                 display: -webkit-box;
@@ -90,17 +90,17 @@
                 -webkit-box-orient: vertical;
             
                                 
-                @media (max-width: $md-breakpoint) {
-                    font-size: 12px;
-                    line-height: 21px;
+                @media (max-width: $sm-breakpoint) {
+                    font-size: .75rem /* 12px -> .75rem */;
+                    line-height: 1.3125rem /* 21px -> 1.3125rem */;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
-                    height: 65px;
-                    margin-top: 15px;
-                    margin-bottom: 21px;
+                    height: 4.0625rem /* 65px -> 4.0625rem */;
+                    margin-top: .9375rem /* 15px -> .9375rem */;
+                    margin-bottom: 1.3125rem /* 21px -> 1.3125rem */;
 
                 }
             }
@@ -114,34 +114,22 @@
                 transition: $fast-transition;
                 color: $dark-green;
                 margin-right: 0.625rem;
-                font-size: 10px;
+                font-size: .625rem /* 10px -> .625rem */;
                 line-height: 1.375rem;
                 font-family: "Cosmica-SemiBold";
             }
         }
     } 
 
-    @media (max-width: $md-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
         flex-direction: column;
         width: 22.375rem;
         cursor: pointer;
 
         .container__image{
-            height: 215px;
+            height: 13.4375rem /* 215px -> 13.4375rem */;
         }
 
-        .container__content{
-            // height: 9.875rem;
-            .text__section{
-                h6{
-                    // display: none;
-                }
-            }
-
-            .aux__section{
-                // display: none;
-            }
-        }
     }
 
     &:hover{
@@ -177,6 +165,11 @@
         }
     }
 
+    .goto_blog{
+        height: .75rem /* 12px -> .75rem */;
+        width: .8125rem /* 13px -> .8125rem */;
+        margin-top: -2px;
+    }
 }
 
 

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NavBar from "components/navbars/home";
-import LoginModal from "components/authentication";
-import styles from "./loginpage.module.scss";
+import AuthView from "__pages__/auth";
+import styles from "./auth.module.scss";
 
 export default function Index() {
   return (
@@ -14,9 +14,10 @@ export default function Index() {
       {/* the navbar */}
       <NavBar />
       {/* the navbar */}
+
       {/* define extra components we are goign to be using for the login page */}
       <div className={styles.loginpage}>
-        <LoginModal />
+        <AuthView />
       </div>
     </>
   );

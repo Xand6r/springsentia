@@ -20,21 +20,19 @@ $padding-x: 6.93125rem;
   position: relative;
 
 
-  // @media (max-width: $md-breakpoint) {
-  //   padding-top: 0;
-  //   padding-bottom: 6.8125rem;
-  // }
-
   @media (max-width: $sm-breakpoint) {
     padding-top: 0;
     padding-left: 1.25rem /* 20px -> 1.25rem */;
     padding-right: 1.25rem /* 20px -> 1.25rem */;
     padding-bottom:4.6875rem /* 75px -> 4.6875rem */;
+    justify-content: flex-start;
   }
 
-  @media (max-width: $sm-breakpoint){
-    justify-content: center;
-  }
+}
+
+.left__arrow{
+  height: .875rem /* 14px -> .875rem */;
+  width: .875rem /* 14px -> .875rem */;
 }
 
 .landing__content {

@@ -1,10 +1,8 @@
+import Image from "next/image";
 import { useState, useRef } from "react";
 
-import Image from "next/image";
 
-import { UserIcon, SearchIcon, LikeIcon, HamburgerMenu } from "../icons";
-import { CartIcon } from "../icons";
-
+import {  HamburgerMenu } from "../icons";
 import styles from "./navbar.module.scss";
 
 // import the required dropdowns
@@ -85,7 +83,7 @@ export default function Index() {
           />
         </p>
 
-        <p id={styles.account__menu}>
+        <p className={styles.account__menu}>
           <div
             style={{ cursor: "pointer" }}
             onClick={() => setActiveTab("account")}

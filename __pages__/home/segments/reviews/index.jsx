@@ -34,20 +34,14 @@ export default function Review() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     responsive: [
       {
-        breakpoint: 1360,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 1060,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
         }

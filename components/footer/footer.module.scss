@@ -2,55 +2,52 @@
 
 .footer{
     background: #014C37;
-    padding-top: 127px;
-    padding-bottom: 120px;
-    padding-left: 195px;
-    padding-right: 200.5px;
+    padding-top: 7.9375rem /* 127px -> 7.9375rem */;
+    padding-bottom: 7.5rem /* 120px -> 7.5rem */;
+    padding-left: 12.1875rem /* 195px -> 12.1875rem */;
+    padding-right: 12.5313rem /* 200.5px -> 12.5313rem */;
 
-    @include large-breakpoint{
-        padding: 110px;
-    }
-    @include medium-breakpoint{
-        padding-top: 84px;
-        padding-left: 33px;
-        padding-right: 33px;
-        padding-bottom: 75px;
+
+    @include small-breakpoint{
+        padding-top: 5.25rem /* 84px -> 5.25rem */;
+        padding-left: 2.0625rem /* 33px -> 2.0625rem */;
+        padding-right: 2.0625rem /* 33px -> 2.0625rem */;
+        padding-bottom: 4.6875rem /* 75px -> 4.6875rem */;
     }
     & > div{
         display: flex;
-        gap: 164px;
+        gap: 10.25rem /* 164px -> 10.25rem */;
         justify-content: space-between;
-        @include xlarge-breakpoint{
+        @include small-breakpoint{
             flex-direction: column;
             align-items: center;
-        }
-        @include small-breakpoint{
-            gap: 82px;
+            gap: 5.125rem /* 82px -> 5.125rem */;
             align-items: flex-start;
         }
+
         .left{
             width: fit-content;
             h2{
-                max-width: 348.03px;
-                margin-bottom: 32px;
+                max-width: 21.7519rem /* 348.03px -> 21.7519rem */;
+                margin-bottom: 2rem /* 32px -> 2rem */;
                 font-weight: 500;
-                font-size: 20.4293px;
-                line-height: 29px;
+                font-size: 1.2768rem /* 20.4293px -> 1.2768rem */;
+                line-height: 1.8125rem /* 29px -> 1.8125rem */;
                 color: #E5E1C6;
-                @include medium-breakpoint{
+                @include small-breakpoint{
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: 1.125rem /* 18px -> 1.125rem */;
                     line-height: 131.5%;
-                    max-width: 288px;
-                    margin-bottom: 40px;
+                    max-width: 18rem /* 288px -> 18rem */;
+                    margin-bottom: 2.5rem /* 40px -> 2.5rem */;
                 }
             }
 
             .input__group{
                 position: relative;
                 width: fit-content;
-                margin-bottom: 62px;
-                @include medium-breakpoint{
+                margin-bottom: 3.875rem /* 62px -> 3.875rem */;
+                @include small-breakpoint{
                     margin-bottom: 0;
                 }
                 input{
@@ -61,52 +58,52 @@
                     outline: none;
                     background-color: transparent;
                     border-bottom: 1px solid #999999;
-                    width: 341.46px;
+                    width: 21.3412rem /* 341.46px -> 21.3412rem */;
                     font-weight: 400;
-                    font-size: 12px;
-                    line-height: 20px;
+                    font-size: .75rem /* 12px -> .75rem */;
+                    line-height: 1.25rem /* 20px -> 1.25rem */;
                     caret-color: #E5E1C6;
                     color: white;
                     &::placeholder{
                         color: #999999;
                     }
-                    @include medium-breakpoint{
-                        width: 299px;
+                    @include small-breakpoint{
+                        width: 18.6875rem /* 299px -> 18.6875rem */;
                     }
                 }
                 span{
                     position: absolute;
-                    bottom: 10px;
+                    bottom: .625rem /* 10px -> .625rem */;
                     right: 0;
                     color: white;
                     font-family: "Cosmica-SemiBold";
-                    font-size: 12px;
-                    line-height: 22px;
+                    font-size: .75rem /* 12px -> .75rem */;
+                    line-height: 1.375rem /* 22px -> 1.375rem */;
                     cursor: pointer;
-                    @include medium-breakpoint{
-                        line-height: 30px;
-                        bottom: 8px;
+                    @include small-breakpoint{
+                        line-height: 1.875rem /* 30px -> 1.875rem */;
+                        bottom: .5rem /* 8px -> .5rem */;
                     }
                 }
             }
     
             .social__media{
                 display: flex;
-                gap: 12px;
+                gap: .75rem /* 12px -> .75rem */;
                 align-items: center;
                 cursor: pointer;
-                margin-bottom: 17.02px;
-                @include medium-breakpoint{
+                margin-bottom: 1.0637rem /* 17.02px -> 1.0637rem */;
+                @include small-breakpoint{
                     display: none;
                 }
             }
     
             .meta__data{
                 font-weight: 400;
-                font-size: 10.2147px;
-                line-height: 20px;
+                font-size: .6384rem /* 10.2147px -> .6384rem */;
+                line-height: 1.25rem /* 20px -> 1.25rem */;
                 color: #D2D2D2;
-                @include medium-breakpoint{
+                @include small-breakpoint{
                     display: none;
                 }
             }
@@ -114,41 +111,41 @@
 
         .right{
             display: flex;
-            gap: 110px;
+            gap: 6.875rem /* 110px -> 6.875rem */;
 
-            @include medium-breakpoint{
+            @include small-breakpoint{
                 flex-wrap: wrap;
-                row-gap: 75px;
-                column-gap: 58px;
+                row-gap: 4.6875rem /* 75px -> 4.6875rem */;
+                column-gap: 3.625rem /* 58px -> 3.625rem */;
             }
 
             & > div{
                 h4{
                     font-weight: 500;
-                    font-size: 16.0516px;
-                    line-height: 16px;
+                    font-size: 1.0032rem /* 16.0516px -> 1.0032rem */;
+                    line-height: 1rem /* 16px -> 1rem */;
                     color: #E5E1C6;
                     text-transform: capitalize;
-                    margin-bottom: 27px;
+                    margin-bottom: 1.6875rem /* 27px -> 1.6875rem */;
                 }
 
                 section{
                     display: flex;
                     flex-direction: column;
-                    gap: 14px;
-                    @include medium-breakpoint{
-                        gap: 10px;
+                    gap: .875rem /* 14px -> .875rem */;
+                    @include small-breakpoint{
+                        gap: .625rem /* 10px -> .625rem */;
                     }
                     p{
                         font-weight: 500;
-                        font-size: 11.6739px;
-                        line-height: 20px;
+                        font-size: .7296rem /* 11.6739px -> .7296rem */;
+                        line-height: 1.25rem /* 20px -> 1.25rem */;
                         color: #FFFFFF;
                         cursor: pointer;
 
-                        @include medium-breakpoint{
-                            font-size: 14px;
-                            line-height: 28px;
+                        @include small-breakpoint{
+                            font-size: .875rem /* 14px -> .875rem */;
+                            line-height: 1.75rem /* 28px -> 1.75rem */;
                             color: #D2D2D2;
                         }
                     }
@@ -160,23 +157,23 @@
 
     .mobile__meta{
         display: none;
-        @include medium-breakpoint{
+        @include small-breakpoint{
             display: flex;
             flex-direction: column;
-            gap: 25px;
-            margin-top: -25px;
+            gap: 1.5625rem /* 25px -> 1.5625rem */;
+            margin-top: -1.5625rem /* -25px -> -1.5625rem */;
         }
 
         div{
             display: flex;
             align-items: center;
-            gap: 17.33px;
+            gap: 1.0831rem /* 17.33px -> 1.0831rem */;
         }
 
         span{
             font-weight: 400;
-            font-size: 13px;
-            line-height: 28px;
+            font-size: .8125rem /* 13px -> .8125rem */;
+            line-height: 1.75rem /* 28px -> 1.75rem */;
             color: #D2D2D2;
         }
     }

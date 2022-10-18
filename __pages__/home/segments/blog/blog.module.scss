@@ -6,10 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 23px;
-    margin-right: 23px;
-    @media (max-width: $md-breakpoint) {
-        padding-top: 60px;
+    margin-left: 1.4375rem /* 23px -> 1.4375rem */;
+    margin-right: 1.4375rem /* 23px -> 1.4375rem */;
+    @media (max-width: $sm-breakpoint) {
+        padding-top: 3.75rem /* 60px -> 3.75rem */;
     }
 }
 
@@ -21,16 +21,16 @@
         margin-bottom: 1.374375rem;
         margin-top: 2.9375rem;
         font-size: 32.1032px;
-        @media (max-width: $md-breakpoint) {
-            font-size: 28px;
+        @media (max-width: $sm-breakpoint) {
+            font-size: 1.75rem /* 28px -> 1.75rem */;
         }
     }
     h5{
         max-width: 46.3125rem;
         color: #676767;
         line-height: 1.75rem;
-        font-size: 13.1331px;
-        line-height: 22px;
+        font-size: .8208rem /* 13.1331px -> .8208rem */;
+        line-height: 1.375rem /* 22px -> 1.375rem */;
         max-width: 33.790625rem;
     }
 
@@ -42,7 +42,7 @@
     justify-content: center;
     // flex-direction: column;
     gap: 2.125rem;
-    @media (max-width: $md-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
         justify-content: flex-start;
         display: flex;
         flex-direction: row;
@@ -62,18 +62,25 @@
 .cta{
     margin-top: 2.733125rem;
     button{
-        width: 142.29px;
-        height: 40.13px;
-        padding: 10px 15px;
+        width: 8.8931rem /* 142.29px -> 8.8931rem */;
+        height: 2.5081rem /* 40.13px -> 2.5081rem */;
+        padding: .625rem /* 10px -> .625rem */ .9375rem /* 15px -> .9375rem */;
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: $md-breakpoint) {
-            height: 45px;
+        @media (max-width: $sm-breakpoint) {
+            height: 2.8125rem /* 45px -> 2.8125rem */;
         }
     }
     span{
-        // margin-right: 2rem;
+        font-family: "Cosmica-SemiBold";
         font-size: 0.6875rem;
     }
+}
+
+
+.goto_blog{
+    height: .75rem /* 12px -> .75rem */;
+    width: .8125rem /* 13px -> .8125rem */;
+    margin-top: -2px;
 }

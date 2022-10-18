@@ -1,0 +1,68 @@
+@import "styles/variables.scss";
+
+.authcomponent{
+    background: #FFFFFF;
+    height: fit-content;
+    width: fit-content;
+    border: .0456rem /* 0.729167px -> .0456rem */ solid #E0E0E0;
+    border-radius: .0456rem /* 0.729167px -> .0456rem */;
+    @media (max-width: $sm-breakpoint) {
+        width: 100%
+    }
+    .heading{
+        display: flex;
+        border-bottom: .0625rem /* 1px -> .0625rem */ solid #EFEFEF;
+        @media (max-width: $sm-breakpoint) {
+            justify-content: center;
+        }
+        & > div {
+            width: 15.6312rem /* 250.1px -> 15.6312rem */;
+            height: 3.4638rem /* 55.42px -> 3.4638rem */;
+            font-family: "Cosmica-SemiBold";
+            font-weight: 600;
+            font-size: .7292rem /* 11.6667px -> .7292rem */;
+            line-height: 3rem /* 48px -> 3rem */;
+            letter-spacing: 0.05em;
+
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999999;
+            cursor: pointer;
+            transition: $fast-transition;
+            border: 0;
+            line-height: 0;
+
+            &:hover{
+                background: #EFF6EE;
+                color: #333333;
+            }
+            
+            &[data-active="active"]{
+                background: #EFF6EE;
+                color: #014C37;
+                color: $dark-green;
+                border-bottom: .25rem /* 4px -> .25rem */ solid transparent;
+                border-bottom-color: $dark-green;
+            }
+
+            
+            @media (max-width: $sm-breakpoint) {
+                width:50%;
+                font-size: .875rem /* 14px -> .875rem */;
+                height: 3.4375rem /* 55px -> 3.4375rem */;
+                border-bottom: .1875rem /* 3px -> .1875rem */ solid transparent;
+            }
+        }
+    }
+
+    .content{
+        margin: 2.25rem /* 36px -> 2.25rem */ auto 3.4375rem /* 55px -> 3.4375rem */;
+        width: fit-content;
+        @media (max-width: $sm-breakpoint) {
+            margin-bottom: 8.0625rem /* 129px -> 8.0625rem */;
+            margin-top: auto;
+        }
+    }
+}

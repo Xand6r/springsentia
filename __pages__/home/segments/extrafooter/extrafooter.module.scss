@@ -2,16 +2,16 @@
 
 .extrafooter{
     width: 100%;
-    height: 160.52px;
+    height: 10.0325rem /* 160.52px -> 10.0325rem */;
     background-color: #F8F7F5;
     background-image: url("/images/paystack/desktop.png");
     background-repeat: no-repeat;
-    background-size:446.53px 80.99px;
+    background-size:27.9081rem /* 446.53px -> 27.9081rem */ 5.0619rem /* 80.99px -> 5.0619rem */;
     background-position: center;
 
-    @include medium-breakpoint{
-        height: 149px;
-        background-size:336px 61px;
+    @include small-breakpoint{
+        height: 9.3125rem /* 149px -> 9.3125rem */;
+        background-size:21rem /* 336px -> 21rem */ 3.8125rem /* 61px -> 3.8125rem */;
     }
 
 }

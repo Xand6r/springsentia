@@ -7,14 +7,14 @@
     margin-top: 6.84rem;
 
     @media (max-width: $sm-breakpoint) {
-        margin-top: 86px;
-        padding: 75px 20px 130px;
+        margin-top: 5.375rem /* 86px -> 5.375rem */;
+        padding: 4.6875rem /* 75px -> 4.6875rem */ 1.25rem /* 20px -> 1.25rem */ 8.125rem /* 130px -> 8.125rem */;
     }
     h2{
-        font-size: 44px;
-        line-height: 44px;
+        font-size: 2.75rem /* 44px -> 2.75rem */;
+        line-height: 2.75rem /* 44px -> 2.75rem */;
         color: #333333;
-        margin-bottom: 70px;
+        margin-bottom: 4.375rem /* 70px -> 4.375rem */;
         width: fit-content;
         margin: auto;
         text-align: center;
@@ -23,19 +23,19 @@
 
         @include medium-breakpoint(){
             font-weight: 400;
-            font-size: 28px;
-            line-height: 40px;
-            margin-bottom: 26px;
+            font-size: 1.75rem /* 28px -> 1.75rem */;
+            line-height: 2.5rem /* 40px -> 2.5rem */;
+            margin-bottom: 1.625rem /* 26px -> 1.625rem */;
 
         }
     }
 
     & > section > div{
-        height: 349px;
+        height: 21.8125rem /* 349px -> 21.8125rem */;
     }
 
     .cards__container{
-        max-width:  1160.68px;
+        max-width:  72.5425rem /* 1160.68px -> 72.5425rem */;
         margin: auto;
         height: fit-content;
     }

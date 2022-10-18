@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   // on tablets
-  @media (max-width: $xl-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +27,15 @@
   justify-content: center;
 
   section{
-    width: 503.44px;
-    height: 569.83px;
-    position: relative;
-    margin-top: -58px;
+    width: 31.465rem /* 503.44px -> 31.465rem */;
+    height: 35.6144rem /* 569.83px -> 35.6144rem */;
+    margin-top: -3.625rem /* -58px -> -3.625rem */;
+    position: absolute;
+    bottom: 0;
+    @include small-breakpoint{
+      position: relative;
+      bottom: unset;
+    }
 
     img{
       object-fit: contain;
@@ -38,7 +43,7 @@
   }
 
   // on tablets
-  @media (max-width: $xl-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     margin: 0;
     background: #D9E3E1;
     width: 100%;
@@ -49,10 +54,10 @@
     }
   }
 
-  @media (max-width: $md-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     & > section {
-      width: 319px;
-      height: 361px;
+      width: 19.9375rem /* 319px -> 19.9375rem */;
+      height: 22.5625rem /* 361px -> 22.5625rem */;
     }
   }
 
@@ -63,20 +68,20 @@
   background-color: #F8F7F5;;
   width: 50%;
   padding: 4.625rem;
-  padding-left: 90px;
+  padding-left: 5.625rem /* 90px -> 5.625rem */;
   padding-top: 6.0625rem;
 
-  @include xlarge-breakpoint(){
+  @include small-breakpoint(){
     padding: 0;
-    padding-top: 77px;
-    padding-bottom: 67px;
+    padding-top: 4.8125rem /* 77px -> 4.8125rem */;
+    padding-bottom: 4.1875rem /* 67px -> 4.1875rem */;
     width: 100%;
   }
 
   & > div{
     width: fit-content;
     
-    @include xlarge-breakpoint(){
+    @include small-breakpoint(){
       margin: auto;
     }
   }
@@ -85,14 +90,14 @@
     margin-bottom: 1.5625rem;
     color: $dark-green;
     letter-spacing: 0.1em;
-    font-size: 13px;
+    font-size: .8125rem /* 13px -> .8125rem */;
     font-family: "Cosmica-SemiBold";
     letter-spacing: 0.1em;
 
-    @media (max-width: $md-breakpoint) {
+    @media (max-width: $sm-breakpoint) {
       text-align: center;
-      font-size: 12px;
-      margin-bottom: 18px;
+      font-size: .75rem /* 12px -> .75rem */;
+      margin-bottom: 1.125rem /* 18px -> 1.125rem */;
       letter-spacing: 0.1em;
     }
   }
@@ -100,20 +105,20 @@
     margin-bottom: 1.25rem;
     color: $darker-charcoal;
     font-weight: 500;
-    font-size: 32.1032px;
-    line-height: 32px;
-    @media (max-width: $md-breakpoint) {
+    font-size: 2.0065rem /* 32.1032px -> 2.0065rem */;
+    line-height: 2rem /* 32px -> 2rem */;
+    @media (max-width: $sm-breakpoint) {
       text-align: center;
-      font-size: 28px;
-      margin-bottom: 35px;
+      font-size: 1.75rem /* 28px -> 1.75rem */;
+      margin-bottom: 2.1875rem /* 35px -> 2.1875rem */;
     }
   }
   button {
     margin-top: 3.125rem;
-    padding: 15px;
-    padding-top: 18px;
-    font-size: 12px;
-    @media (max-width: $md-breakpoint) {
+    padding: .9375rem /* 15px -> .9375rem */;
+    padding-top: 1.125rem /* 18px -> 1.125rem */;
+    font-size: .75rem /* 12px -> .75rem */;
+    @media (max-width: $sm-breakpoint) {
       margin: auto;
       margin-top: 0;
       // margin-bottom: 60px;
@@ -125,16 +130,16 @@
     line-height: 1.875rem;
     color: #707070;
     font-family: "Cosmica-Regular";
-    font-size: 13.1331px;
-    line-height: 22px;
-    @media (max-width: $md-breakpoint) {
+    font-size: .8208rem /* 13.1331px -> .8208rem */;
+    line-height: 1.375rem /* 22px -> 1.375rem */;
+    @media (max-width: $sm-breakpoint) {
       text-align: center;
     }
 
-    @media (max-width: $md-breakpoint) {
-      margin: 40px 28px 45px;
+    @media (max-width: $sm-breakpoint) {
+      margin: 2.5rem /* 40px -> 2.5rem */ 1.75rem /* 28px -> 1.75rem */ 2.8125rem /* 45px -> 2.8125rem */;
       text-align: center;
-      max-width: 317px;
+      max-width: 19.8125rem /* 317px -> 19.8125rem */;
     }
   }
 }
@@ -149,12 +154,12 @@
     flex-direction: column;
     width: fit-content;
     margin: 0 auto;
-    gap: 26px;
+    gap: 1.625rem /* 26px -> 1.625rem */;
   }
   div {
     display: flex;
     align-items: center;
-    margin-right: 24px;
+    margin-right: 1.5rem /* 24px -> 1.5rem */;
     @media (max-width: $sm-breakpoint) {
       margin-right: 0px;
     }
@@ -162,11 +167,11 @@
       margin-right: 0;
     }
     h4 {
-      margin-left: 9px;
+      margin-left: .5625rem /* 9px -> .5625rem */;
       max-width: 34.3125rem;
       color: $darker-charcoal;
-      font-size: 14.5924px;
-      line-height: 15px;
+      font-size: .912rem /* 14.5924px -> .912rem */;
+      line-height: .9375rem /* 15px -> .9375rem */;
     }
   }
 }

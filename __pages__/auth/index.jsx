@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-import styles from "./authentication.module.scss";
-import Register from "./components/register";
-import Login from "./components/login";
+import styles from './authentication.module.scss';
+import Register from './segments/register';
+import Login from './segments/login';
 
-const KEY = "confirmed";
+const KEY = 'confirmed';
 
 export default function Index() {
   const router = useRouter();
@@ -25,13 +25,13 @@ export default function Index() {
       {!confirmationMode && (
         <div className={styles.heading}>
           <div
-            data-active={activeTab === 1 && "active"}
+            data-active={activeTab === 1 && 'active'}
             onClick={() => setActiveTab(1)}
           >
             Register
           </div>
           <div
-            data-active={activeTab === 2 && "active"}
+            data-active={activeTab === 2 && 'active'}
             onClick={() => setActiveTab(2)}
           >
             Login
@@ -43,13 +43,9 @@ export default function Index() {
       {/* the content of the login component */}
       <div className={styles.content}>
         {activeTab === 1 ? (
-          // {/* tab one for register */}
           <Register />
         ) : (
-          // {/* tab one for register */}
-          // {/* tab two for login*/}
           <Login confirmationMode />
-          // {/* tab two for login*/}
         )}
       </div>
       {/* the content of the login component */}

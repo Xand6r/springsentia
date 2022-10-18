@@ -9,8 +9,8 @@
     margin: auto;
     margin-top: 11.25rem;
 
-    @include xlarge-breakpoint(){
-        margin-top: 100px;
+    @include small-breakpoint(){
+        margin-top: 6.25rem /* 100px -> 6.25rem */;
         padding-left: 0;
         padding-right: 0;
     }
@@ -18,41 +18,41 @@
     .image__container{
         height: 100%;
         margin: auto;
-        gap: 20px;
+        gap: 1.25rem /* 20px -> 1.25rem */;
         display: flex;
         background-size: cover;
         flex-wrap: wrap;
         justify-content: center;
 
-        @include xlarge-breakpoint(){
+        @include small-breakpoint(){
             flex-direction: column;
-            gap: 60px;
+            gap: 2.5rem /* 40px -> 2.5rem */;
             width: fit-content;
         }
     }
 
     .image__item{
-        width: 374.29px;
-        height: 295.5px;
+        width: 23.3931rem /* 374.29px -> 23.3931rem */;
+        height: 18.4688rem /* 295.5px -> 18.4688rem */;
         position: relative;
         background-color: #F8F7F5;
-        padding: 30px;
+        padding: 1.375rem /* 22px -> 1.375rem */;
         display: flex;
         background-position: center;
         align-items: flex-end;
         background-size: cover;
 
-        @include xlarge-breakpoint(){
-            width: 335px;
-            height: 265px;
-            padding: 20px;
+        @include small-breakpoint(){
+            width: 20.9375rem /* 335px -> 20.9375rem */;
+            height: 16.5625rem /* 265px -> 16.5625rem */;
+            padding: 1.25rem /* 20px -> 1.25rem */;
             box-sizing: border-box;
         }
     }
 
     .image__footer{
-        height: 40px;
-        width: 330px;
+        height: 2.5rem /* 40px -> 2.5rem */;
+        width: 20.625rem /* 330px -> 20.625rem */;
         
         background: white;
         border: 1px solid $dark-green;
@@ -67,16 +67,25 @@
         font-family: Cosmica-SemiBold;
         span{
             display: inline-block;
-            margin-top: 4px;
-            font-size: 12px;
+            margin-top: .25rem /* 4px -> .25rem */;
+            font-size: .75rem /* 12px -> .75rem */;
         }
 
-        @include xlarge-breakpoint(){
-            width: 295px;
-            height:55px;
+        @include small-breakpoint(){
+            width: 18.4375rem /* 295px -> 18.4375rem */;
+            height:3.4375rem /* 55px -> 3.4375rem */;
             position: absolute;
-            bottom: 20px;
+            bottom: 1.25rem /* 20px -> 1.25rem */;
         }
+    }
 
+    .left_arrow{
+        height: .8662rem /* 13.86px -> .8662rem */;
+        width: .8662rem /* 13.86px -> .8662rem */;
+
+        @include small-breakpoint{
+            height: 1.0625rem /* 17px -> 1.0625rem */;
+            width: 1.0625rem /* 17px -> 1.0625rem */;
+        }
     }
 }

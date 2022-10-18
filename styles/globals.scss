@@ -31,6 +31,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
   padding: 0;
@@ -72,10 +74,30 @@ input{
   outline: none;
   border: none;
   font-size: 1rem;
-  padding: 1em 1.25em;
+  background: #FFFFFF;
+  border-radius: 1px;
+  width: 17.3175rem /* 277.08px -> 17.3175rem */;
+  height: 2.7344rem /* 43.75px -> 2.7344rem */;
+  box-sizing: border-box;
+  padding: .9375rem /* 15px -> .9375rem */;
+  font-size: .7292rem /* 11.6667px -> .7292rem */;
+  line-height: 1.125rem /* 18px -> 1.125rem */;
   font-family: 'Helvetica Neue';
+  border: .0456rem /* 0.729167px -> .0456rem */ solid #999999;
+  border-radius: .0456rem /* 0.729167px -> .0456rem */;
+
+  &:focus{
+    outline: none;
+  }
+
   &::placeholder {
-    color: #707070;
+    color: #999999;
+  }
+
+  @include small-breakpoint{
+    width: 20.9375rem /* 335px -> 20.9375rem */;
+    height: 3.4375rem /* 55px -> 3.4375rem */;
+    font-size: 1rem /* 16px -> 1rem */;
   }
 }
 
@@ -169,9 +191,9 @@ button{
 // override react slick
 .reviews{
   .slick-dots{
-    bottom: -50px;
+    bottom: -3.125rem /* -50px -> -3.125rem */;
     @include medium-breakpoint{
-      bottom: -40px;
+      bottom: -2.5rem /* -40px -> -2.5rem */;
     }
     li {
       width: unset;
@@ -180,21 +202,21 @@ button{
         &::before{
           display: none;
         }
-        width: 4px;
-        height: 4px;
+        width: .25rem /* 4px -> .25rem */;
+        height: .25rem /* 4px -> .25rem */;
         background: #999999;
       }
     }
     .slick-active{
       button{
         background: #014C37;
-        width: 24.81px;
-        height: 4.38px;
+        width: 1.5506rem /* 24.81px -> 1.5506rem */;
+        height: .2737rem /* 4.38px -> .2737rem */;
         &:before{
           display: none;
         }
         @include medium-breakpoint{
-          width: 18px;
+          width: 1.125rem /* 18px -> 1.125rem */;
         }
       }
     }

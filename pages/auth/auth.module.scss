@@ -4,11 +4,12 @@
   overflow: auto;
   min-height: calc(100vh - 90px);
   width: 100vw;
+  height: 100vh;
   display: flex;
-  padding-top: 5.8125rem;
-  padding-bottom: 11.0625rem;
+  padding-top: 4.6025rem /* 73.64px -> 4.6025rem */;
+  padding-bottom: 17.625rem /* 282px -> 17.625rem */;
   justify-content: center;
-  @media (max-width: $md-breakpoint) {
+  @media (max-width: $sm-breakpoint) {
     padding-top: 0;
     padding-bottom: 0;
     background-color: white;
@@ -19,19 +20,10 @@
       position: relative;
     }
     & > div {
-      label {
-        display: block;
-        font-size: 0.875rem;
-        color: #707070;
-        @media (max-width: $sm-breakpoint) {
-          font-size: 14px;
-        }
-      }
       input {
         background: #f9f9f9;
-        border: 1px solid #ebebeb;
         box-sizing: border-box;
-        border-radius: 1px;
+        border-radius: .0625rem /* 1px -> .0625rem */;
         width: 100%;
         &::placeholder {
           color: #999999;
@@ -43,7 +35,7 @@
             transition: $fast-transition;
             cursor: pointer;
             position: absolute;
-            top: calc(50% - 9px);
+            top: calc(50% - .5625rem /* 9px -> .5625rem */);
             right: 1.25rem;
           }
         }

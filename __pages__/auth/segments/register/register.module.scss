@@ -1,0 +1,174 @@
+@import "styles/variables.scss";
+.registercomponent {
+  width: 17.3175rem /* 277.08px -> 17.3175rem */;
+  @media (max-width: $sm-breakpoint) {
+    width: 335px;
+  }
+
+  h5.header {
+    font-size: 1.0026rem /* 16.0416px -> 1.0026rem */;
+    margin-bottom: 1.4375rem /* 23px -> 1.4375rem */;
+    text-transform: uppercase;
+    color: $darker-charcoal;
+    text-align: center;
+    @media (max-width: $sm-breakpoint) {
+      margin-top: 2.8125rem /* 45px -> 2.8125rem */;
+      margin-bottom: 1.5625rem /* 25px -> 1.5625rem */;
+      font-size: 1.125rem /* 18px -> 1.125rem */;
+    }
+  }
+
+
+  //options for facebook or google
+  section.options {
+    display: flex;
+    gap: 1.25rem /* 20px -> 1.25rem */;
+    width: fit-content;
+    margin: auto;
+    @media (max-width: $sm-breakpoint) {
+      gap: .8125rem /* 13px -> .8125rem */;
+    }
+    
+    & > div {
+      display: flex;
+      align-items: center;
+
+      width: 8.2031rem /* 131.25px -> 8.2031rem */;
+      height: 2.5063rem /* 40.1px -> 2.5063rem */;
+
+      padding-top: 1.0181rem /* 16.29px -> 1.0181rem */;
+      padding-left: .7281rem /* 11.65px -> .7281rem */;
+      padding-bottom: .7294rem /* 11.67px -> .7294rem */;
+
+      border: 1px solid #ebebeb;
+
+      gap: .875rem /* 14px -> .875rem */;
+
+      background: #f9f9f9;
+      box-sizing: border-box;
+      border-radius: .0625rem /* 1px -> .0625rem */;
+      cursor: pointer;
+
+      @media (max-width: $sm-breakpoint) {
+        width: 10.0625rem /* 161px -> 10.0625rem */;
+        height: 3.125rem /* 50px -> 3.125rem */;
+        padding-left: 1.5625rem /* 25px -> 1.5625rem */;
+      }
+
+      h6 {
+        color: $darker-charcoal;
+        font-weight: 600;
+        font-size: .75rem /* 12px -> .75rem */;
+        line-height: 1.25rem /* 20px -> 1.25rem */;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        @media (max-width: $sm-breakpoint) {
+          font-size: 12px;
+        }
+      }
+    }
+    //options for facebook or google
+  }
+
+  & > h6.top_one {
+    margin-top: 1rem /* 16px -> 1rem */;
+    border-bottom: .0625rem /* 1px -> .0625rem */ solid $dark-charcoal;
+    font-weight: 400;
+    font-size: .638rem /* 10.2083px -> .638rem */;
+    line-height: 1.125rem /* 18px -> 1.125rem */;
+    padding-bottom: 1.875rem /* 30px -> 1.875rem */;
+    color: #707070;
+
+    @media (max-width: $sm-breakpoint) {
+      margin-bottom: 2.1875rem /* 35px -> 2.1875rem */;
+      padding-bottom: 1.5625rem /* 25px -> 1.5625rem */;
+      margin-top: 1.25rem /* 20px -> 1.25rem */;
+      font-size: .75rem /* 12px -> .75rem */;
+      line-height: 1.375rem /* 22px -> 1.375rem */;
+    }
+
+  }
+
+  h5.alternative {
+    font-size: 1.0026rem /* 16.0417px -> 1.0026rem */;
+    margin: auto;
+    margin-top: 2.2788rem /* 36.46px -> 2.2788rem */;
+    margin-bottom: 1.595rem /* 25.52px -> 1.595rem */;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    width: fit-content;
+    @media (max-width: $sm-breakpoint) {
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+  }
+
+  form {
+    .input_wrapper {
+        margin-bottom: 1.595rem /* 25.52px -> 1.595rem */;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      label {
+        margin-bottom: 0.9375rem;
+        @media (max-width: $sm-breakpoint) {
+          margin-bottom: .9375rem /* 15px -> .9375rem */;
+        }
+      }
+      input {
+      }
+    }
+  }
+  & > h6.bottom_one {
+    font-size: .638rem /* 10.2083px -> .638rem */;
+    line-height: 1.125rem /* 18px -> 1.125rem */;
+    color: #707070;
+    margin-top: 1rem /* 16px -> 1rem */;
+    margin-bottom: 1.9375rem /* 31px -> 1.9375rem */;
+
+    span{
+      color: $dark-green;
+    }
+    @media (max-width: $sm-breakpoint) {
+      margin-top: 1.5625rem /* 25px -> 1.5625rem */;
+      margin-bottom: 2.5rem /* 40px -> 2.5rem */;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  button{
+    width: 100%;
+    height: 2.5063rem /* 40.1px -> 2.5063rem */;
+    font-weight: 600;
+    font-size: .7292rem /* 11.6667px -> .7292rem */;
+    line-height: 1.375rem /* 22px -> 1.375rem */;
+    color: #FFFFFF;
+    font-family: 'Cosmica-SemiBold';
+  }
+  
+}
+
+
+.oauth__image{
+  width:  1.0263rem /* 16.42px -> 1.0263rem */;
+  height: 1.0481rem /* 16.7696px -> 1.0481rem */;
+  margin-top: -5px;
+
+  @include small-breakpoint{
+    width: 1.145rem /* 18.32px -> 1.145rem */;
+    height: 1.17rem /* 18.72px -> 1.17rem */;
+    margin-top: -3px;
+  }
+}
+
+.eyesicon{
+  height: 1rem /* 16px -> 1rem */;
+  width: 1rem /* 16px -> 1rem */;
+}

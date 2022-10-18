@@ -1,11 +1,11 @@
-import React from "react";
-import Head from "next/head";
-import { Envelope } from "./assets";
-import NavBar from "components/navbars/home";
-import styles from "./confirm.module.scss";
+import React from 'react';
+import Head from 'next/head';
+import NavBar from 'components/navbars/home';
+import styles from './confirm.module.scss';
+import RenderStyledImage from 'components/images/renderstyledimage';
 
 export default function index() {
-  const name =  "chidonmerole@gmail.com";
+  const name = 'chidonmerole@gmail.com';
   return (
     <>
       {/* define extra components we are goign to be using for the login page */}
@@ -16,24 +16,26 @@ export default function index() {
       {/* the navbar */}
       <NavBar />
       {/* the navbar */}
-      <div className={styles.loginpage}>
+      <div className={styles.confirmpage}>
         <div className={styles.confirm__tab}>
-          <Envelope />
+          <RenderStyledImage
+            className={styles.envelopeicon}
+            src="/icons/auth/envelopeconfirmed.svg"
+          />
           <div className={styles.tab__title}>CONFIRM YOUR EMAIL</div>
           <p className={styles.tab__text}>
-            A confirmation mail has been sent to <b>{name}</b>. To
-            complete your registration, kindly check your inbox to confirm your
-            email
+            A confirmation mail has been sent to <b>{name}</b>. To complete your
+            registration, kindly check your inbox to confirm your email
           </p>
           <div className={styles.tab__footer}>
             <section>
-                <p>Incorrect email?</p>
-                <p>Edit email</p>
+              <p>Incorrect email?</p>
+              <p>Edit email</p>
             </section>
 
             <section>
-                <p>No email recieved</p>
-                <p>Resend Mail</p>
+              <p>No email recieved</p>
+              <p>Resend Mail</p>
             </section>
           </div>
         </div>
